@@ -1,0 +1,993 @@
+Started by user [8mha:////4PfB2hKO65xEFvEkDdbhRTJ2eOvE3AiOpYrplRiydTmuAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Obtained jenkinsfiles/Jenkinsfile_spellcheck from git https://github.com/lavishay-technion/jenkins_pipeline_task.git
+[8mha:////4Eif8i+huO8Du5/2WMuOXf+dab5fsSI1vDt5pS/NdwpcAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4Apv0at6J2gqvo59i13LxYcyn6eumKi2WruAevDpBZf2AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4CioWp4s975HSL2z/7AjIQxVXSgHfskWncjS3GFs4agJAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAx2oBn6yfm5BaUlqUX65flF2alFhvoAb1fE1scAAAA=[0mworker1 in /home/jenkins/workspace/1_spell_check
+[8mha:////4IG9NmHoZxScNfzFQR45gkWn0VciPfKVHnfOTy94GebnAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4MSOWT3Pa6/TYp7t5Sulfhv29+aPK5F8c+dvSV5E1zYcAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4Kes4nP1K0oDCUpV+cU5YlBIfyRq/dpNekpMp6z/bKArAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4HeRuTKqvRJYgy2lEc4h1lTE2N77cqRaPoL+wlMq7OztAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+Fetching changes from the remote Git repository
+ > git rev-parse --resolve-git-dir /home/jenkins/workspace/1_spell_check/.git # timeout=10
+ > git config remote.origin.url https://github.com/lavishay-technion/jenkins_pipeline_task.git # timeout=10
+Fetching upstream changes from https://github.com/lavishay-technion/jenkins_pipeline_task.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+ > git fetch --tags --force --progress -- https://github.com/lavishay-technion/jenkins_pipeline_task.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking out Revision e2e37234e75ca5fc5e6cdbb496a2662732a6cf34 (refs/remotes/origin/main)
+Commit message: "UpdatingGit"
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e2e37234e75ca5fc5e6cdbb496a2662732a6cf34 # timeout=10
+ > git rev-list --no-walk 90a60d9c903ddcfbff7858c50ecacd9c72cdb49d # timeout=10
+[8mha:////4Ht2XOwhwp1/DQub0INbV57LB0maZLmMdPv8CsUX+Vm0AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4CkJLbyzBxQSNABbP9SsTq/el82MBPRj8G2UEPVFG7g8AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4FSplG+QBcf3sVsOldNT8quuaZiLzOFg6DXmLbjX9qk8AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4Gvp5A+qJ/jd+TcIhdJqwOV9nfRkvJ0e5WFqE+nubY9jAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4HEg5hpfD79hNMKisDe41mRa+K7bnyNaWdGdZbYTIXb+AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] stage
+[8mha:////4JUSMOWMTCtx7U28kCmQgLBtB8c1ebVx8X1N2+nmylaJAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (Spellcheck)
+[8mha:////4OwhtEDgOutQGiYVX8qyBdT0p8GbOjXShKV2qjCY8UqWAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] sh
++ chmod +x ./scripts/spellcheck.sh
++ bash ./scripts/spellcheck.sh
+fatal: destination path 'details_app' already exists and is not an empty directory.
+Hit:1 https://download.docker.com/linux/debian bookworm InRelease
+Hit:2 http://deb.debian.org/debian bookworm InRelease
+Hit:3 http://deb.debian.org/debian bookworm-updates InRelease
+Hit:4 http://deb.debian.org/debian-security bookworm-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+hunspell is already the newest version (1.7.1-1).
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+#######################################
+[+] hunspell installed on Debian
+#######################################
+Running script, can't get it to work at this time
+/tmp/details_app
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+####################
+File .dockerignore 
+####################
+Line 1: pycache -> cache
+Line 2: venv -> vena
+Line 3: vscodium -> sodium
+Line 4: csv -> csc
+
+
+
+
+
+
+
+
+
+
+####################
+File .gitignore 
+####################
+Line 1: pycache -> cache
+Line 2: venv -> vena
+Line 3: vscodium -> sodium
+Line 4: csv -> csc
+Line 6: env -> enc
+Line 7: pgsql -> SQL
+
+
+
+
+
+
+####################
+File Dockerfile 
+####################
+Line 3: apk -> pk
+Line 3: python3 -> python
+Line 3: dev -> dec
+Line 3: libffi -> filibeg
+Line 3: dev -> dec
+Line 5: config -> con fig
+Line 5: virtualenvs -> virtuality
+Line 6: dev -> dec
+Line 10: ENV -> ENC
+Line 11: Avishay -> Avis hay
+Line 12: WORKDIR -> WORK DIR
+Line 13: apk -> pk
+Line 13: tini -> tin
+Line 18: gunicorn -> unicorn
+Line 18: config -> con fig
+Line 18: src -> scr
+Line 19: CMD -> CM
+Line 20: ENTRYPOINT -> ENTRY POINT
+Line 20: gunicorn -> unicorn
+Line 20: config -> con fig
+Line 20: src -> scr
+
+
+
+
+
+
+####################
+File README.md 
+####################
+Line 3: html -> HTML
+Line 8: SQLite3 -> SQLite
+Line 11: Postgresql -> PostgreSQL
+Line 13: k3s -> ks
+Line 14: Virtualbox -> Virtual box
+Line 14: k8s -> ks
+
+
+
+
+
+
+####################
+File build.sh 
+####################
+
+
+
+
+
+
+####################
+File details.py 
+####################
+Line 1: src -> scr
+
+
+
+
+
+
+####################
+File docker-compose.yaml 
+####################
+Line 1: api -> API
+Line 4: POSTGRES -> POSTURES
+Line 4: pgadmin -> pg admin
+Line 5: POSTGRES -> POSTURES
+Line 5: pgadmin -> pg admin
+Line 6: DBHOST -> DB HOST
+Line 6: postgres -> postures
+Line 7: DBNAME -> DB NAME
+Line 7: postgres -> postures
+Line 12: cpus -> cups
+Line 20: api -> API
+Line 22: postgresql -> PostgreSQL
+Line 23: ansible -> expansible
+Line 27: postgresql -> PostgreSQL
+Line 28: postgres -> postures
+Line 29: postgres -> postures
+Line 34: POSTGRES -> POSTURES
+Line 34: pgadmin -> pg admin
+Line 35: POSTGRES -> POSTURES
+Line 35: pgadmin -> pg admin
+Line 36: POSTGRES -> POSTURES
+Line 36: postgres -> postures
+
+
+
+
+
+
+####################
+File gunicorn_conf.py 
+####################
+Line 5: loglevel -> log level
+
+
+
+
+
+
+
+
+
+
+####################
+File poetry.lock 
+####################
+Line 10: py3 -> pye
+Line 10: whl -> hl
+Line 10: sha256 -> shahs
+Line 11: gz -> g
+Line 11: sha256 -> shahs
+Line 17: Composable -> Com posable
+Line 21: py3 -> pye
+Line 21: whl -> hl
+Line 21: sha256 -> shahs
+Line 22: gz -> g
+Line 22: sha256 -> shahs
+Line 26: colorama -> colorado
+Line 29: colorama -> colorado
+Line 35: colorama -> colorado
+Line 35: py2 -> pye
+Line 35: py3 -> pye
+Line 35: whl -> hl
+Line 35: sha256 -> shahs
+Line 36: colorama -> colorado
+Line 36: gz -> g
+Line 36: sha256 -> shahs
+Line 40: dnspython -> pythoness
+Line 42: DNS -> DENS
+Line 46: dnspython -> pythoness
+Line 46: py3 -> pye
+Line 46: whl -> hl
+Line 46: sha256 -> shahs
+Line 47: dnspython -> pythoness
+Line 47: gz -> g
+Line 47: sha256 -> shahs
+Line 51: dev -> dec
+Line 51: flake8 -> flake
+Line 51: mypy -> pygmy
+Line 51: pylint -> plinth
+Line 51: pytest -> testes
+Line 51: pytest -> testes
+Line 51: cov -> voc
+Line 52: dnssec -> dissect
+Line 53: doh -> hod
+Line 53: h2 -> h
+Line 53: httpcore -> threescore
+Line 53: httpx -> HTTP
+Line 54: doq -> dow
+Line 54: aioquic -> coquina
+Line 55: idna -> idea
+Line 55: idna -> idea
+Line 57: wmi -> mi
+Line 57: wmi -> mi
+Line 60: validator -> invalidator
+Line 66: validator -> invalidator
+Line 66: py3 -> pye
+Line 66: whl -> hl
+Line 66: sha256 -> shahs
+Line 67: validator -> invalidator
+Line 67: gz -> g
+Line 67: sha256 -> shahs
+Line 71: dnspython -> pythoness
+Line 72: idna -> idea
+Line 81: py3 -> pye
+Line 81: whl -> hl
+Line 81: sha256 -> shahs
+Line 82: gz -> g
+Line 82: sha256 -> shahs
+Line 88: itsdangerous -> its dangerous
+Line 89: Jinja2 -> Jinja
+Line 90: Werkzeug -> Zeugma
+Line 93: async -> sync
+Line 93: asgiref -> ceasefire
+Line 94: dotenv -> dote
+Line 94: dotenv -> dote
+Line 97: sqlalchemy -> alchemy
+Line 99: SQLAlchemy -> Alchemy
+Line 103: sqlalchemy -> alchemy
+Line 103: py3 -> pye
+Line 103: whl -> hl
+Line 103: sha256 -> shahs
+Line 104: sqlalchemy -> alchemy
+Line 104: gz -> g
+Line 104: sha256 -> shahs
+Line 109: sqlalchemy -> alchemy
+Line 112: wtf -> wt
+Line 114: CSRF -> CORF
+Line 114: WTForms -> Wt Forms
+Line 118: wtf -> wt
+Line 118: py3 -> pye
+Line 118: whl -> hl
+Line 118: sha256 -> shahs
+Line 119: wtf -> wt
+Line 119: gz -> g
+Line 119: sha256 -> shahs
+Line 124: itsdangerous -> its dangerous
+Line 125: wtforms -> wt forms
+Line 128: validator -> invalidator
+Line 137: macosx -> macaco
+Line 137: universal2 -> universal
+Line 137: whl -> hl
+Line 137: sha256 -> shahs
+Line 138: manylinux -> manyplies
+Line 138: aarch64 -> anarch
+Line 138: aarch64 -> anarch
+Line 138: whl -> hl
+Line 138: sha256 -> shahs
+Line 139: manylinux -> manyplies
+Line 139: whl -> hl
+Line 139: sha256 -> shahs
+Line 140: manylinux -> manyplies
+Line 140: whl -> hl
+Line 140: sha256 -> shahs
+Line 141: manylinux -> manyplies
+Line 141: whl -> hl
+Line 141: sha256 -> shahs
+Line 142: manylinux -> manyplies
+Line 142: manylinux -> manyplies
+Line 142: whl -> hl
+Line 142: sha256 -> shahs
+Line 143: musllinux -> muslin
+Line 143: aarch64 -> anarch
+Line 143: whl -> hl
+Line 143: sha256 -> shahs
+Line 144: musllinux -> muslin
+Line 144: whl -> hl
+Line 144: sha256 -> shahs
+Line 145: amd64 -> AMD
+Line 145: whl -> hl
+Line 145: sha256 -> shahs
+Line 146: macosx -> macaco
+Line 146: universal2 -> universal
+Line 146: whl -> hl
+Line 146: sha256 -> shahs
+Line 147: manylinux -> manyplies
+Line 147: aarch64 -> anarch
+Line 147: aarch64 -> anarch
+Line 147: whl -> hl
+Line 147: sha256 -> shahs
+Line 148: manylinux -> manyplies
+Line 148: whl -> hl
+Line 148: sha256 -> shahs
+Line 149: manylinux -> manyplies
+Line 149: whl -> hl
+Line 149: sha256 -> shahs
+Line 150: manylinux -> manyplies
+Line 150: whl -> hl
+Line 150: sha256 -> shahs
+Line 151: manylinux -> manyplies
+Line 151: manylinux -> manyplies
+Line 151: whl -> hl
+Line 151: sha256 -> shahs
+Line 152: musllinux -> muslin
+Line 152: aarch64 -> anarch
+Line 152: whl -> hl
+Line 152: sha256 -> shahs
+Line 153: musllinux -> muslin
+Line 153: whl -> hl
+Line 153: sha256 -> shahs
+Line 154: amd64 -> AMD
+Line 154: whl -> hl
+Line 154: sha256 -> shahs
+Line 155: macosx -> macaco
+Line 155: universal2 -> universal
+Line 155: whl -> hl
+Line 155: sha256 -> shahs
+Line 156: manylinux -> manyplies
+Line 156: aarch64 -> anarch
+Line 156: aarch64 -> anarch
+Line 156: whl -> hl
+Line 156: sha256 -> shahs
+Line 157: manylinux -> manyplies
+Line 157: whl -> hl
+Line 157: sha256 -> shahs
+Line 158: manylinux -> manyplies
+Line 158: whl -> hl
+Line 158: sha256 -> shahs
+Line 159: manylinux -> manyplies
+Line 159: whl -> hl
+Line 159: sha256 -> shahs
+Line 160: manylinux -> manyplies
+Line 160: manylinux -> manyplies
+Line 160: whl -> hl
+Line 160: sha256 -> shahs
+Line 161: musllinux -> muslin
+Line 161: aarch64 -> anarch
+Line 161: whl -> hl
+Line 161: sha256 -> shahs
+Line 162: musllinux -> muslin
+Line 162: whl -> hl
+Line 162: sha256 -> shahs
+Line 163: amd64 -> AMD
+Line 163: whl -> hl
+Line 163: sha256 -> shahs
+Line 164: cp37 -> cp
+Line 164: macosx -> macaco
+Line 164: universal2 -> universal
+Line 164: whl -> hl
+Line 164: sha256 -> shahs
+Line 165: cp37 -> cp
+Line 165: manylinux -> manyplies
+Line 165: aarch64 -> anarch
+Line 165: aarch64 -> anarch
+Line 165: whl -> hl
+Line 165: sha256 -> shahs
+Line 166: cp37 -> cp
+Line 166: manylinux -> manyplies
+Line 166: whl -> hl
+Line 166: sha256 -> shahs
+Line 167: cp37 -> cp
+Line 167: manylinux -> manyplies
+Line 167: whl -> hl
+Line 167: sha256 -> shahs
+Line 168: cp37 -> cp
+Line 168: manylinux -> manyplies
+Line 168: whl -> hl
+Line 168: sha256 -> shahs
+Line 169: cp37 -> cp
+Line 169: manylinux -> manyplies
+Line 169: manylinux -> manyplies
+Line 169: whl -> hl
+Line 169: sha256 -> shahs
+Line 170: cp37 -> cp
+Line 170: musllinux -> muslin
+Line 170: aarch64 -> anarch
+Line 170: whl -> hl
+Line 170: sha256 -> shahs
+Line 171: cp37 -> cp
+Line 171: musllinux -> muslin
+Line 171: whl -> hl
+Line 171: sha256 -> shahs
+Line 172: cp37 -> cp
+Line 172: win32 -> win
+Line 172: whl -> hl
+Line 172: sha256 -> shahs
+Line 173: cp37 -> cp
+Line 173: amd64 -> AMD
+Line 173: whl -> hl
+Line 173: sha256 -> shahs
+Line 174: cp38 -> cp
+Line 174: cp38 -> cp
+Line 174: macosx -> macaco
+Line 174: universal2 -> universal
+Line 174: whl -> hl
+Line 174: sha256 -> shahs
+Line 175: cp38 -> cp
+Line 175: cp38 -> cp
+Line 175: manylinux -> manyplies
+Line 175: aarch64 -> anarch
+Line 175: aarch64 -> anarch
+Line 175: whl -> hl
+Line 175: sha256 -> shahs
+Line 176: cp38 -> cp
+Line 176: cp38 -> cp
+Line 176: manylinux -> manyplies
+Line 176: whl -> hl
+Line 176: sha256 -> shahs
+Line 177: cp38 -> cp
+Line 177: cp38 -> cp
+Line 177: manylinux -> manyplies
+Line 177: whl -> hl
+Line 177: sha256 -> shahs
+Line 178: cp38 -> cp
+Line 178: cp38 -> cp
+Line 178: manylinux -> manyplies
+Line 178: whl -> hl
+Line 178: sha256 -> shahs
+Line 179: cp38 -> cp
+Line 179: cp38 -> cp
+Line 179: manylinux -> manyplies
+Line 179: manylinux -> manyplies
+Line 179: whl -> hl
+Line 179: sha256 -> shahs
+Line 180: cp38 -> cp
+Line 180: cp38 -> cp
+Line 180: musllinux -> muslin
+Line 180: aarch64 -> anarch
+Line 180: whl -> hl
+Line 180: sha256 -> shahs
+Line 181: cp38 -> cp
+Line 181: cp38 -> cp
+Line 181: musllinux -> muslin
+Line 181: whl -> hl
+Line 181: sha256 -> shahs
+Line 182: cp38 -> cp
+Line 182: cp38 -> cp
+Line 182: win32 -> win
+Line 182: whl -> hl
+Line 182: sha256 -> shahs
+Line 183: cp38 -> cp
+Line 183: cp38 -> cp
+Line 183: amd64 -> AMD
+Line 183: whl -> hl
+Line 183: sha256 -> shahs
+Line 184: cp39 -> cp
+Line 184: cp39 -> cp
+Line 184: macosx -> macaco
+Line 184: universal2 -> universal
+Line 184: whl -> hl
+Line 184: sha256 -> shahs
+Line 185: cp39 -> cp
+Line 185: cp39 -> cp
+Line 185: manylinux -> manyplies
+Line 185: aarch64 -> anarch
+Line 185: aarch64 -> anarch
+Line 185: whl -> hl
+Line 185: sha256 -> shahs
+Line 186: cp39 -> cp
+Line 186: cp39 -> cp
+Line 186: manylinux -> manyplies
+Line 186: whl -> hl
+Line 186: sha256 -> shahs
+Line 187: cp39 -> cp
+Line 187: cp39 -> cp
+Line 187: manylinux -> manyplies
+Line 187: whl -> hl
+Line 187: sha256 -> shahs
+Line 188: cp39 -> cp
+Line 188: cp39 -> cp
+Line 188: manylinux -> manyplies
+Line 188: whl -> hl
+Line 188: sha256 -> shahs
+Line 189: cp39 -> cp
+Line 189: cp39 -> cp
+Line 189: manylinux -> manyplies
+Line 189: manylinux -> manyplies
+Line 189: whl -> hl
+Line 189: sha256 -> shahs
+Line 190: cp39 -> cp
+Line 190: cp39 -> cp
+Line 190: musllinux -> muslin
+Line 190: aarch64 -> anarch
+Line 190: whl -> hl
+Line 190: sha256 -> shahs
+Line 191: cp39 -> cp
+Line 191: cp39 -> cp
+Line 191: musllinux -> muslin
+Line 191: whl -> hl
+Line 191: sha256 -> shahs
+Line 192: cp39 -> cp
+Line 192: cp39 -> cp
+Line 192: win32 -> win
+Line 192: whl -> hl
+Line 192: sha256 -> shahs
+Line 193: cp39 -> cp
+Line 193: cp39 -> cp
+Line 193: amd64 -> AMD
+Line 193: whl -> hl
+Line 193: sha256 -> shahs
+Line 194: gz -> g
+Line 194: sha256 -> shahs
+Line 198: furo -> duro
+Line 199: objgraph -> obj graph
+Line 199: psutil -> pistil
+Line 202: gunicorn -> unicorn
+Line 204: WSGI -> SWIG
+Line 208: gunicorn -> unicorn
+Line 208: py3 -> pye
+Line 208: whl -> hl
+Line 208: sha256 -> shahs
+Line 209: gunicorn -> unicorn
+Line 209: gz -> g
+Line 209: sha256 -> shahs
+Line 216: eventlet -> event let
+Line 216: eventlet -> event let
+Line 217: gevent -> event
+Line 217: gevent -> event
+Line 218: setproctitle -> profitless
+Line 218: setproctitle -> profitless
+Line 219: eventlet -> event let
+Line 219: gevent -> event
+Line 219: pytest -> testes
+Line 219: pytest -> testes
+Line 219: cov -> voc
+Line 223: idna -> idea
+Line 225: IDNA -> IDEA
+Line 229: idna -> idea
+Line 229: py3 -> pye
+Line 229: whl -> hl
+Line 229: sha256 -> shahs
+Line 230: idna -> idea
+Line 230: gz -> g
+Line 230: sha256 -> shahs
+Line 234: itsdangerous -> its dangerous
+Line 236: untrusted -> entrusted
+Line 240: itsdangerous -> its dangerous
+Line 240: py3 -> pye
+Line 240: whl -> hl
+Line 240: sha256 -> shahs
+Line 241: itsdangerous -> its dangerous
+Line 241: gz -> g
+Line 241: sha256 -> shahs
+Line 245: jinja2 -> ninja
+Line 251: jinja2 -> ninja
+Line 251: py3 -> pye
+Line 251: whl -> hl
+Line 251: sha256 -> shahs
+Line 252: jinja2 -> ninja
+Line 252: gz -> g
+Line 252: sha256 -> shahs
+Line 256: MarkupSafe -> Markup Safe
+Line 262: markupsafe -> markup safe
+Line 264: untrusted -> entrusted
+Line 268: MarkupSafe -> Markup Safe
+Line 268: macosx -> macaco
+Line 268: universal2 -> universal
+Line 268: whl -> hl
+Line 268: sha256 -> shahs
+Line 269: MarkupSafe -> Markup Safe
+Line 269: macosx -> macaco
+Line 269: whl -> hl
+Line 269: sha256 -> shahs
+Line 270: MarkupSafe -> Markup Safe
+Line 270: manylinux -> manyplies
+Line 270: aarch64 -> anarch
+Line 270: aarch64 -> anarch
+Line 270: whl -> hl
+Line 270: sha256 -> shahs
+Line 271: MarkupSafe -> Markup Safe
+Line 271: manylinux -> manyplies
+Line 271: whl -> hl
+Line 271: sha256 -> shahs
+Line 272: MarkupSafe -> Markup Safe
+Line 272: manylinux -> manyplies
+Line 272: manylinux1 -> manyplies
+Line 272: manylinux -> manyplies
+Line 272: whl -> hl
+Line 272: sha256 -> shahs
+Line 273: MarkupSafe -> Markup Safe
+Line 273: musllinux -> muslin
+Line 273: aarch64 -> anarch
+Line 273: whl -> hl
+Line 273: sha256 -> shahs
+Line 274: MarkupSafe -> Markup Safe
+Line 274: musllinux -> muslin
+Line 274: whl -> hl
+Line 274: sha256 -> shahs
+Line 275: MarkupSafe -> Markup Safe
+Line 275: musllinux -> muslin
+Line 275: whl -> hl
+Line 275: sha256 -> shahs
+Line 276: MarkupSafe -> Markup Safe
+Line 276: win32 -> win
+Line 276: whl -> hl
+Line 276: sha256 -> shahs
+Line 277: MarkupSafe -> Markup Safe
+Line 277: amd64 -> AMD
+Line 277: whl -> hl
+Line 277: sha256 -> shahs
+Line 278: MarkupSafe -> Markup Safe
+Line 278: macosx -> macaco
+Line 278: universal2 -> universal
+Line 278: whl -> hl
+Line 278: sha256 -> shahs
+Line 279: MarkupSafe -> Markup Safe
+Line 279: macosx -> macaco
+Line 279: whl -> hl
+Line 279: sha256 -> shahs
+Line 280: MarkupSafe -> Markup Safe
+Line 280: manylinux -> manyplies
+Line 280: aarch64 -> anarch
+Line 280: aarch64 -> anarch
+Line 280: whl -> hl
+Line 280: sha256 -> shahs
+Line 281: MarkupSafe -> Markup Safe
+Line 281: manylinux -> manyplies
+Line 281: whl -> hl
+Line 281: sha256 -> shahs
+Line 282: MarkupSafe -> Markup Safe
+Line 282: manylinux -> manyplies
+Line 282: manylinux1 -> manyplies
+Line 282: manylinux -> manyplies
+Line 282: whl -> hl
+Line 282: sha256 -> shahs
+Line 283: MarkupSafe -> Markup Safe
+Line 283: musllinux -> muslin
+Line 283: aarch64 -> anarch
+Line 283: whl -> hl
+Line 283: sha256 -> shahs
+Line 284: MarkupSafe -> Markup Safe
+Line 284: musllinux -> muslin
+Line 284: whl -> hl
+Line 284: sha256 -> shahs
+Line 285: MarkupSafe -> Markup Safe
+Line 285: musllinux -> muslin
+Line 285: whl -> hl
+Line 285: sha256 -> shahs
+Line 286: MarkupSafe -> Markup Safe
+Line 286: win32 -> win
+Line 286: whl -> hl
+Line 286: sha256 -> shahs
+Line 287: MarkupSafe -> Markup Safe
+Line 287: amd64 -> AMD
+Line 287: whl -> hl
+Line 287: sha256 -> shahs
+Line 288: MarkupSafe -> Markup Safe
+Line 288: macosx -> macaco
+Line 288: universal2 -> universal
+Line 288: whl -> hl
+Line 288: sha256 -> shahs
+Line 289: MarkupSafe -> Markup Safe
+Line 289: macosx -> macaco
+Line 289: whl -> hl
+Line 289: sha256 -> shahs
+Line 290: MarkupSafe -> Markup Safe
+Line 290: manylinux -> manyplies
+Line 290: aarch64 -> anarch
+Line 290: aarch64 -> anarch
+Line 290: whl -> hl
+Line 290: sha256 -> shahs
+Line 291: MarkupSafe -> Markup Safe
+Line 291: manylinux -> manyplies
+Line 291: whl -> hl
+Line 291: sha256 -> shahs
+Line 292: MarkupSafe -> Markup Safe
+Line 292: manylinux -> manyplies
+Line 292: manylinux1 -> manyplies
+Line 292: manylinux -> manyplies
+Line 292: whl -> hl
+Line 292: sha256 -> shahs
+Line 293: MarkupSafe -> Markup Safe
+Line 293: musllinux -> muslin
+Line 293: aarch64 -> anarch
+Line 293: whl -> hl
+Line 293: sha256 -> shahs
+Line 294: MarkupSafe -> Markup Safe
+Line 294: musllinux -> muslin
+Line 294: whl -> hl
+Line 294: sha256 -> shahs
+Line 295: MarkupSafe -> Markup Safe
+Line 295: musllinux -> muslin
+Line 295: whl -> hl
+Line 295: sha256 -> shahs
+Line 296: MarkupSafe -> Markup Safe
+Line 296: win32 -> win
+Line 296: whl -> hl
+Line 296: sha256 -> shahs
+Line 297: MarkupSafe -> Markup Safe
+Line 297: amd64 -> AMD
+Line 297: whl -> hl
+Line 297: sha256 -> shahs
+Line 298: MarkupSafe -> Markup Safe
+Line 298: cp37 -> cp
+Line 298: macosx -> macaco
+Line 298: whl -> hl
+Line 298: sha256 -> shahs
+Line 299: MarkupSafe -> Markup Safe
+Line 299: cp37 -> cp
+Line 299: manylinux -> manyplies
+Line 299: aarch64 -> anarch
+Line 299: aarch64 -> anarch
+Line 299: whl -> hl
+Line 299: sha256 -> shahs
+Line 300: MarkupSafe -> Markup Safe
+Line 300: cp37 -> cp
+Line 300: manylinux -> manyplies
+Line 300: whl -> hl
+Line 300: sha256 -> shahs
+Line 301: MarkupSafe -> Markup Safe
+Line 301: cp37 -> cp
+Line 301: manylinux -> manyplies
+Line 301: manylinux1 -> manyplies
+Line 301: manylinux -> manyplies
+Line 301: whl -> hl
+Line 301: sha256 -> shahs
+Line 302: MarkupSafe -> Markup Safe
+Line 302: cp37 -> cp
+Line 302: musllinux -> muslin
+Line 302: aarch64 -> anarch
+Line 302: whl -> hl
+Line 302: sha256 -> shahs
+Line 303: MarkupSafe -> Markup Safe
+Line 303: cp37 -> cp
+Line 303: musllinux -> muslin
+Line 303: whl -> hl
+Line 303: sha256 -> shahs
+Line 304: MarkupSafe -> Markup Safe
+Line 304: cp37 -> cp
+Line 304: musllinux -> muslin
+Line 304: whl -> hl
+Line 304: sha256 -> shahs
+Line 305: MarkupSafe -> Markup Safe
+Line 305: cp37 -> cp
+Line 305: win32 -> win
+Line 305: whl -> hl
+Line 305: sha256 -> shahs
+Line 306: MarkupSafe -> Markup Safe
+Line 306: cp37 -> cp
+Line 306: amd64 -> AMD
+Line 306: whl -> hl
+Line 306: sha256 -> shahs
+Line 307: MarkupSafe -> Markup Safe
+Line 307: cp38 -> cp
+Line 307: cp38 -> cp
+Line 307: macosx -> macaco
+Line 307: universal2 -> universal
+Line 307: whl -> hl
+Line 307: sha256 -> shahs
+Line 308: MarkupSafe -> Markup Safe
+Line 308: cp38 -> cp
+Line 308: cp38 -> cp
+Line 308: macosx -> macaco
+Line 308: whl -> hl
+Line 308: sha256 -> shahs
+Line 309: MarkupSafe -> Markup Safe
+Line 309: cp38 -> cp
+Line 309: cp38 -> cp
+Line 309: manylinux -> manyplies
+Line 309: aarch64 -> anarch
+Line 309: aarch64 -> anarch
+Line 309: whl -> hl
+Line 309: sha256 -> shahs
+Line 310: MarkupSafe -> Markup Safe
+Line 310: cp38 -> cp
+Line 310: cp38 -> cp
+Line 310: manylinux -> manyplies
+Line 310: whl -> hl
+Line 310: sha256 -> shahs
+Line 311: MarkupSafe -> Markup Safe
+Line 311: cp38 -> cp
+Line 311: cp38 -> cp
+Line 311: manylinux -> manyplies
+Line 311: manylinux1 -> manyplies
+Line 311: manylinux -> manyplies
+Line 311: whl -> hl
+Line 311: sha256 -> shahs
+Line 312: MarkupSafe -> Markup Safe
+Line 312: cp38 -> cp
+Line 312: cp38 -> cp
+Line 312: musllinux -> muslin
+Line 312: aarch64 -> anarch
+Line 312: whl -> hl
+Line 312: sha256 -> shahs
+Line 313: MarkupSafe -> Markup Safe
+Line 313: cp38 -> cp
+Line 313: cp38 -> cp
+Line 313: musllinux -> muslin
+Line 313: whl -> hl
+Line 313: sha256 -> shahs
+Line 314: MarkupSafe -> Markup Safe
+Line 314: cp38 -> cp
+Line 314: cp38 -> cp
+Line 314: musllinux -> muslin
+Line 314: whl -> hl
+Line 314: sha256 -> shahs
+Line 315: MarkupSafe -> Markup Safe
+Line 315: cp38 -> cp
+Line 315: cp38 -> cp
+Line 315: win32 -> win
+Line 315: whl -> hl
+Line 315: sha256 -> shahs
+Line 316: MarkupSafe -> Markup Safe
+Line 316: cp38 -> cp
+Line 316: cp38 -> cp
+Line 316: amd64 -> AMD
+Line 316: whl -> hl
+Line 316: sha256 -> shahs
+Line 317: MarkupSafe -> Markup Safe
+Line 317: cp39 -> cp
+Line 317: cp39 -> cp
+Line 317: macosx -> macaco
+Line 317: universal2 -> universal
+Line 317: whl -> hl
+Line 317: sha256 -> shahs
+Line 318: MarkupSafe -> Markup Safe
+Line 318: cp39 -> cp
+Line 318: cp39 -> cp
+Line 318: macosx -> macaco
+Line 318: whl -> hl
+Line 318: sha256 -> shahs
+Line 319: MarkupSafe -> Markup Safe
+Line 319: cp39 -> cp
+Line 319: cp39 -> cp
+Line 319: manylinux -> manyplies
+Line 319: aarch64 -> anarch
+Line 319: aarch64 -> anarch
+Line 319: whl -> hl
+Line 319: sha256 -> shahs
+Line 320: MarkupSafe -> Markup Safe
+Line 320: cp39 -> cp
+Line 320: cp39 -> cp
+Line 320: manylinux -> manyplies
+Line 320: whl -> hl
+Line 320: sha256 -> shahs
+Line 321: MarkupSafe -> Markup Safe
+Line 321: cp39 -> cp
+Line 321: cp39 -> cp
+Line 321: manylinux -> manyplies
+Line 321: manylinux1 -> manyplies
+Line 321: manylinux -> manyplies
+Line 321: whl -> hl
+Line 321: sha256 -> shahs
+Line 322: MarkupSafe -> Markup Safe
+Line 322: cp39 -> cp
+Line 322: cp39 -> cp
+Line 322: musllinux -> muslin
+Line 322: aarch64 -> anarch
+Line 322: whl -> hl
+Line 322: sha256 -> shahs
+Line 323: MarkupSafe -> Markup Safe
+Line 323: cp39 -> cp
+Line 323: cp39 -> cp
+Line 323: musllinux -> muslin
+Line 323: whl -> hl
+Line 323: sha256 -> shahs
+Line 324: MarkupSafe -> Markup Safe
+Line 324: cp39 -> cp
+Line 324: cp39 -> cp
+Line 324: musllinux -> muslin
+Line 324: whl -> hl
+Line 324: sha256 -> shahs
+Line 325: MarkupSafe -> Markup Safe
+Line 325: cp39 -> cp
+Line 325: cp39 -> cp
+Line 325: win32 -> win
+Line 325: whl -> hl
+Line 325: sha256 -> shahs
+Line 326: MarkupSafe -> Markup Safe
+Line 326: cp39 -> cp
+Line 326: cp39 -> cp
+Line 326: amd64 -> AMD
+Line 326: whl -> hl
+Line 326: sha256 -> shahs
+Line 327: MarkupSafe -> Markup Safe
+Line 327: gz -> g
+Line 327: sha256 -> shahs
+Line 337: py3 -> pye
+Line 337: whl -> hl
+Line 337: sha256 -> shahs
+Line 338: gz -> g
+Line 338: sha256 -> shahs
+Line 342: psycopg2 -> psychology
+Line 344: psycopg2 -> psychology
+Line 348: psycopg2 -> psychology
+Line 348: gz -> g
+Line 348: sha256 -> shahs
+Line 349: psycopg2 -> psychology
+Line 349: macosx -> macaco
+Line 349: whl -> hl
+Line 349: sha256 -> shahs
+Line 350: psycopg2 -> psychology
+Line 350: macosx -> macaco
+Line 350: arm64 -> arm
+Line 350: whl -> hl
+Line 350: sha256 -> shahs
+Line 351: psycopg2 -> psychology
+Line 351: manylinux -> manyplies
+Line 351: aarch64 -> anarch
+Line 351: aarch64 -> anarch
+Line 351: whl -> hl
+Line 351: sha256 -> shahs
+Line 352: psycopg2 -> psychology
+Line 352: manylinux -> manyplies
+Line 352: whl -> hl
+Line 352: sha256 -> shahs
+Line 353: psycopg2 -> psychology
+Line 353: manylinux -> manyplies
+Line 353: whl -> hl
+Line 353: sha256 -> shahs
+Line 354: psycopg2 -> psychology
+Line 354: manylinux -> manyplies
+Line 354: whl -> hl
+Line 354: sha256 -> shahs
+Line 355: psycopg2 -> psychology
+Line 355: musllinux -> muslin
+Line 355: aarch64 -> anarch
+Line 355: whl -> hl
+Line 355: sha256 -> shahs
+Line 356: psycopg2 -> psychology
+Line 356: musllinux -> muslin
+Line 356: whl -> hl
+Line 356: sha256 -> shahs
+Line 357: psycopg2 -> psychology
+Line 357: musllinux -> muslin
+Line 357: whl -> hl
+Line 357: sha256 -> shahs
+Line 358: psycopg2 -> psychology
+Line 358: musllinux -> muslin
+Line 358: whl -> hl
+Line 358: sha256 -> shahs
+Line 359: psycopg2 -> psychology
+Line 359: win32 -> win
+Line 359: whl -> hl
+Line 359: sha256 -> shahs
+Line 360: psycopg2 -> psychology
+Line 360: amd64 -> AMD
+Line 360: whl -> hl
+Line 360: sha256 -> shahs
+Line 361: psycopg2 -> psychology
+Line 361: macosx -> macaco
+Line 361

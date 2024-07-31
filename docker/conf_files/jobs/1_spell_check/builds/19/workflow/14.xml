@@ -1,0 +1,29 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@920.v59f71ce16f04">
+  <node class="cps.n.StepAtomNode" plugin="workflow-cps@3908.vd6b_b_5a_a_54010">
+    <parentIds>
+      <string>13</string>
+    </parentIds>
+    <id>14</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.durable_task.ShellStep</descriptorId>
+  </node>
+  <actions>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@3908.vd6b_b_5a_a_54010">
+      <arguments>
+        <entry>
+          <string>script</string>
+          <string>
+                chmod +x ./scripts/spellcheck.sh
+                bash ./scripts/spellcheck.sh
+                </string>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
+      <startTime>1722462360679</startTime>
+    </wf.a.TimingAction>
+    <s.a.LogStorageAction/>
+  </actions>
+</Tag>

@@ -1,0 +1,36 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@920.v59f71ce16f04">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@3908.vd6b_b_5a_a_54010">
+    <parentIds>
+      <string>2</string>
+    </parentIds>
+    <id>3</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.support.steps.ExecutorStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@3908.vd6b_b_5a_a_54010">
+      <arguments>
+        <entry>
+          <string>label</string>
+          <string>workers</string>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
+      <startTime>1722462359452</startTime>
+    </wf.a.TimingAction>
+    <org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution_-QueueItemActionImpl plugin="workflow-durable-task-step@1360.v82d13453da_a_f">
+      <id>38</id>
+    </org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution_-QueueItemActionImpl>
+    <s.a.WorkspaceActionImpl>
+      <node>worker1</node>
+      <path>/home/jenkins/workspace/1_spell_check</path>
+      <labels class="sorted-set">
+        <hudson.model.labels.LabelAtom>workers</hudson.model.labels.LabelAtom>
+      </labels>
+    </s.a.WorkspaceActionImpl>
+  </actions>
+</Tag>

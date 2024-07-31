@@ -10,3 +10,9 @@ jenkins-worker2-task: Temporary failure in name resolution
 SSH Connection failed with IOException: "jenkins-worker2-task: Temporary failure in name resolution", retrying in 15 seconds. There are 7 more retries left.
 jenkins-worker2-task: Temporary failure in name resolution
 SSH Connection failed with IOException: "jenkins-worker2-task: Temporary failure in name resolution", retrying in 15 seconds. There are 6 more retries left.
+jenkins-worker2-task: Temporary failure in name resolution
+SSH Connection failed with IOException: "jenkins-worker2-task: Temporary failure in name resolution", retrying in 15 seconds. There are 5 more retries left.
+jenkins-worker2-task: Temporary failure in name resolution
+SSH Connection failed with IOException: "jenkins-worker2-task: Temporary failure in name resolution", retrying in 15 seconds. There are 4 more retries left.
+jenkins-worker2-task: Temporary failure in name resolution
+SSH Connection failed with IOException: "jenkins-worker2-task: Temporary failure in name resolution", retrying in 15 seconds. There are 3 more retries left.
