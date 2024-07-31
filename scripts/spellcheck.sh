@@ -50,6 +50,7 @@ echo '' >> /home/reports/spell_check_report
 for i in $(ls -Ra /tmp/details_app/);
 do
     if grep "$i" temp.txt; then
+        echo "Skipping" $i
         continue
     else
         cat $i &> /dev/null
