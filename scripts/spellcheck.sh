@@ -39,17 +39,20 @@ else
     echo "#######################################"
     exit 1
 fi
-
+echo ${EXCLUDE_PATHS_FILES[@]} > temp.txt
 ### Doing the actual testing of every file in the details app project
 echo '' >> /home/reports/spell_check_report
 for i in $(ls -Ra /tmp/details_app/);
 do
-    cat $i &> /dev/null
-    if [[ $? == '0' ]]; then
-        printf "\n\n####################\nFile %s \n####################\n" $i >> /home/reports/spell_check_report
-        hunspell -u -d en_US $i >> /home/reports/spell_check_report
-    fi
-    printf "\n\n\n\n"
+    if grep "$i" temp.txt; then
+        continue
+    else
+        cat $i &> /dev/null
+        if [[ $? == '0' ]]; then
+            printf "\n\n####################\nFile %s \n####################\n" $i >> /home/reports/spell_check_report
+            hunspell -u -d en_US $i >> /home/reports/spell_check_report
+            printf "\n\n\n\n"
+        fi
 done
 
 
