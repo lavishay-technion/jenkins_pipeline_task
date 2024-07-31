@@ -40,16 +40,14 @@ else
     exit 1
 fi
 
-### Doing the actual testing of every python file in the details app project
-echo "Running script, can't get it to work at this time"
-#!/bin/bash
-pwd
+### Doing the actual testing of every file in the details app project
+echo '' >> /var/reports/spell_check_report
 for i in $(ls -Ra /tmp/details_app/);
 do
     cat $i &> /dev/null
     if [[ $? == '0' ]]; then
-        printf "\n\n####################\nFile %s \n####################\n" $i
-        hunspell -u -d en_US $i >> /tmp/spell_check_report
+        printf "\n\n####################\nFile %s \n####################\n" $i >> /var/reports/spell_check_report
+        hunspell -u -d en_US $i >> /var/reports/spell_check_report
     fi
     printf "\n\n\n\n"
 done

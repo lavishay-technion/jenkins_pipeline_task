@@ -15,13 +15,13 @@
       <queuingDurationMillis>2</queuingDurationMillis>
       <blockedDurationMillis>0</blockedDurationMillis>
       <buildableDurationMillis>0</buildableDurationMillis>
-      <waitingDurationMillis>0</waitingDurationMillis>
+      <waitingDurationMillis>1</waitingDurationMillis>
     </jenkins.metrics.impl.TimeInQueueAction>
     <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@727.ve832a_9244dfa_">
       <libraries/>
     </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
     <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@2.2205.vc9522a_9d5711">
-      <stagesUUID>2d34aa46-0c45-4021-8e21-6e4326fbaf78</stagesUUID>
+      <stagesUUID>bfdd812e-3a39-4f44-89b5-af30a361ebac</stagesUUID>
       <pipelineDefs>
         <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@2.2205.vc9522a_9d5711">
           <stages>
@@ -55,7 +55,7 @@
                 </branches>
               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
             </stages>
-            <uuid>2d34aa46-0c45-4021-8e21-6e4326fbaf78</uuid>
+            <uuid>bfdd812e-3a39-4f44-89b5-af30a361ebac</uuid>
           </stages>
           <agent>
             <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
@@ -68,39 +68,6 @@
         </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
       </pipelineDefs>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
-    <hudson.plugins.git.util.BuildData plugin="git@5.2.2">
-      <buildsByBranchName>
-        <entry>
-          <string>refs/remotes/origin/main</string>
-          <hudson.plugins.git.util.Build>
-            <marked plugin="git-client@5.0.0">
-              <sha1>e2e37234e75ca5fc5e6cdbb496a2662732a6cf34</sha1>
-              <branches class="list">
-                <hudson.plugins.git.Branch>
-                  <sha1 reference="../../../sha1"/>
-                  <name>refs/remotes/origin/main</name>
-                </hudson.plugins.git.Branch>
-              </branches>
-            </marked>
-            <revision reference="../marked"/>
-            <hudsonBuildNumber>19</hudsonBuildNumber>
-          </hudson.plugins.git.util.Build>
-        </entry>
-      </buildsByBranchName>
-      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
-      <scmName></scmName>
-      <remoteUrls>
-        <string>https://github.com/lavishay-technion/jenkins_pipeline_task.git</string>
-      </remoteUrls>
-    </hudson.plugins.git.util.BuildData>
-    <org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState plugin="workflow-scm-step@427.v4ca_6512e7df1">
-      <revisionStates>
-        <entry>
-          <string>git https://github.com/lavishay-technion/jenkins_pipeline_task.git</string>
-          <hudson.scm.SCMRevisionState_-None/>
-        </entry>
-      </revisionStates>
-    </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
     <jenkins.model.InterruptedBuildAction>
       <causes>
         <jenkins.model.CauseOfInterruption_-UserInterruption>
@@ -109,19 +76,19 @@
       </causes>
     </jenkins.model.InterruptedBuildAction>
     <jenkins.metrics.impl.SubTaskTimeInQueueAction plugin="metrics@4.2.21-451.vd51df8df52ec">
-      <queuingDurationMillis>5</queuingDurationMillis>
+      <queuingDurationMillis>6</queuingDurationMillis>
       <blockedDurationMillis>0</blockedDurationMillis>
-      <buildableDurationMillis>3</buildableDurationMillis>
-      <waitingDurationMillis>1</waitingDurationMillis>
-      <executingDurationMillis>63167</executingDurationMillis>
+      <buildableDurationMillis>5</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+      <executingDurationMillis>7870</executingDurationMillis>
       <workUnitCount>1</workUnitCount>
     </jenkins.metrics.impl.SubTaskTimeInQueueAction>
   </actions>
-  <queueId>37</queueId>
-  <timestamp>1722462358309</timestamp>
-  <startTime>1722462358321</startTime>
+  <queueId>39</queueId>
+  <timestamp>1722462415384</timestamp>
+  <startTime>1722462415387</startTime>
   <result>ABORTED</result>
-  <duration>64372</duration>
+  <duration>9137</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
@@ -145,30 +112,29 @@
     <timings class="map">
       <entry>
         <string>flowNode</string>
-        <long>123900707</long>
+        <long>89391669</long>
       </entry>
       <entry>
         <string>classLoad</string>
-        <long>248008233</long>
+        <long>139615273</long>
       </entry>
       <entry>
         <string>run</string>
-        <long>754139687</long>
+        <long>322133287</long>
       </entry>
       <entry>
         <string>parse</string>
-        <long>14031799</long>
+        <long>14716269</long>
       </entry>
       <entry>
         <string>saveProgram</string>
-        <long>243631943</long>
+        <long>42942990</long>
       </entry>
     </timings>
     <internalCalls class="sorted-set">
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.SyntheticStageNames.checkout</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.Utils.createStepsBlock</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.Utils.getRestartedStage</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.Utils.markStageFailedAndContinued</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.Utils.updateJobProperties</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.Utils.updateRunAndJobActions</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.agent.impl.Label.customWorkspace</string>
@@ -178,77 +144,30 @@
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.agent.impl.Label.isDoCheckout</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.agent.impl.Label.label</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.agent.impl.Label.retries</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.agent.impl.Label.reuseRootAgent</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.agent.impl.Label.subdirectory</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Agent.&lt;init&gt;</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Agent.getDeclarativeAgent</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Agent.hasAgent</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Agent.populateMap</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Agent.rawClosure</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.&lt;init&gt;</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.agent</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.astUUID</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.environment</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.getEnvVars</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.hasSatisfiedConditions</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.libraries</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.options</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.parameters</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.post</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.stages</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.tools</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.triggers</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Stage.&lt;init&gt;</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Stage.agent</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Stage.environment</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Stage.getEnvVars</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Stage.getMatrixCellEnvVars</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Stage.input</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Stage.name</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Stage.options</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Stage.parallel</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Stage.post</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Stage.stages</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Stage.steps</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Stage.tools</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Stage.when</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Stages.&lt;init&gt;</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Stages.stages</string>
-      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.StepsBlock.closure</string>
-      <string>org.jenkinsci.plugins.workflow.cps.persistence.IteratorHack$Itr.hasNext</string>
-      <string>org.jenkinsci.plugins.workflow.cps.persistence.IteratorHack$Itr.next</string>
-      <string>org.jenkinsci.plugins.workflow.support.steps.build.RunWrapper.result</string>
     </internalCalls>
     <sandbox>true</sandbox>
-    <iota>21</iota>
-    <head>1:21</head>
+    <iota>12</iota>
+    <head>1:12</head>
     <done>true</done>
     <resumeBlocked>false</resumeBlocked>
     <storageDir>workflow-completed</storageDir>
   </execution>
   <completed>true</completed>
-  <checkouts class="hudson.util.PersistedList">
-    <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
-      <scm class="hudson.plugins.git.GitSCM" plugin="git@5.2.2">
-        <configVersion>2</configVersion>
-        <userRemoteConfigs>
-          <hudson.plugins.git.UserRemoteConfig>
-            <url>https://github.com/lavishay-technion/jenkins_pipeline_task.git</url>
-          </hudson.plugins.git.UserRemoteConfig>
-        </userRemoteConfigs>
-        <branches>
-          <hudson.plugins.git.BranchSpec>
-            <name>*/main</name>
-          </hudson.plugins.git.BranchSpec>
-        </branches>
-        <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
-        <submoduleCfg class="empty-list"/>
-        <extensions/>
-      </scm>
-      <node>worker1</node>
-      <workspace>/home/jenkins/workspace/1_spell_check</workspace>
-      <changelogFile>/var/jenkins_home/jobs/1_spell_check/builds/19/changelog8182611679368371227.xml</changelogFile>
-      <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
-    </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
-  </checkouts>
+  <checkouts class="hudson.util.PersistedList"/>
 </flow-build>
