@@ -12,7 +12,7 @@ services:
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock    
             - ./conf_files:/var/jenkins_home/
-            - ./reports:/var/reports
+            - ./reports:/home/reports/
     
     worker1-task:
         hostname: jenkins-worker1-task

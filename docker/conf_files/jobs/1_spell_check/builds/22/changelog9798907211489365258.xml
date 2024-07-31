@@ -1,0 +1,90 @@
+commit 18e82632df5e8069ecf34e14cf21bc7e39d2c60a
+tree 7163be1bb6ae50cf67fea5bdf2ec025418000e5a
+parent f25ac6143e929d09ab6ca438644ac1344cdaff46
+author lavishay <lavishay@campus.technion.ac.il> 2024-08-01 00:56:26 +0300
+committer lavishay <lavishay@campus.technion.ac.il> 2024-08-01 00:56:26 +0300
+
+    UpdatingGit
+
+
+:100755 100644 afbdfa8002426fd07464d5030710e7adcca75dc2 afbdfa8002426fd07464d5030710e7adcca75dc2 M	docker/conf_files/config.xml
+:100755 100755 7895bc3020d601af5f61b8b463dc4c35baefecb7 94412577907c85bc7e3360d7567a69274a9ec7c2 M	docker/conf_files/copy_reference_file.log
+:100644 100644 3c348c53439e0a99f382652dbce00914ecd93a5c 627dd37e23e648e83832d1e2c2738b570198dbf6 M	docker/conf_files/fingerprints/12/22/1f798b3ca14aa3c3cc6545bf3b21.xml
+:100755 100644 47c488d303a6153d8a4e962b5c08352c38ee6fe2 47c488d303a6153d8a4e962b5c08352c38ee6fe2 M	docker/conf_files/hudson.model.UpdateCenter.xml
+:100755 100755 5d8932112aad74785fd2a4fa8f30dd4d01b5bfe7 e6739120fb610c712289ff0f4cf76d7f0eaa99a8 M	docker/conf_files/logs/health-checker.log
+:100755 100644 5ba6ac3ef91e3a81c68aed96d54828f3f133fc16 b4d80b3cc353a232617e31f5ef3abbbc4f5b0945 M	docker/conf_files/logs/slaves/worker1/slave.log
+:100644 100644 f02e89e85b776724b011bbeb436276e14d69f1b9 8cc2ba4e1f6aad493b48a62b565228836df66f30 M	docker/conf_files/logs/slaves/worker2/slave.log
+:100644 000000 fa8aca49bd4d1f9e7e28b0030903a02a7e858736 0000000000000000000000000000000000000000 D	docker/conf_files/logs/slaves/worker2/slave.log.1
+:100644 000000 fb7714fd783cf4afb88fcb6d1c1754f2ef79726e 0000000000000000000000000000000000000000 D	docker/conf_files/logs/slaves/worker2/slave.log.2
+:100644 000000 1e3e1d459924974321fded1fd8b72553d67408b3 0000000000000000000000000000000000000000 D	docker/conf_files/logs/slaves/worker2/slave.log.3
+:100644 000000 d7351450730a15fd6c440ddd85ebf47e0f4bee0c 0000000000000000000000000000000000000000 D	docker/conf_files/logs/slaves/worker2/slave.log.4
+:100644 000000 f5b567edf8f2e0dff344b912ea12bf1e9df41c36 0000000000000000000000000000000000000000 D	docker/conf_files/logs/slaves/worker2/slave.log.5
+:100644 000000 adfbc1be134a48de4c895dd7baea4d4d6ef8f88e 0000000000000000000000000000000000000000 D	docker/conf_files/logs/slaves/worker2/slave.log.6
+:100644 000000 e2de8b6d4e44d1a1cb86f86f36c57da465405beb 0000000000000000000000000000000000000000 D	docker/conf_files/logs/slaves/worker2/slave.log.7
+:100644 000000 fdd24d9dbca83f5c6c47ef1561ba165a2352ed21 0000000000000000000000000000000000000000 D	docker/conf_files/logs/slaves/worker2/slave.log.8
+:100755 000000 2e9134f8fd934a6206c604f2f1e174a094114012 0000000000000000000000000000000000000000 D	docker/conf_files/logs/slaves/worker2/slave.log.9
+:100755 100644 31f6fa171dabc2ff0e8d547a71b57888dff9e3f2 31f6fa171dabc2ff0e8d547a71b57888dff9e3f2 M	docker/conf_files/nodeMonitors.xml
+:100755 100644 0fb266cb38ef03eb379ae98ed0c6792b807d6ca8 1158c692e3058e2c7045c3aa4957922cfcfcbd63 M	docker/conf_files/plugins/workflow-cps.jpi
+:100755 100755 7249b8823938502be425ce33d5906a95099fda0f e9f3dd2e992934f122c9f51c0ea974fb4008a610 M	docker/conf_files/plugins/workflow-cps.jpi.version_from_image
+:100755 100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 M	docker/conf_files/plugins/workflow-cps/.timestamp2
+:100755 100644 570ddd447684a336e2ea5d92f0739641d1f51e43 497277d3605b34f132074391edb2f60e9c7a0aa2 M	docker/conf_files/plugins/workflow-cps/META-INF/MANIFEST.MF
+:100755 100644 2693672e2e98da9f1610c41c14c29460ccb5332a 8d44c4fc94868c04539f001313bc19da017ccc17 M	docker/conf_files/plugins/workflow-cps/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-cps/pom.properties
+:100755 100644 74222e4bea87a32408db7e1bad89e70b7ff74252 cccb5c1929c7c400e6c63436e8a62549a45fbec6 M	docker/conf_files/plugins/workflow-cps/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-cps/pom.xml
+:100755 100644 293c4fb12993924a0e09f0119c3063bc08f05958 293c4fb12993924a0e09f0119c3063bc08f05958 M	docker/conf_files/plugins/workflow-cps/WEB-INF/lib/diff4j-1.3.jar
+:100755 100644 93c64c60a8ef38b2e861f8562a42b01b48abb7d2 28e8c84e9caeafde1a4f4c5d2dd2714c9ceb6f48 R069	docker/conf_files/plugins/workflow-cps/WEB-INF/lib/groovy-cps-3908.vd6b_b_5a_a_54010.jar	docker/conf_files/plugins/workflow-cps/WEB-INF/lib/groovy-cps-3922.va_f73b_7c4246b_.jar
+:100755 100644 4c58a5c9660a5cd8a2f025995e3c264898016d48 0afefbab56074c920005214c0333f4e32816bcb3 M	docker/conf_files/plugins/workflow-cps/WEB-INF/lib/workflow-cps.jar
+:100755 100644 322c8c8b372c5698db0887250026863bd82ada1c 1906c49ec2566b40a3c8eaf23d7fcbec0ae2db12 M	docker/conf_files/plugins/workflow-cps/WEB-INF/licenses.xml
+:100755 100644 a2fa505f690748ae6573d2bd4636f3ca30df5543 e1b3dc60407b887e285a6ef53ac603d03b40f6ff M	docker/conf_files/plugins/workflow-durable-task-step.jpi
+:100755 100755 0de79f78193f512a826d607134a3481c4110bb55 09836e4035e4a1de77da85c697bab6ce95a6c2ea M	docker/conf_files/plugins/workflow-durable-task-step.jpi.version_from_image
+:100755 100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 M	docker/conf_files/plugins/workflow-durable-task-step/.timestamp2
+:100755 100644 a6d508baa9ecfb4871eac52ad8fa8572b50eb0e3 f096c54d317a724d9d7756f75f04f33045b0d040 M	docker/conf_files/plugins/workflow-durable-task-step/META-INF/MANIFEST.MF
+:100755 100644 0c9bdb0db10c648892b91211d707446c431e2517 7e2a5ba65d332e28ed555d04add7a7e30485be96 M	docker/conf_files/plugins/workflow-durable-task-step/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-durable-task-step/pom.properties
+:100755 100644 2434ef242deba6e564fd5412877da192903168e1 a9cfd877a1430c39dbee5c07d2fa2504a8d0e555 M	docker/conf_files/plugins/workflow-durable-task-step/META-INF/maven/org.jenkins-ci.plugins.workflow/workflow-durable-task-step/pom.xml
+:100755 100644 2556d3aa52f73ee343a727a250817663c73c292b b33453de7f9cdf977a059cda7640a0226d2fdd2b M	docker/conf_files/plugins/workflow-durable-task-step/WEB-INF/lib/workflow-durable-task-step.jar
+:100755 100644 a88e4cac545eb9500b041bbba944c107b9aff974 02e31e4c3fc9739d91ee20471b5bba36b7a63ee1 M	docker/conf_files/plugins/workflow-durable-task-step/WEB-INF/licenses.xml
+:100644 000000 67cfaafd07f95a3dd93038f8a8ea0b7b40c7e649 0000000000000000000000000000000000000000 D	docker/conf_files/queue.xml
+:100755 100644 045010d8d074bf1e578319b048a9512a09544cf3 67cfaafd07f95a3dd93038f8a8ea0b7b40c7e649 M	docker/conf_files/queue.xml.bak
+commit f25ac6143e929d09ab6ca438644ac1344cdaff46
+tree 3ab0e112f00f10aa9f659b8624a9fcc98035469f
+parent 4b07f23b10469dc488626964b39d34663a7b8884
+author lavishay <lavishay@campus.technion.ac.il> 2024-08-01 00:49:01 +0300
+committer lavishay <lavishay@campus.technion.ac.il> 2024-08-01 00:49:01 +0300
+
+    UpdatingGit
+
+
+:100644 100644 0d058c6b2829a0dc448a7ddf3319328170b58a72 3c348c53439e0a99f382652dbce00914ecd93a5c M	docker/conf_files/fingerprints/12/22/1f798b3ca14aa3c3cc6545bf3b21.xml
+:100644 100644 015341ea80482c01b296da6f9d62cdb48e66fa19 d97b40be609566be35cc1a3e57b06dd285ab1c52 M	docker/conf_files/jobs/1_spell_check/builds/19/build.xml
+:100644 100644 9531cf0555a7a3669c20d4896fb9d051ddf27b8e 0bf9364ac123f8835e4aaae65981ebd893cecba0 M	docker/conf_files/jobs/1_spell_check/builds/19/log
+:100644 100644 d9cba6ae9e90926a2d8fe7fcbe70b0266e0bff8b aded0f6a8d2986bb0144574eb8ef1d8e129ed56e M	docker/conf_files/jobs/1_spell_check/builds/19/log-index
+:100644 000000 a917d3dfc653908787035ead8b29ee9c302277c9 0000000000000000000000000000000000000000 D	docker/conf_files/jobs/1_spell_check/builds/19/program.dat
+:000000 100644 0000000000000000000000000000000000000000 0ea948b9c1335624de8b418ee937ccb33ec38640 A	docker/conf_files/jobs/1_spell_check/builds/19/workflow-completed/flowNodeStore.xml
+:100644 000000 43c7db1947cae43d7e82db2ce81250e4a615ee60 0000000000000000000000000000000000000000 D	docker/conf_files/jobs/1_spell_check/builds/19/workflow/10.xml
+:100644 000000 3c500fd7ea6a5c462023379ef58e2f6c71bdd46c 0000000000000000000000000000000000000000 D	docker/conf_files/jobs/1_spell_check/builds/19/workflow/11.xml
+:100644 000000 be0110200027f4c020899f7157950f0c22f23dca 0000000000000000000000000000000000000000 D	docker/conf_files/jobs/1_spell_check/builds/19/workflow/12.xml
+:100644 000000 2061ab4c0c0ef9049627e740e07fd5a786c82e3d 0000000000000000000000000000000000000000 D	docker/conf_files/jobs/1_spell_check/builds/19/workflow/13.xml
+:100644 000000 a7760c633b1b6c36c6cc338343867f84bb1a2691 0000000000000000000000000000000000000000 D	docker/conf_files/jobs/1_spell_check/builds/19/workflow/14.xml
+:100644 000000 6f6f1868aef6ba33a5db4d008137762fed5f5eb8 0000000000000000000000000000000000000000 D	docker/conf_files/jobs/1_spell_check/builds/19/workflow/2.xml
+:100644 000000 f80e1dbf07eb3183570590d995c2cab816097ec9 0000000000000000000000000000000000000000 D	docker/conf_files/jobs/1_spell_check/builds/19/workflow/3.xml
+:100644 000000 d94594ac377cc1e5ea0712548958aca161f5bec4 0000000000000000000000000000000000000000 D	docker/conf_files/jobs/1_spell_check/builds/19/workflow/4.xml
+:100644 000000 5571ec2a31b01ffdd05deb64cff9b29745914759 0000000000000000000000000000000000000000 D	docker/conf_files/jobs/1_spell_check/builds/19/workflow/5.xml
+:100644 000000 f9e5c9a79efccd1ade4fbbd33463d656f385b529 0000000000000000000000000000000000000000 D	docker/conf_files/jobs/1_spell_check/builds/19/workflow/6.xml
+:100644 000000 bcc40127170b9b48995e3569a4154ca5f77da7d6 0000000000000000000000000000000000000000 D	docker/conf_files/jobs/1_spell_check/builds/19/workflow/7.xml
+:100644 000000 bbd9d1599e1c9e042167ec28c373856ee3880e2b 0000000000000000000000000000000000000000 D	docker/conf_files/jobs/1_spell_check/builds/19/workflow/8.xml
+:100644 000000 eed55454ae0c6cc29479ef01ddc9f58fff242640 0000000000000000000000000000000000000000 D	docker/conf_files/jobs/1_spell_check/builds/19/workflow/9.xml
+:000000 100644 0000000000000000000000000000000000000000 2b874ad21a75f1d30250d88f50a221b4194197b4 A	docker/conf_files/jobs/1_spell_check/builds/20/build.xml
+:000000 100644 0000000000000000000000000000000000000000 80b55def899af0d024eb62ab650092d3081031fe A	docker/conf_files/jobs/1_spell_check/builds/20/log
+:000000 100644 0000000000000000000000000000000000000000 8b5eb447ffdef145e1c4d127a9b1eabe6fd17db9 A	docker/conf_files/jobs/1_spell_check/builds/20/log-index
+:000000 100644 0000000000000000000000000000000000000000 e9429bee9269dc4e48f492acc21395f9001547b2 A	docker/conf_files/jobs/1_spell_check/builds/20/workflow-completed/flowNodeStore.xml
+:000000 100644 0000000000000000000000000000000000000000 505191048ee4b32268a2388893757bf655d57f94 A	docker/conf_files/jobs/1_spell_check/builds/21/build.xml
+:000000 100644 0000000000000000000000000000000000000000 ee24ef326588f7e68602a591a1b64dd5503ff5af A	docker/conf_files/jobs/1_spell_check/builds/21/changelog10126785897641089279.xml
+:000000 100644 0000000000000000000000000000000000000000 47a3f8dc2166e38b7f512cd7849695d7d0472c59 A	docker/conf_files/jobs/1_spell_check/builds/21/log
+:000000 100644 0000000000000000000000000000000000000000 c888b260be92c7450ec7dcefb69e9ed668f0e17e A	docker/conf_files/jobs/1_spell_check/builds/21/log-index
+:000000 100644 0000000000000000000000000000000000000000 73d6d80297f62a309b869f2c7581ca406eedcd93 A	docker/conf_files/jobs/1_spell_check/builds/21/workflow-completed/flowNodeStore.xml
+:100644 100644 eee77065679847635219f6ba716db8ea87e66377 30b5b8b3f4a9f68e519a6b6eb9b029939ffde335 M	docker/conf_files/jobs/1_spell_check/builds/permalinks
+:100644 100644 209e3ef4b6247ce746048d5711befda46206d235 2bd5a0a98a36cc08ada88b804d3be047e6aa5b8a M	docker/conf_files/jobs/1_spell_check/nextBuildNumber
+:100755 100755 37a6d8b9a79bef8bd5df542013216bb0b7d2a6fb 5d8932112aad74785fd2a4fa8f30dd4d01b5bfe7 M	docker/conf_files/logs/health-checker.log
+:100644 100644 d0ff619ff87172db0202350542d12a96725a2356 f02e89e85b776724b011bbeb436276e14d69f1b9 M	docker/conf_files/logs/slaves/worker2/slave.log
+:100644 100644 ac75cf1ccb58cb1f2775f699b7c5ff32d1b7ba11 de3d5a10b984710d14f3718a01e29a0e26169d67 M	docker/conf_files/org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml
+:100644 100644 64dcca50d220767f0390b970e176e5480bc8fbd8 67cfaafd07f95a3dd93038f8a8ea0b7b40c7e649 M	docker/conf_files/queue.xml
+:100755 100755 3332ef274e9cdbeaa2a91a112c04c541131655cd 25b86f165e47845e4217d62dbde77eb27cab6a3e M	scripts/spellcheck.sh

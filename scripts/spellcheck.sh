@@ -41,13 +41,13 @@ else
 fi
 
 ### Doing the actual testing of every file in the details app project
-echo '' >> /var/reports/spell_check_report
+echo '' >> /home/reports/spell_check_report
 for i in $(ls -Ra /tmp/details_app/);
 do
     cat $i &> /dev/null
     if [[ $? == '0' ]]; then
-        printf "\n\n####################\nFile %s \n####################\n" $i >> /var/reports/spell_check_report
-        hunspell -u -d en_US $i >> /var/reports/spell_check_report
+        printf "\n\n####################\nFile %s \n####################\n" $i >> /home/reports/spell_check_report
+        hunspell -u -d en_US $i >> /home/reports/spell_check_report
     fi
     printf "\n\n\n\n"
 done
