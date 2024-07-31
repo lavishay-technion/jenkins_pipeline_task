@@ -1,0 +1,1 @@
+jenkins_data docker .git spellcheck_results.md .DS_Store spellchech.sh spelltest.sh . ..

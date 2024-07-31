@@ -16,22 +16,22 @@ git clone https://github.com/lavishay-technion/details_app.git
 if [[ $ID = "debian" ]]
 then
     sudo apt-get update
-    sudo apt-get install -y aspell
+    sudo apt-get install -y hunspell
     echo "#######################################"
-    echo "[+] aspell installed on Debian"
+    echo "[+] hunspell installed on Debian"
     echo "#######################################"
 elif [[ $ID = "rocky" ]]
 then
     sudo dnf update -y
-    sudo dnf --enablerepo=crb install aspell -y
+    sudo dnf install hunspell -y
     echo "#######################################"
-    echo "[+] aspell installed on Rocky"
+    echo "[+] hunspell installed on Rocky"
     echo "#######################################"
 elif [[ $ID = 'alpine' ]]
 then
-    apk add aspell 
+    apk add hunspell 
     echo "#######################################"
-    echo "[+] aspell installed on Alpine"
+    echo "[+] hunspell installed on Alpine"
     echo "#######################################"
 else
     echo "#######################################"
@@ -44,13 +44,14 @@ fi
 echo "Running script, can't get it to work at this time"
 #!/bin/bash
 
-for i in $(ls -Ra); 
+for i in $(ls -Ra);
 do
-    if [[ $i != "." && $i != ".." ]]
-    then
-        aspell -c
-        echo $i >> files.tx
+    cat $i &> /dev/null
+    if [[ $? == '0' ]]; then
+        printf "\n\n####################\nFile %s \n####################\n" $i
+        hunspell -u -d en_US $i
     fi
+    printf "\n\n\n\n"
 done
 
 
