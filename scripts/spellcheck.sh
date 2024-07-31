@@ -44,7 +44,7 @@ fi
 echo "Running script, can't get it to work at this time"
 #!/bin/bash
 
-for i in $(ls -Ra);
+for i in $(ls -Ra /tmp/details_app/);
 do
     cat $i &> /dev/null
     if [[ $? == '0' ]]; then
