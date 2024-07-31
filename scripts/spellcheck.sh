@@ -43,13 +43,13 @@ fi
 ### Doing the actual testing of every python file in the details app project
 echo "Running script, can't get it to work at this time"
 #!/bin/bash
-
+pwd
 for i in $(ls -Ra /tmp/details_app/);
 do
     cat $i &> /dev/null
     if [[ $? == '0' ]]; then
         printf "\n\n####################\nFile %s \n####################\n" $i
-        hunspell -u -d en_US $i >> /tmp/spell_check_report.txt
+        hunspell -u -d en_US $i
     fi
     printf "\n\n\n\n"
 done

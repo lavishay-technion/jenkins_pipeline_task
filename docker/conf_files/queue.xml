@@ -4,7 +4,7 @@
   <properties>
     <entry>
       <string>jenkins.model.queue.QueueIdStrategy$DefaultStrategy</string>
-      <long>30</long>
+      <long>34</long>
     </entry>
   </properties>
 </hudson.model.Queue_-State>
