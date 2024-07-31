@@ -1,0 +1,19 @@
+commit 591979b654d756386c14937cc0e51fdf7c3ee500
+tree c8f3db15988c03485fda765ad95ea041f74db2e2
+parent 1cd816afb03577bca60d08e630048bb0a7bcd4aa
+author lavishay <lavishay@campus.technion.ac.il> 2024-07-31 22:24:35 +0300
+committer lavishay <lavishay@campus.technion.ac.il> 2024-07-31 22:24:35 +0300
+
+    Updating script
+
+
+:000000 100644 0000000000000000000000000000000000000000 60fa2b50c4cd8efae16f5f77d317a872ddce97f2 A	docker/conf_files/jobs/1_spell_check/builds/3/build.xml
+:000000 100644 0000000000000000000000000000000000000000 d7f93f18b61de9f97fa20563af026cd4f3b96227 A	docker/conf_files/jobs/1_spell_check/builds/3/changelog11542131325460295288.xml
+:000000 100644 0000000000000000000000000000000000000000 71e8440d5399fee8430132c95cbfd5e8549f14ed A	docker/conf_files/jobs/1_spell_check/builds/3/log
+:000000 100644 0000000000000000000000000000000000000000 bbe893c9d6ea0b2dd176be1d1a6bd00fd67440ad A	docker/conf_files/jobs/1_spell_check/builds/3/log-index
+:000000 100644 0000000000000000000000000000000000000000 2375673d4152861f499d5a8fda7c0f119f881d1f A	docker/conf_files/jobs/1_spell_check/builds/3/workflow-completed/flowNodeStore.xml
+:100644 100644 f8d43987530769940545ebe9ac48f881fd5a58af d6010d44ebd56a1e1f4d0d8bed772c7efc330505 M	docker/conf_files/jobs/1_spell_check/builds/permalinks
+:100644 100644 00750edc07d6415dcc07ae0351e9397b0222b7ba b8626c4cff2849624fb67f87cd0ad72b163671ad M	docker/conf_files/jobs/1_spell_check/nextBuildNumber
+:100755 100755 1303ee1a740d23aae76a57fc64a6bfd613abfbfc 51264c0760cc62051e2d1ec52241d1282c593c6e M	docker/conf_files/logs/health-checker.log
+:100644 100644 95effe6849ca67c007bf4db51611a78c331803d1 d8917ee260f831a858760514d14a0d4ad9bb99c8 M	docker/conf_files/queue.xml
+:100755 100755 4ae6ba9dbe6a9a455441fc94911676378f506a34 0c72a176966c76dc8a07b83df9c51b92f973334e M	jenkinsfiles/Jenkinsfile_spellcheck
