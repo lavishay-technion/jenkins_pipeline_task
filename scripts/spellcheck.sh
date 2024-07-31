@@ -53,6 +53,7 @@ do
             hunspell -u -d en_US $i >> /home/reports/spell_check_report
             printf "\n\n\n\n"
         fi
+    fi
 done
 
 
