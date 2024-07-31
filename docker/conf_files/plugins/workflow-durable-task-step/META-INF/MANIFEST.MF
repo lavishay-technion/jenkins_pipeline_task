@@ -4,14 +4,14 @@ Build-Jdk-Spec: 17
 Specification-Title: Pipeline: Nodes and Processes
 Specification-Version: 0.0
 Implementation-Title: Pipeline: Nodes and Processes
-Implementation-Version: 1360.v82d13453da_a_f
+Implementation-Version: 1364.v2fd76fb_6fd41
 Group-Id: org.jenkins-ci.plugins.workflow
 Artifact-Id: workflow-durable-task-step
 Short-Name: workflow-durable-task-step
 Long-Name: Pipeline: Nodes and Processes
 Url: https://github.com/jenkinsci/workflow-durable-task-step-plugin
 Compatible-Since-Version: 2.40
-Plugin-Version: 1360.v82d13453da_a_f
+Plugin-Version: 1364.v2fd76fb_6fd41
 Hudson-Version: 2.440.1
 Jenkins-Version: 2.440.1
 Plugin-Dependencies: workflow-api:1291.v51fd2a_625da_7,workflow-step-api
@@ -23,9 +23,9 @@ Plugin-License-Name: MIT License
 Plugin-License-Url: https://opensource.org/licenses/MIT
 Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/workflow-dura
  ble-task-step-plugin.git
-Plugin-ScmTag: 82d13453daaf27eed2f632b3bcf65f1d20a14b13
+Plugin-ScmTag: 2fd76fb6fd41c74186b54c72dc3c95d8382d0113
 Plugin-ScmUrl: https://github.com/jenkinsci/workflow-durable-task-step-p
  lugin
-Plugin-GitHash: 82d13453daaf27eed2f632b3bcf65f1d20a14b13
-Implementation-Build: 82d13453daaf27eed2f632b3bcf65f1d20a14b13
+Plugin-GitHash: 2fd76fb6fd41c74186b54c72dc3c95d8382d0113
+Implementation-Build: 2fd76fb6fd41c74186b54c72dc3c95d8382d0113
 

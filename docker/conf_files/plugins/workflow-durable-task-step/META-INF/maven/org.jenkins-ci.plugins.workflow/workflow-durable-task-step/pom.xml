@@ -27,7 +27,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins.workflow</groupId>
   <artifactId>workflow-durable-task-step</artifactId>
-  <version>1360.v82d13453da_a_f</version>
+  <version>1364.v2fd76fb_6fd41</version>
   <packaging>hpi</packaging>
   <name>Pipeline: Nodes and Processes</name>
   <description>Pipeline steps locking agents and workspaces, and running external processes that may survive a Jenkins restart or agent reconnection.</description>
@@ -42,7 +42,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/workflow-durable-task-step-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/workflow-durable-task-step-plugin.git</developerConnection>
-    <tag>82d13453daaf27eed2f632b3bcf65f1d20a14b13</tag>
+    <tag>2fd76fb6fd41c74186b54c72dc3c95d8382d0113</tag>
     <url>https://github.com/jenkinsci/workflow-durable-task-step-plugin</url>
   </scm>
   <distributionManagement>
