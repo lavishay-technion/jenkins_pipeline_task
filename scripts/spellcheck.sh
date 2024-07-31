@@ -39,6 +39,11 @@ else
     echo "#######################################"
     exit 1
 fi
+
+
+
+
+EXCLUDE_PATHS_FILES=("jenkins_data" "docker" ".git" "spellcheck_results.md" ".DS_Store" "spellchech.sh" "spelltest.sh" "." "..")
 echo ${EXCLUDE_PATHS_FILES[@]} > temp.txt
 ### Doing the actual testing of every file in the details app project
 echo '' >> /home/reports/spell_check_report
