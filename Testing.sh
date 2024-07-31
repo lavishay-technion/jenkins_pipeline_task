@@ -1,24 +1,25 @@
 #!/bin/bash
 EXCLUDE_PATHS_FILES=("jenkins_data" "docker" ".git" "spellcheck_results.md" ".DS_Store" "spellchech.sh" "spelltest.sh" "." "..")
-#echo ${EXCLUDE_PATHS_FILES[@]} > exclusion.txt
-echo "" > 1.txt
-for i in $(ls -Ra);
-do
-    # if grep "$i" "${EXCLUDE_PATHS_FILES[@]}"; then
-    # # if [[ $i =~ ^($(echo $EXCLUDE_PATHS_FILES))$ ]]; then
-    #     echo SKIP
-    # else
-    #     echo $i >> 1.txt
-    # fi  
-    echo "Showing file name:"
-    echo $i
-    echo "Displaying the file if possible:"
-    cat $i 2> /dev/null
-    if [[ $? == '0' ]]; then
-        printf "\n\n####################\nFile %s \n####################\n" $i
-        hunspell -u -d en_US $i
+echo ${EXCLUDE_PATHS_FILES[@]} > temp.txt
+### Doing the actual testing of every file in the details app project
+echo '' > /home/reports/spell_check_report
+for i in $(find $PWD);
+do  
+
+    if grep "$i" temp.txt; then
+        echo "Skipping" $i
+        continue
+    else
+        cat $i &> /dev/null
+        if [[ $? == '0' ]]; then
+            printf "\n\n####################\nFile %s \n####################\n" $i >> ./spell_check_report
+            hunspell -u -d en_US $i >> ./spell_check_report
+            printf "\n\n\n\n"
+        else
+            echo "Skipping in the second step" $i
+            echo "############"
+        fi
     fi
-    printf "\n\n\n\n"
 done
 
 

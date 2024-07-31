@@ -1,0 +1,22 @@
+commit da6822e9bde5c393f335bbb1e0f80b6904b9f5c5
+tree a0d8c1005e7b1585c38319631cdf9de1a4bc4c1e
+parent e59492ad77121cf773029f059a14583ab168c36b
+author lavishay <lavishay@campus.technion.ac.il> 2024-08-01 01:17:51 +0300
+committer lavishay <lavishay@campus.technion.ac.il> 2024-08-01 01:17:51 +0300
+
+    UpdatingGit
+
+
+:000000 100644 0000000000000000000000000000000000000000 003cf25cd5bc692eee119ae4e127fcbf3bb1ec18 A	docker/conf_files/jobs/1_spell_check/builds/29/build.xml
+:000000 100644 0000000000000000000000000000000000000000 78bbb968c87995f694fdb1e48f1f50db11e104ba A	docker/conf_files/jobs/1_spell_check/builds/29/changelog5524292741877857646.xml
+:000000 100644 0000000000000000000000000000000000000000 8929b2d6523a2428ac5e1b9d3e0dda4db462629b A	docker/conf_files/jobs/1_spell_check/builds/29/log
+:000000 100644 0000000000000000000000000000000000000000 6678241b69fe31636c878021a035c54e342a6d88 A	docker/conf_files/jobs/1_spell_check/builds/29/log-index
+:000000 100644 0000000000000000000000000000000000000000 64082584ee3ec6f31e76bc187373420b53cf77e1 A	docker/conf_files/jobs/1_spell_check/builds/29/workflow-completed/flowNodeStore.xml
+:100644 100644 0cb0f8cba775aa0ccf7f2553eb1eb185b0686650 337106009f2d6a646c8b0b4434a274104993e47c M	docker/conf_files/jobs/1_spell_check/builds/permalinks
+:100644 100644 f04c001f3f7fd5d290d0264b4a2c35f7b159ac42 64bb6b746dceaf12b0ba8c08f310b0426babde44 M	docker/conf_files/jobs/1_spell_check/nextBuildNumber
+:100755 100755 bb37b7616296b4fd7a88120d0bc825ebc6383a01 32c20de5f77f023bae04d81411a8e9aea4c463bb M	docker/conf_files/logs/health-checker.log
+:100755 100644 6bd0ce222ce3b269f68f1d2aa8527db288fa7b16 8f2d2bcd0db45b5cee4d418248550b585630c9eb M	docker/conf_files/logs/tasks/Periodic background build discarder.log
+:100755 100755 9539257a3c836fc1e561205a908411960c666bb0 6bd0ce222ce3b269f68f1d2aa8527db288fa7b16 M	docker/conf_files/logs/tasks/Periodic background build discarder.log.1
+:000000 100755 0000000000000000000000000000000000000000 9539257a3c836fc1e561205a908411960c666bb0 A	docker/conf_files/logs/tasks/Periodic background build discarder.log.2
+:100644 100644 3e561fcc22751eeaaf3d5ef5c12d889f4b860992 a91e5ce09586ae37b9ae29f613b1f5188c9a68c4 M	docker/conf_files/queue.xml
+:100755 100755 2e30762b2979e4483205a02a542f1116c7b6e4b0 e1f31ebd303b1f113d271d21517c51f73b16b1f3 M	scripts/spellcheck.sh
