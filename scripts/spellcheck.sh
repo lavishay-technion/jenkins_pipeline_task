@@ -58,6 +58,9 @@ do
             printf "\n\n####################\nFile %s \n####################\n" $i >> /home/reports/spell_check_report
             hunspell -u -d en_US $i >> /home/reports/spell_check_report
             printf "\n\n\n\n"
+        else
+            echo "Skipping in the second step" $i
+            echo "############"
         fi
     fi
 done
