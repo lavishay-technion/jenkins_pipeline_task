@@ -4,6 +4,7 @@ pipeline {
         stage('Spellcheck') {
             steps {
                 sh 'pwd'
+                sh 'ls -la'
             }
         }
     }
