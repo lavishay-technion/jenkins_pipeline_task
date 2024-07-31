@@ -23,7 +23,7 @@ then
 elif [[ $ID = "rocky" ]]
 then
     sudo dnf update -y
-    sudo dnf install aspell-br.x86_64 -y --skip-broken
+    sudo dnf --enablerepo=crb install aspell -y
     echo "#######################################"
     echo "[+] aspell installed on Rocky"
     echo "#######################################"

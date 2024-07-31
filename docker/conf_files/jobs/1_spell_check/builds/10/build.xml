@@ -12,7 +12,7 @@
       </causeBag>
     </hudson.model.CauseAction>
     <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.2.21-451.vd51df8df52ec">
-      <queuingDurationMillis>3</queuingDurationMillis>
+      <queuingDurationMillis>2</queuingDurationMillis>
       <blockedDurationMillis>0</blockedDurationMillis>
       <buildableDurationMillis>0</buildableDurationMillis>
       <waitingDurationMillis>0</waitingDurationMillis>
@@ -21,7 +21,7 @@
       <libraries/>
     </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
     <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@2.2205.vc9522a_9d5711">
-      <stagesUUID>dd1abe66-e03c-407e-94ee-b565a32b6dab</stagesUUID>
+      <stagesUUID>d6e9cd3f-585e-41ea-8ec0-b4327326886d</stagesUUID>
       <pipelineDefs>
         <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@2.2205.vc9522a_9d5711">
           <stages>
@@ -41,22 +41,10 @@
                                 <key>script</key>
                               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
                               <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
-                                <value class="string">pwd</value>
-                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
-                            </entry>
-                          </arguments>
-                        </args>
-                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
-                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
-                        <name>sh</name>
-                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
-                          <arguments class="linked-hash-map">
-                            <entry>
-                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
-                                <key>script</key>
-                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
-                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
-                                <value class="string">ls -la</value>
+                                <value class="string">
+                chmod +x ./scripts/spellcheck.sh
+                bash ./scripts/spellcheck.sh
+                </value>
                               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
                             </entry>
                           </arguments>
@@ -67,7 +55,7 @@
                 </branches>
               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
             </stages>
-            <uuid>dd1abe66-e03c-407e-94ee-b565a32b6dab</uuid>
+            <uuid>d6e9cd3f-585e-41ea-8ec0-b4327326886d</uuid>
           </stages>
           <agent>
             <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
@@ -86,7 +74,7 @@
           <string>refs/remotes/origin/main</string>
           <hudson.plugins.git.util.Build>
             <marked plugin="git-client@5.0.0">
-              <sha1>7bd7ac928f4d2089fc6daa442b6c5dc9bcbb9f85</sha1>
+              <sha1>7c1a12e90ced925dbd37bddc3fd0716fb6112c41</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -95,7 +83,7 @@
               </branches>
             </marked>
             <revision reference="../marked"/>
-            <hudsonBuildNumber>2</hudsonBuildNumber>
+            <hudsonBuildNumber>10</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -113,19 +101,19 @@
       </revisionStates>
     </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
     <jenkins.metrics.impl.SubTaskTimeInQueueAction plugin="metrics@4.2.21-451.vd51df8df52ec">
-      <queuingDurationMillis>19</queuingDurationMillis>
+      <queuingDurationMillis>3</queuingDurationMillis>
       <blockedDurationMillis>0</blockedDurationMillis>
-      <buildableDurationMillis>17</buildableDurationMillis>
+      <buildableDurationMillis>2</buildableDurationMillis>
       <waitingDurationMillis>0</waitingDurationMillis>
-      <executingDurationMillis>20160</executingDurationMillis>
+      <executingDurationMillis>3090</executingDurationMillis>
       <workUnitCount>1</workUnitCount>
     </jenkins.metrics.impl.SubTaskTimeInQueueAction>
   </actions>
-  <queueId>3</queueId>
-  <timestamp>1722453410607</timestamp>
-  <startTime>1722453410611</startTime>
+  <queueId>19</queueId>
+  <timestamp>1722456598646</timestamp>
+  <startTime>1722456598649</startTime>
   <result>SUCCESS</result>
-  <duration>40357</duration>
+  <duration>4323</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
@@ -135,8 +123,10 @@
     stages {
         stage(&apos;Spellcheck&apos;) {
             steps {
-                sh &apos;pwd&apos;
-                sh &apos;ls -la&apos;
+                sh &apos;&apos;&apos;
+                chmod +x ./scripts/spellcheck.sh
+                bash ./scripts/spellcheck.sh
+                &apos;&apos;&apos;
             }
         }
     }
@@ -147,23 +137,23 @@
     <timings class="map">
       <entry>
         <string>flowNode</string>
-        <long>107434638</long>
+        <long>80581074</long>
       </entry>
       <entry>
         <string>classLoad</string>
-        <long>2733483379</long>
+        <long>204030645</long>
       </entry>
       <entry>
         <string>run</string>
-        <long>2413938348</long>
+        <long>490358635</long>
       </entry>
       <entry>
         <string>parse</string>
-        <long>343601800</long>
+        <long>26018622</long>
       </entry>
       <entry>
         <string>saveProgram</string>
-        <long>281001487</long>
+        <long>111719197</long>
       </entry>
     </timings>
     <internalCalls class="sorted-set">
@@ -221,8 +211,8 @@
       <string>org.jenkinsci.plugins.workflow.support.steps.build.RunWrapper.result</string>
     </internalCalls>
     <sandbox>true</sandbox>
-    <iota>22</iota>
-    <head>1:22</head>
+    <iota>21</iota>
+    <head>1:21</head>
     <done>true</done>
     <resumeBlocked>false</resumeBlocked>
     <storageDir>workflow-completed</storageDir>
@@ -248,7 +238,7 @@
       </scm>
       <node>worker2</node>
       <workspace>/home/jenkins/workspace/1_spell_check</workspace>
-      <changelogFile>/var/jenkins_home/jobs/1_spell_check/builds/2/changelog16930206466728262062.xml</changelogFile>
+      <changelogFile>/var/jenkins_home/jobs/1_spell_check/builds/10/changelog2908442190192994941.xml</changelogFile>
       <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
     </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
   </checkouts>
