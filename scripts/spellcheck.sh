@@ -49,7 +49,7 @@ do
     cat $i &> /dev/null
     if [[ $? == '0' ]]; then
         printf "\n\n####################\nFile %s \n####################\n" $i
-        hunspell -u -d en_US $i >> /var/reports/spell_check_report.txt
+        hunspell -u -d en_US $i >> /tmp/spell_check_report.txt
     fi
     printf "\n\n\n\n"
 done
