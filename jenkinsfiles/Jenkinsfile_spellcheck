@@ -3,8 +3,10 @@ pipeline {
     stages {
         stage('Spellcheck') {
             steps {
-                sh 'pwd'
-                sh 'ls -la'
+                sh '''
+                chmod +x ./scripts/spellcheck.sh
+                bash ./scripts/spellcheck.sh
+                '''
             }
         }
     }
