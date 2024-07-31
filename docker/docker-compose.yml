@@ -1,0 +1,43 @@
+version: "2"
+services:
+    main-task:
+        hostname: jenkins-main-task
+        build:
+            context: .
+            dockerfile: Dockerfile.main
+        ports:
+            - "80:8080"
+        networks:
+            - jenkins
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock    
+            - ./conf_files:/var/jenkins_home/
+    
+    worker1-task:
+        hostname: jenkins-worker1-task
+        build:
+            context: .
+            dockerfile: Dockerfile.deb.worker
+
+        networks:
+            - jenkins
+        environment:
+            SSH_USERNAME: jenkins
+            SSH_USERPASS: jenkins
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock    
+    worker2-task:
+        hostname: jenkins-worker2-task
+        build:
+            context: .
+            dockerfile: Dockerfile.rpm.worker
+
+        networks:
+            - jenkins
+        environment:
+            SSH_USERNAME: jenkins
+            SSH_USERPASS: jenkins
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock   
+networks:
+    jenkins:

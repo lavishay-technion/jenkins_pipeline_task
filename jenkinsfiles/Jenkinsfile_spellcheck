@@ -1,0 +1,10 @@
+pipeline {
+    agent {label 'workers'}
+    stages {
+        stage('Spellcheck') {
+            steps {
+                sh 'pwd'
+            }
+        }
+    }
+}

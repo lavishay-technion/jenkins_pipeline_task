@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: Mina SSHD API :: Core
+Specification-Version: 2.13
+Implementation-Title: Mina SSHD API :: Core
+Implementation-Version: 2.13.1-117.v2f1a_b_66ff91d
+Group-Id: io.jenkins.plugins.mina-sshd-api
+Artifact-Id: mina-sshd-api-core
+Short-Name: mina-sshd-api-core
+Long-Name: Mina SSHD API :: Core
+Url: https://github.com/jenkinsci/mina-sshd-api-plugin
+Plugin-Version: 2.13.1-117.v2f1a_b_66ff91d
+Hudson-Version: 2.426.3
+Jenkins-Version: 2.426.3
+Plugin-Dependencies: mina-sshd-api-common:2.13.1-117.v2f1a_b_66ff91d,ssh
+ -credentials:337.v395d2403ccd4;resolution:=optional
+Plugin-Developers: Allan Burdajewicz:allan_burdajewicz:allan.burdajewicz
+ @gmail.com
+Plugin-License-Name: The MIT license
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/mina-sshd-api
+ -plugin.git
+Plugin-ScmTag: 2f1ab66ff91dd432ab3fb35cdb2d6bd55dd4bdf9
+Plugin-ScmUrl: https://github.com/jenkinsci/mina-sshd-api-plugin
+Plugin-GitHash: 2f1ab66ff91dd432ab3fb35cdb2d6bd55dd4bdf9
+Implementation-Build: 2f1ab66ff91dd432ab3fb35cdb2d6bd55dd4bdf9
+

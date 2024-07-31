@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: PAM Authentication plugin
+Specification-Version: 1.11
+Implementation-Title: PAM Authentication plugin
+Implementation-Version: 1.11
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: pam-auth
+Short-Name: pam-auth
+Long-Name: PAM Authentication plugin
+Url: https://github.com/jenkinsci/pam-auth-plugin
+Plugin-Version: 1.11
+Hudson-Version: 2.361.4
+Jenkins-Version: 2.361.4
+Plugin-Developers: 
+Plugin-License-Name: The MIT license
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/pam-auth-plug
+ in.git
+Plugin-ScmTag: pam-auth-1.11
+Plugin-ScmUrl: https://github.com/jenkinsci/pam-auth-plugin
+Plugin-GitHash: db65d83457c7bcae9060e602722025a645ab4c04
+Implementation-Build: db65d83457c7bcae9060e602722025a645ab4c04
+

@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: LDAP Plugin
+Specification-Version: 0.0
+Implementation-Title: LDAP Plugin
+Implementation-Version: 725.v3cb_b_711b_1a_ef
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: ldap
+Short-Name: ldap
+Long-Name: LDAP Plugin
+Url: https://github.com/jenkinsci/ldap-plugin
+Compatible-Since-Version: 1.16
+Plugin-Version: 725.v3cb_b_711b_1a_ef
+Hudson-Version: 2.361.4
+Jenkins-Version: 2.361.4
+Plugin-Dependencies: mailer:448.v5b_97805e3767
+Plugin-Developers: 
+Plugin-License-Name: The MIT license
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/ldap-plugin.g
+ it
+Plugin-ScmTag: 3cbb711b1aefc38d38f08044aca3de485980a524
+Plugin-ScmUrl: https://github.com/jenkinsci/ldap-plugin
+Plugin-GitHash: 3cbb711b1aefc38d38f08044aca3de485980a524
+Implementation-Build: 3cbb711b1aefc38d38f08044aca3de485980a524
+

@@ -1,0 +1,65 @@
+--- Copying files at Wed Jul 31 07:47:55 UTC 2024
+INSTALLED plugins/workflow-durable-task-step.jpi : 1360.v82d13453da_a_f
+INSTALLED plugins/pipeline-model-extensions.jpi : 2.2205.vc9522a_9d5711
+INSTALLED plugins/pipeline-graph-analysis.jpi : 216.vfd8b_ece330ca_
+INSTALLED plugins/ssh-credentials.jpi : 343.v884f71d78167
+INSTALLED plugins/commons-text-api.jpi : 1.12.0-119.v73ef73f2345d
+INSTALLED plugins/javax-activation-api.jpi : 1.2.0-7
+INSTALLED plugins/joda-time-api.jpi : 2.12.7-29.v5a_b_e3a_82269a_
+INSTALLED plugins/jakarta-activation-api.jpi : 2.1.3-1
+INSTALLED plugins/pipeline-model-api.jpi : 2.2205.vc9522a_9d5711
+INSTALLED plugins/structs.jpi : 338.v848422169819
+INSTALLED plugins/authentication-tokens.jpi : 1.119.v50285141b_7e1
+INSTALLED plugins/docker-commons.jpi : 439.va_3cb_0a_6a_fb_29
+INSTALLED plugins/display-url-api.jpi : 2.204.vf6fddd8a_8b_e9
+INSTALLED plugins/workflow-basic-steps.jpi : 1058.vcb_fc1e3a_21a_9
+INSTALLED plugins/pipeline-utility-steps.jpi : 2.15.0
+INSTALLED plugins/bouncycastle-api.jpi : 2.30.1.78.1-248.ve27176eb_46cb_
+INSTALLED plugins/pipeline-input-step.jpi : 495.ve9c153f6067b_
+INSTALLED plugins/pipeline-stage-step.jpi : 312.v8cd10304c27a_
+INSTALLED plugins/workflow-job.jpi : 1400.v7fd111b_ec82f
+INSTALLED plugins/durable-task.jpi : 555.v6802fe0f0b_82
+INSTALLED plugins/jakarta-mail-api.jpi : 2.1.3-1
+INSTALLED plugins/asm-api.jpi : 9.7-33.v4d23ef79fcc8
+INSTALLED plugins/script-security.jpi : 1341.va_2819b_414686
+INSTALLED plugins/snakeyaml-api.jpi : 2.2-111.vc6598e30cc65
+INSTALLED plugins/caffeine-api.jpi : 3.1.8-133.v17b_1ff2e0599
+INSTALLED plugins/docker-workflow.jpi : 1.28
+INSTALLED plugins/json-api.jpi : 20240303-41.v94e11e6de726
+INSTALLED plugins/workflow-support.jpi : 920.v59f71ce16f04
+INSTALLED plugins/instance-identity.jpi : 185.v303dc7c645f9
+INSTALLED plugins/workflow-scm-step.jpi : 427.v4ca_6512e7df1
+INSTALLED plugins/workflow-api.jpi : 1322.v857eeeea_9902
+INSTALLED plugins/pipeline-stage-tags-metadata.jpi : 2.2205.vc9522a_9d5711
+INSTALLED plugins/credentials.jpi : 1371.vfee6b_095f0a_3
+INSTALLED plugins/cloudbees-folder.jpi : 6.928.v7c780211d66e
+INSTALLED plugins/variant.jpi : 60.v7290fc0eb_b_cd
+INSTALLED plugins/workflow-cps.jpi : 3908.vd6b_b_5a_a_54010
+INSTALLED plugins/commons-lang3-api.jpi : 3.14.0-76.vda_5591261cfe
+INSTALLED plugins/workflow-multibranch.jpi : 783.787.v50539468395f
+INSTALLED plugins/branch-api.jpi : 2.1178.v969d9eb_c728e
+INSTALLED plugins/metrics.jpi : 4.2.21-451.vd51df8df52ec
+INSTALLED plugins/mailer.jpi : 472.vf7c289a_4b_420
+INSTALLED plugins/workflow-step-api.jpi : 678.v3ee58b_469476
+INSTALLED plugins/jaxb.jpi : 2.3.9-1
+INSTALLED plugins/pipeline-graph-view.jpi : 144.vf3924feb_7e35
+INSTALLED plugins/pipeline-model-definition.jpi : 2.2205.vc9522a_9d5711
+INSTALLED plugins/ionicons-api.jpi : 74.v93d5eb_813d5f
+INSTALLED plugins/plain-credentials.jpi : 183.va_de8f1dd5a_2b_
+INSTALLED plugins/apache-httpcomponents-client-4-api.jpi : 4.5.14-208.v438351942757
+INSTALLED plugins/credentials-binding.jpi : 681.vf91669a_32e45
+INSTALLED plugins/scm-api.jpi : 696.v778d637b_a_762
+INSTALLED plugins/jackson2-api.jpi : 2.17.0-379.v02de8ec9f64c
+INSTALLED plugins/pipeline-groovy-lib.jpi : 727.ve832a_9244dfa_
+--- Copying files at Wed Jul 31 07:52:35 UTC 2024
+SKIPPED plugins/pipeline-utility-steps.jpi : Installed version (2.17.0) has been manually upgraded from initial version (2.15.0)
+SKIPPED plugins/docker-workflow.jpi : Installed version (580.vc0c340686b_54) has been manually upgraded from initial version (1.28)
+SKIPPED plugins/pipeline-graph-view.jpi : Installed version (313.v1322ce83d680) has been manually upgraded from initial version (144.vf3924feb_7e35)
+--- Copying files at Wed Jul 31 08:00:36 UTC 2024
+SKIPPED plugins/pipeline-utility-steps.jpi : Installed version (2.17.0) has been manually upgraded from initial version (2.15.0)
+SKIPPED plugins/docker-workflow.jpi : Installed version (580.vc0c340686b_54) has been manually upgraded from initial version (1.28)
+SKIPPED plugins/pipeline-graph-view.jpi : Installed version (313.v1322ce83d680) has been manually upgraded from initial version (144.vf3924feb_7e35)
+--- Copying files at Wed Jul 31 11:22:56 UTC 2024
+SKIPPED plugins/pipeline-utility-steps.jpi : Installed version (2.17.0) has been manually upgraded from initial version (2.15.0)
+SKIPPED plugins/docker-workflow.jpi : Installed version (580.vc0c340686b_54) has been manually upgraded from initial version (1.28)
+SKIPPED plugins/pipeline-graph-view.jpi : Installed version (313.v1322ce83d680) has been manually upgraded from initial version (144.vf3924feb_7e35)

@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: Git plugin
+Specification-Version: 5.2
+Implementation-Title: Git plugin
+Implementation-Version: 5.2.2
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: git
+Short-Name: git
+Long-Name: Git plugin
+Url: https://github.com/jenkinsci/git-plugin
+Plugin-Version: 5.2.2
+Hudson-Version: 2.426.3
+Jenkins-Version: 2.426.3
+Plugin-Dependencies: configuration-as-code:1775.v810dc950b_514;resolutio
+ n:=optional,workflow-scm-step:427.v4ca_6512e7df1,workflow-step-api:657.
+ v03b_e8115821b_,credentials-binding:677.vdc9d38cb_254d,credentials:1337
+ .v60b_d7b_c7b_c9f,git-client:4.7.0,mailer:470.vc91f60c5d8e2,matrix-proj
+ ect:822.824.v14451b_c0fd42;resolution:=optional,parameterized-trigger:7
+ 87.v665fcf2a_830b_;resolution:=optional,promoted-builds:892.vd6219fc0a_
+ efb;resolution:=optional,scm-api:690.vfc8b_54395023,script-security:133
+ 6.vf33a_a_9863911,ssh-credentials:337.v395d2403ccd4,structs:337.v1b_04e
+ a_4df7c8,token-macro:400.v35420b_922dcb_;resolution:=optional
+Plugin-Developers: Mark Waite:markewaite:mark.earl.waite@gmail.com,Rober
+ t Sandell:rsandell:rsandell@cloudbees.com,M Ramon Leon:mramonleon:rleon
+ @cloudbees.com,Olivier Lamy:olamy:olamy@apache.org
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/git-plugin
+Plugin-ScmTag: git-5.2.2
+Plugin-ScmUrl: https://github.com/jenkinsci/git-plugin
+Plugin-GitHash: da8fff14ae9f23002ef20ee00f7cedbabea5cd73
+Implementation-Build: da8fff14ae9f23002ef20ee00f7cedbabea5cd73
+

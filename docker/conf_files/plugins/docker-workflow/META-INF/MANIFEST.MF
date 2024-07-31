@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: Docker Pipeline
+Specification-Version: 0.0
+Implementation-Title: Docker Pipeline
+Implementation-Version: 580.vc0c340686b_54
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: docker-workflow
+Short-Name: docker-workflow
+Long-Name: Docker Pipeline
+Url: https://github.com/jenkinsci/docker-workflow-plugin
+Plugin-Version: 580.vc0c340686b_54
+Hudson-Version: 2.361.4
+Jenkins-Version: 2.361.4
+Plugin-Dependencies: workflow-basic-steps:1017.vb_45b_302f0cea_,workflow
+ -cps:3659.v582dc37621d8,workflow-durable-task-step:1246.v5524618ea_097,
+ workflow-step-api:639.v6eca_cd8c04a_a_,cloudbees-folder:6.758.vfd75d09e
+ ea_a_1,docker-commons:419.v8e3cd84ef49c,pipeline-model-definition:2.213
+ 1.vb_9788088fdb_5
+Plugin-Developers: 
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/docker-workfl
+ ow-plugin.git
+Plugin-ScmTag: c0c340686b542632d4879233cefcdb2573816f00
+Plugin-ScmUrl: https://github.com/jenkinsci/docker-workflow-plugin
+Plugin-GitHash: c0c340686b542632d4879233cefcdb2573816f00
+Implementation-Build: c0c340686b542632d4879233cefcdb2573816f00
+

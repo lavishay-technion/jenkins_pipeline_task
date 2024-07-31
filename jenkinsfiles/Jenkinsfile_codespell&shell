@@ -1,0 +1,10 @@
+pipeline {
+    agent {label 'workers'}
+    stages {
+        stage('Codespell and Shellcheck') {
+            steps {
+                sh ''
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: Pipeline: Multibranch
+Specification-Version: 0.0
+Implementation-Title: Pipeline: Multibranch
+Implementation-Version: 783.787.v50539468395f
+Group-Id: org.jenkins-ci.plugins.workflow
+Artifact-Id: workflow-multibranch
+Short-Name: workflow-multibranch
+Long-Name: Pipeline: Multibranch
+Url: https://github.com/jenkinsci/workflow-multibranch-plugin
+Plugin-Version: 783.787.v50539468395f
+Hudson-Version: 2.452.1
+Jenkins-Version: 2.452.1
+Plugin-Dependencies: ionicons-api:70.v2959a_b_74e3cf,workflow-api:1291.v
+ 51fd2a_625da_7,workflow-cps:3894.vd0f0248b_a_fc4,workflow-job:1400.v7fd
+ 111b_ec82f,workflow-scm-step:427.v4ca_6512e7df1,workflow-step-api:657.v
+ 03b_e8115821b_,workflow-support:896.v175a_a_9c5b_78f,branch-api:2.1163.
+ va_f1064e4a_a_f3,cloudbees-folder:6.928.v7c780211d66e,scm-api:690.vfc8b
+ _54395023,script-security:1335.vf07d9ce377a_e
+Plugin-Developers: 
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/workflow-mult
+ ibranch-plugin.git
+Plugin-ScmTag: 50539468395f4488631015e4dfa3bb72634169f2
+Plugin-ScmUrl: https://github.com/jenkinsci/workflow-multibranch-plugin
+Plugin-GitHash: 50539468395f4488631015e4dfa3bb72634169f2
+Implementation-Build: 50539468395f4488631015e4dfa3bb72634169f2
+

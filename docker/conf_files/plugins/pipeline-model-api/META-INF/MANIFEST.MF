@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: Pipeline: Model API
+Specification-Version: 0.0
+Implementation-Title: Pipeline: Model API
+Implementation-Version: 2.2205.vc9522a_9d5711
+Group-Id: org.jenkinsci.plugins
+Artifact-Id: pipeline-model-api
+Short-Name: pipeline-model-api
+Long-Name: Pipeline: Model API
+Url: https://github.com/jenkinsci/pipeline-model-definition-plugin
+Plugin-Version: 2.2205.vc9522a_9d5711
+Hudson-Version: 2.426.1
+Jenkins-Version: 2.426.1
+Plugin-Dependencies: joda-time-api:2.12.5-5.v5495a_235fedf,workflow-step
+ -api:639.v6eca_cd8c04a_a_,jackson2-api:2.15.3-372.v309620682326,structs
+ :325.vcb_307d2a_2782
+Plugin-Developers: Andrew Bayer:abayer:
+Plugin-License-Name: MIT
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/pipeline-mode
+ l-definition-plugin.git
+Plugin-ScmTag: c9522a9d57116ecbafd049a3c58ae781e61ddff8
+Plugin-ScmUrl: https://github.com/jenkinsci/pipeline-model-definition-pl
+ ugin
+Plugin-GitHash: c9522a9d57116ecbafd049a3c58ae781e61ddff8
+Implementation-Build: c9522a9d57116ecbafd049a3c58ae781e61ddff8
+
