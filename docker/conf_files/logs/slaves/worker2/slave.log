@@ -2,3 +2,11 @@ SSHLauncher{host='jenkins-worker2-task', port=22, credentialsId='bf611ad5-b138-4
 [07/31/24 21:44:48] [SSH] Opening SSH connection to jenkins-worker2-task:22.
 jenkins-worker2-task: Temporary failure in name resolution
 SSH Connection failed with IOException: "jenkins-worker2-task: Temporary failure in name resolution", retrying in 15 seconds. There are 10 more retries left.
+jenkins-worker2-task: Temporary failure in name resolution
+SSH Connection failed with IOException: "jenkins-worker2-task: Temporary failure in name resolution", retrying in 15 seconds. There are 9 more retries left.
+jenkins-worker2-task: Temporary failure in name resolution
+SSH Connection failed with IOException: "jenkins-worker2-task: Temporary failure in name resolution", retrying in 15 seconds. There are 8 more retries left.
+jenkins-worker2-task: Temporary failure in name resolution
+SSH Connection failed with IOException: "jenkins-worker2-task: Temporary failure in name resolution", retrying in 15 seconds. There are 7 more retries left.
+jenkins-worker2-task: Temporary failure in name resolution
+SSH Connection failed with IOException: "jenkins-worker2-task: Temporary failure in name resolution", retrying in 15 seconds. There are 6 more retries left.
