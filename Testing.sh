@@ -4,7 +4,7 @@ echo
 echo "" > 1.txt
 for i in $(ls -Ra);
 do
-    if [[ $i == $(printf "%s\n" "${EXCLUDE_PATHS_FILES[@]}" | grep -q "$i") ]]
+    if [[ $i == $(printf "%s\n" "${EXCLUDE_PATHS_FILES[@]}" | grep -q -x "$i") ]]
     then
         continue
     else
