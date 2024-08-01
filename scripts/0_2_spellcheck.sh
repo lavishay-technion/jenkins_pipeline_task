@@ -29,18 +29,21 @@ report_file="/home/reports/spell_check_report"
 gitdir= $1
 for i in $(find $gitdir);
 do
-    # test=exists "$i"
-    cat $i &> /dev/null
-    # exists "$i"
+    
+    exists() $i
     if [[ $? == '0' ]]; then
-        printf "\n\n####################\nFile Name with path: %s \n####################\n" $i >> "/home/reports/spell_check_report"
-        hunspell -u -d en_US $i >> "/home/reports/spell_check_report"
-        printf "\n\n\n\n"
+        cat $i &> /dev/null
+        if [[ $? == '0' ]]; then
+            printf "\n\n####################\nFile Name with path: %s \n####################\n" $i >> "/home/reports/spell_check_report"
+            hunspell -u -d en_US $i >> "/home/reports/spell_check_report"
+            printf "\n\n\n\n"
+        else
+            echo "Skipping item: " $i
+            echo "############"
+        fi
     else
-        echo "Skipping item: " $i
-        echo "############"
+        continue
     fi
-
 done
 
 EXCLUDE_PATHS_FILES=("jenkins_data" "docker" ".git" "spellcheck_results.md" ".DS_Store" "spellchech.sh" "spelltest.sh" ".jpi" ".key" ".enc")
