@@ -51,7 +51,7 @@ do
             hunspell -u -d en_US $i >> "/home/reports/spell_check_report"
             printf "\n\n\n\n"
         else
-            echo "Skipping item: " $i
+            echo "Skipping item: $i"
             echo "############"
         fi
     else
