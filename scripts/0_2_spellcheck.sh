@@ -10,7 +10,7 @@
 #################################################
 #   This script depends on the installation script with cloning the GIT
 #   It runs hunspell on every file under on the environment variable that comes from the Jenkins file
-#   A report will be saved in /home/reports and it's volumed to the VM at ./docker/reports as spell_check_report
+#   A report will be saved in /home/reports and it's volumed to the VM at Jenkins_pipeline_task/docker/reports as spell_check_report
 #################################################
 
 ### Initial step to clone the Details App project into /tmp folder for the testing. 
@@ -24,6 +24,7 @@
 ### Checking if the project exists,if yes it pulls 
 
 ### Doing the actual testing of every file in the details app project
+sudo chown -R jenkins:jenkins /home/reports
 report_file="/home/reports/spell_check_report"
 gitdir= $1
 for i in $(find $gitdir);
