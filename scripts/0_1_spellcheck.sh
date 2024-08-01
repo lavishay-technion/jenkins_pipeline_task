@@ -10,7 +10,7 @@
 ### Checking if the OS is Debian, Rocky or Alpine and running installations for hunspell accordingly
 . /etc/os-release
 
-if [[ $ID = "debian" || $ID = "ubuntu"]]
+if [[ $ID = "debian" || $ID = "ubuntu" ]]
 then
     sudo apt-get update
     sudo apt-get install -y hunspell
@@ -40,8 +40,9 @@ fi
 
 git --version 2> /dev/null
 
-if [[ $? == 0 ]]; then
-
+if [[ $? == 0 ]]; 
+then
+    git clone https://github.com/lavishay-technion/details_app.git /tmp/details_app/
     echo "Project cloned to /tmp/details_app"
 else
     echo "[!] GIT is not installed - Exiting"
