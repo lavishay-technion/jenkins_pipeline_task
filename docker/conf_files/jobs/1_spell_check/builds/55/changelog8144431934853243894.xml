@@ -1,0 +1,37 @@
+commit 5827af08801e7b6340dcfe2ebad570cc194626a0
+tree a5c5bc78f72722ec7e2be3df76421a08724ac529
+parent c3a13266734d7c51e98875d436a2404821db52e0
+author lavishay <lavishay@campus.technion.ac.il> 2024-08-01 23:28:47 +0300
+committer lavishay <lavishay@campus.technion.ac.il> 2024-08-01 23:28:47 +0300
+
+    UpdatingGit
+
+
+:100755 100755 94412577907c85bc7e3360d7567a69274a9ec7c2 d80571db740e7bd2b8eee7c2855459cdd26173b7 M	docker/conf_files/copy_reference_file.log
+:000000 100644 0000000000000000000000000000000000000000 6c2684b01ac12e87d8d11f1c2938723ba1128585 A	docker/conf_files/fingerprints/12/22/1f798b3ca14aa3c3cc6545bf3b21.xml
+:000000 100644 0000000000000000000000000000000000000000 86ac2dbf417d2d2df40eaff659af717e24efc712 A	docker/conf_files/jobs/1_spell_check/builds/54/build.xml
+:000000 100644 0000000000000000000000000000000000000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 A	docker/conf_files/jobs/1_spell_check/builds/54/changelog576273064451167681.xml
+:000000 100644 0000000000000000000000000000000000000000 a884b4bd73d4a729a15a91538c0540d3bbcf3f5d A	docker/conf_files/jobs/1_spell_check/builds/54/log
+:000000 100644 0000000000000000000000000000000000000000 d299ffaea16adeed74bea2acce381a8934913f23 A	docker/conf_files/jobs/1_spell_check/builds/54/log-index
+:000000 100644 0000000000000000000000000000000000000000 be399d815ac8c24d54087b7fda1cc6c89266c9fd A	docker/conf_files/jobs/1_spell_check/builds/54/workflow-completed/flowNodeStore.xml
+:100644 100644 462d1b37b6195a8582387b2029f58b9e3ba208ee 0e77dc5c4dbb3929d616b6565a9245d1a4b7dc20 M	docker/conf_files/jobs/1_spell_check/builds/permalinks
+:100644 100644 fb1e7bc86996a80d4a16529b990adda1d3434c92 c3f407c0955bb5738e40a82664c79b63f04a9adb M	docker/conf_files/jobs/1_spell_check/nextBuildNumber
+:100755 100755 cbd767e8366c134316e9d909e7ae845e31c77195 d11b33a2df116bd1ae623d212a498d70e96ca5ae M	docker/conf_files/logs/health-checker.log
+:000000 100644 0000000000000000000000000000000000000000 e4b91d680f3cad818f3bcd38321c77c77c4acd02 A	docker/conf_files/logs/slaves/worker1/slave.log
+:000000 100644 0000000000000000000000000000000000000000 b76a931f64834db26632dc640d263b7fd2fd8af8 A	docker/conf_files/logs/slaves/worker2/slave.log
+:100644 100644 b943c32765ca5c4dc32516e1aa15af389f01dfe5 de3d5a10b984710d14f3718a01e29a0e26169d67 M	docker/conf_files/org.jenkinsci.plugins.workflow.flow.FlowExecutionList.xml
+:100755 100644 94142db074a77d231d90c63ee5f1901a8196b0fe d109586903f07118b246045ebd24024b44b3aa38 M	docker/conf_files/plugins/commons-text-api.jpi
+:100755 100755 32fa56df315986f9c4a6caf029281a49260592b4 f91e4b99ca547681d19adcc8c554a6b884279b0a M	docker/conf_files/plugins/commons-text-api.jpi.version_from_image
+:100755 100644 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 M	docker/conf_files/plugins/commons-text-api/.timestamp2
+:100755 100644 13e0b3e748ef03fbb7a2bf8fb72a994c5c5a4079 c8ce95539c2b47f46b961412c514db8a3379246e M	docker/conf_files/plugins/commons-text-api/META-INF/MANIFEST.MF
+:100755 100644 362fd149a7cdfacdb1b417591a437c2b7b8d8093 558c5df45f89b273c0d923d390f03c56ff45c94e M	docker/conf_files/plugins/commons-text-api/META-INF/maven/io.jenkins.plugins/commons-text-api/pom.properties
+:100755 100644 c91f9d90baf75fbc79f1a2d4bd0ddf655718ba4d c9a63c06b529df6995acc3100cbeef35808f1900 M	docker/conf_files/plugins/commons-text-api/META-INF/maven/io.jenkins.plugins/commons-text-api/pom.xml
+:100755 100644 a2daab1488b485bf8b61d0657c96c2a0c59d705c a2daab1488b485bf8b61d0657c96c2a0c59d705c M	docker/conf_files/plugins/commons-text-api/WEB-INF/lib/commons-text-1.12.0.jar
+:100755 100644 c09206583ba1460864f281758c26c252a2ac0602 40722b02e1014defcaf044ad9077aa37bd0aa195 M	docker/conf_files/plugins/commons-text-api/WEB-INF/lib/commons-text-api.jar
+:100755 100644 20a17c220c867fb5b22344ad95ba341aefb03b40 92acd0f7d7545961221f621ea78767b100850452 M	docker/conf_files/plugins/commons-text-api/WEB-INF/licenses.xml
+:100644 100644 ce9b9898b821da2e6d838ffe610c80c59443b1d4 54263cac5acdc3555701fe3efe8f91d366572b71 M	docker/conf_files/queue.xml
+:100644 100644 67cfaafd07f95a3dd93038f8a8ea0b7b40c7e649 ce9b9898b821da2e6d838ffe610c80c59443b1d4 M	docker/conf_files/queue.xml.bak
+:100755 100644 a55e833e975aea6db3a9c40d33ee5270966828c1 60f33abae97b311c817396a461b5392d05da7227 M	docker/conf_files/updates/default.json
+:100755 100644 5fe5a5429355e927fda829664503118c210340f1 5fe5a5429355e927fda829664503118c210340f1 M	docker/conf_files/updates/hudson.plugins.gradle.GradleInstaller
+:100755 100644 401477be378f07fcc265daa0ea38e620902ba7ff 401477be378f07fcc265daa0ea38e620902ba7ff M	docker/conf_files/updates/hudson.tasks.Ant.AntInstaller
+:100755 100644 d4ce17d16eba198f5997829a5aa1c2ee1ac5afdd d4ce17d16eba198f5997829a5aa1c2ee1ac5afdd M	docker/conf_files/updates/hudson.tasks.Maven.MavenInstaller
