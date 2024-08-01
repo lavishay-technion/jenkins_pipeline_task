@@ -116,6 +116,7 @@
         </entry>
       </buildsByBranchName>
       <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <scmName></scmName>
       <remoteUrls>
         <string>https://github.com/lavishay-technion/jenkins_pipeline_task.git</string>
       </remoteUrls>
@@ -128,15 +129,31 @@
         </entry>
       </revisionStates>
     </org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState>
+    <jenkins.model.InterruptedBuildAction>
+      <causes>
+        <jenkins.model.CauseOfInterruption_-UserInterruption>
+          <user>admin</user>
+        </jenkins.model.CauseOfInterruption_-UserInterruption>
+      </causes>
+    </jenkins.model.InterruptedBuildAction>
+    <jenkins.metrics.impl.SubTaskTimeInQueueAction plugin="metrics@4.2.21-451.vd51df8df52ec">
+      <queuingDurationMillis>2</queuingDurationMillis>
+      <blockedDurationMillis>0</blockedDurationMillis>
+      <buildableDurationMillis>1</buildableDurationMillis>
+      <waitingDurationMillis>0</waitingDurationMillis>
+      <executingDurationMillis>608168</executingDurationMillis>
+      <workUnitCount>1</workUnitCount>
+    </jenkins.metrics.impl.SubTaskTimeInQueueAction>
   </actions>
   <queueId>169</queueId>
   <timestamp>1722546223762</timestamp>
   <startTime>1722546223765</startTime>
-  <duration>0</duration>
+  <result>ABORTED</result>
+  <duration>609329</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
-    <result>SUCCESS</result>
+    <result>ABORTED</result>
     <script>pipeline {
     agent {label &apos;workers&apos;}
     stages {
@@ -164,7 +181,7 @@
     <timings class="map">
       <entry>
         <string>flowNode</string>
-        <long>72981622</long>
+        <long>120407933</long>
       </entry>
       <entry>
         <string>classLoad</string>
@@ -172,7 +189,7 @@
       </entry>
       <entry>
         <string>run</string>
-        <long>340449772</long>
+        <long>559623648</long>
       </entry>
       <entry>
         <string>parse</string>
@@ -180,13 +197,14 @@
       </entry>
       <entry>
         <string>saveProgram</string>
-        <long>76181117</long>
+        <long>177192187</long>
       </entry>
     </timings>
     <internalCalls class="sorted-set">
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.SyntheticStageNames.checkout</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.Utils.createStepsBlock</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.Utils.getRestartedStage</string>
+      <string>org.jenkinsci.plugins.pipeline.modeldefinition.Utils.markStageFailedAndContinued</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.Utils.updateJobProperties</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.Utils.updateRunAndJobActions</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.agent.impl.Label.customWorkspace</string>
@@ -212,6 +230,7 @@
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.libraries</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.options</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.parameters</string>
+      <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.post</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.stages</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.tools</string>
       <string>org.jenkinsci.plugins.pipeline.modeldefinition.model.Root.triggers</string>
@@ -237,13 +256,13 @@
       <string>org.jenkinsci.plugins.workflow.support.steps.build.RunWrapper.result</string>
     </internalCalls>
     <sandbox>true</sandbox>
-    <iota>19</iota>
-    <head>1:19</head>
-    <start>2</start>
-    <done>false</done>
+    <iota>26</iota>
+    <head>1:26</head>
+    <done>true</done>
     <resumeBlocked>false</resumeBlocked>
+    <storageDir>workflow-completed</storageDir>
   </execution>
-  <completed>false</completed>
+  <completed>true</completed>
   <checkouts class="hudson.util.PersistedList">
     <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
       <scm class="hudson.plugins.git.GitSCM" plugin="git@5.2.2">

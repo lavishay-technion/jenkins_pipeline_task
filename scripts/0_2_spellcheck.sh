@@ -50,7 +50,7 @@ do
         fi
     done
     cat $i &> /dev/null
-    if [[ $? == '0' && $condition=False]]; then
+    if [[ $? == '0' && $condition==False ]]; then
         printf "\n\n####################\nFile Name with path: %s \n####################\n" $i >> "/home/reports/spell_check_report"
         hunspell -u -d en_US $i >> "/home/reports/spell_check_report"
         printf "\n\n\n\n"
