@@ -1,11 +1,11 @@
 #!/bin/bash
 
-################################################################################
+#################################################################################
 ##  This Script runs spell check for all Python files in the details-app project
 ##  Author: Avishay Layani
 ##  Collaborator: Ori Nahum
 ##  Packages needed for 
-################################################################################
+#################################################################################
 
 #################################################
 #   This script depends on the installation script with cloning the GIT
