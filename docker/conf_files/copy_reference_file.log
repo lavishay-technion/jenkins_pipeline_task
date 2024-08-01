@@ -74,3 +74,7 @@ UPGRADED plugins/commons-text-api.jpi : Image version (1.12.0-129.v99a_50df237f7
 SKIPPED plugins/pipeline-utility-steps.jpi : Installed version (2.17.0) has been manually upgraded from initial version (2.15.0)
 SKIPPED plugins/docker-workflow.jpi : Installed version (580.vc0c340686b_54) has been manually upgraded from initial version (1.28)
 SKIPPED plugins/pipeline-graph-view.jpi : Installed version (313.v1322ce83d680) has been manually upgraded from initial version (144.vf3924feb_7e35)
+--- Copying files at Thu Aug  1 21:56:06 UTC 2024
+SKIPPED plugins/pipeline-utility-steps.jpi : Installed version (2.17.0) has been manually upgraded from initial version (2.15.0)
+SKIPPED plugins/docker-workflow.jpi : Installed version (580.vc0c340686b_54) has been manually upgraded from initial version (1.28)
+SKIPPED plugins/pipeline-graph-view.jpi : Installed version (313.v1322ce83d680) has been manually upgraded from initial version (144.vf3924feb_7e35)
