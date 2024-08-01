@@ -39,7 +39,7 @@ function exists () {
 ### Doing the actual testing of every file in the details app project
 sudo chown -R jenkins:jenkins /home/reports
 report_file="/home/reports/spell_check_report"
-gitdir= "$1"
+gitdir="$1"
 for i in $(find $gitdir);
 do
     
