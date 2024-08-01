@@ -24,9 +24,11 @@ function exists () {
     file=$1
     for i in ${EXCLUDE_PATHS_FILES[@]}
     do
-        if [[ $file =~ $i ]];then       
+        if [[ $file =~ $i ]];then
+            echo "File is excluded $i"
             return 1
         else
+            echo "File will be checked $i
             return 0
         fi
     done
