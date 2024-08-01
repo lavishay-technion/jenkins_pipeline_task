@@ -25,9 +25,11 @@
 
 ### Doing the actual testing of every file in the details app project
 echo '' >> /home/reports/spell_check_report
-for i in $(find  /tmp/details_app/);
+gitdir= $1
+for i in $(find  $gitdir);
 do
     cat $i &> /dev/null
+    exists() "$i"
     if [[ $? == '0' ]]; then
         printf "\n\n####################\nFile Name with path: %s \n####################\n" $i >> /home/reports/spell_check_report
         hunspell -u -d en_US $i >> /home/reports/spell_check_report
@@ -38,5 +40,18 @@ do
     fi
 
 done
+
+EXCLUDE_PATHS_FILES=("jenkins_data" "docker" ".git" "spellcheck_results.md" ".DS_Store" "spellchech.sh" "spelltest.sh" "." "..")
+function exists {
+    file=$1
+    for i in ${EXCLUDE_PATHS_FILES[@]}
+    do
+        if [[ $file =~ $i ]];then       
+            return 1
+        else
+            return 0
+        fi
+    done
+}
 
 

@@ -1,12 +1,18 @@
 pipeline {
     agent {label 'workers'}
     stages {
-        stage('Spellcheck') {
+        stage('Spellcheck Prerequisitions') {
+            steps {
+                sh '''
+                chmod +x ./scripts/0_1_spellcheck.sh
+                bash scripts/0_1_spellcheck.sh
+                '''
+            }
+        }
+        stage('Spellcheck Execution') {
             steps {
                 sh '''
                 chmod +x ./scripts/0_2_spellcheck.sh
-                chmod +x ./scripts/0_1_spellcheck.sh
-                bash scripts/0_1_spellcheck.sh
                 bash scripts/0_2_spellcheck.sh
                 '''
             }
