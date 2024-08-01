@@ -39,10 +39,9 @@ function exists () {
 ### Doing the actual testing of every file in the details app project
 sudo chown -R jenkins:jenkins /home/reports
 report_file="/home/reports/spell_check_report"
-gitdir=/tmp/details_app
-for i in $(find $gitdir);
+
+for i in $(find /tmp/details_app);
 do
-    
     exists "$i"
     if [[ $? == '0' ]]; then
         cat $i &> /dev/null
@@ -50,9 +49,6 @@ do
             printf "\n\n####################\nFile Name with path: %s \n####################\n" $i >> "/home/reports/spell_check_report"
             hunspell -u -d en_US $i >> "/home/reports/spell_check_report"
             printf "\n\n\n\n"
-        else
-            echo "Skipping item: $i"
-            echo "############"
         fi
     fi
 done
