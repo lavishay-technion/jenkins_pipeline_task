@@ -42,7 +42,7 @@ fi
 
 # if [[ $? == 0 ]]; 
 # then
-#     git clone https://github.com/lavishay-technion/details_app.git /tmp/details_app/
+git clone https://github.com/lavishay-technion/details_app.git /tmp/details_app/
 #     echo "Project cloned to /tmp/details_app"
 # else
 #     echo "[!] GIT is not installed - Exiting"
