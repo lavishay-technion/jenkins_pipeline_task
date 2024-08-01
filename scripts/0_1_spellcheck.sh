@@ -38,14 +38,46 @@ else
     exit 1
 fi
 
-# git --version 2> /dev/null
 
-# if [[ $? == 0 ]]; 
-# then
-#     git clone https://github.com/lavishay-technion/details_app.git /tmp/details_app/
-#     echo "Project cloned to /tmp/details_app"
-# else
-#     echo "[!] GIT is not installed - Exiting"
-# fi
+git --version 2> /dev/null
 
+if [[ $? != 0 ]]; 
+then
+    if [[ $ID = "debian" || $ID = "ubuntu" ]]
+    then
+        sudo apt-get update
+        sudo apt-get install -y git
+        echo "#######################################"
+        echo "[+] git installed on Debian"
+        echo "#######################################"
+    elif [[ $ID = "rocky" ]]
+    then
+        sudo dnf update -y
+        sudo dnf install git -y
+        echo "#######################################"
+        echo "[+] git installed on Rocky"
+        echo "#######################################"
+    elif [[ $ID = 'alpine' ]]
+    then
+        apk add git 
+        echo "#######################################"
+        echo " "
+        echo "[+] git installed on Alpine"
+        echo "#######################################"
+    else
+        echo "#######################################"
+        printf "[!] OS %s Is not compatible with this pipeline. \n[!] This is meant for Debian, Rocky or Alpine systems ONLY\n" $ID
+        echo "#######################################"
+        exit 1
+    fi
+else
+    echo "[+] GIT is already installed"
+fi
 
+if [[ ! -d "/tmp/details_app"  ]]; then
+    git clone https://github.com/lavishay-technion/details_app.git /tmp/details_app/
+    echo "Project cloned to /tmp/details_app"
+else    
+    git pull https://github.com/lavishay-technion/details_app.git /tmp/details_app/
+    echo "Project updated in /tmp/details_app"
+fi
