@@ -28,7 +28,7 @@ function exists () {
             echo "File is excluded $i"
             return 1
         else
-            echo "File will be checked $i
+            echo "File will be checked $i"
             return 0
         fi
     done
