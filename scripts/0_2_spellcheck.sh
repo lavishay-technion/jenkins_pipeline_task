@@ -18,8 +18,7 @@
 
 ### Checking if GIT is installed by running the GIT command we need, and checking if this exists or not
 
-
-EXCLUDE_PATHS_FILES=("jenkins_data" "docker" ".git" "spellcheck_results.md" ".DS_Store" "spellchech.sh" "spelltest.sh" ".jpi" ".key" ".enc" ".lock")
+EXCLUDE_PATHS_FILES=(".git" ".DS_Store" ".jpi" ".key" ".enc" ".lock" ".jpg" ".mp4")
 # exists () {
 #     file=$1
 #     for i in ${EXCLUDE_PATHS_FILES[@]}
@@ -51,10 +50,11 @@ do
     done
     cat $i &> /dev/null
     if [[ $? == '0' && $condition == 'False' ]]; then
+        echo "Checking $i"
         printf "\n\n####################\nFile Name with path: %s \n####################\n" $i >> "/home/reports/spell_check_report"
         hunspell -u -d en_US $i >> "/home/reports/spell_check_report"
         printf "\n\n\n\n"
-        echo "Checked $i"
+
     else
         echo "Skipping file $i"
     fi

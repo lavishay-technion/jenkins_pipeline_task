@@ -15,8 +15,8 @@
           <string>overrides</string>
           <list>
             <string>GIT_BRANCH=origin/main</string>
-            <string>GIT_COMMIT=21bafd2e04397e7323222405290ece09cca2d0dd</string>
-            <string>GIT_PREVIOUS_COMMIT=48edf5efd406b0f3a8c739c580d13dc045830827</string>
+            <string>GIT_COMMIT=6e0f0f4f04b43a30ea2a8e61e4852d6166007865</string>
+            <string>GIT_PREVIOUS_COMMIT=6e0f0f4f04b43a30ea2a8e61e4852d6166007865</string>
             <string>GIT_PREVIOUS_SUCCESSFUL_COMMIT=e552b0b891ba21009f210395a83aeaaa704f36a1</string>
             <string>GIT_URL=https://github.com/lavishay-technion/jenkins_pipeline_task.git</string>
           </list>
@@ -26,7 +26,7 @@
       <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
     </cps.a.ArgumentsActionImpl>
     <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-      <startTime>1722547267420</startTime>
+      <startTime>1722547498035</startTime>
     </wf.a.TimingAction>
   </actions>
 </Tag>
