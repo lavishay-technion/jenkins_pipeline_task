@@ -24,7 +24,7 @@
 ### Checking if the project exists,if yes it pulls 
 
 ### Doing the actual testing of every file in the details app project
-report_file="/home/reports/spell_check_report.md"
+report_file="/home/reports/spell_check_report"
 gitdir= $1
 for i in $(find $gitdir);
 do
@@ -32,8 +32,8 @@ do
     cat $i &> /dev/null
     # exists "$i"
     if [[ $? == '0' ]]; then
-        printf "\n\n####################\nFile Name with path: %s \n####################\n" $i >> "/home/reports/spell_check_report.md"
-        hunspell -u -d en_US $i >> "/home/reports/spell_check_report.md"
+        printf "\n\n####################\nFile Name with path: %s \n####################\n" $i >> "/home/reports/spell_check_report"
+        hunspell -u -d en_US $i >> "/home/reports/spell_check_report"
         printf "\n\n\n\n"
     else
         echo "Skipping item: " $i
@@ -42,7 +42,7 @@ do
 
 done
 
-EXCLUDE_PATHS_FILES=("jenkins_data" "docker" ".git" "spellcheck_results.md" ".DS_Store" "spellchech.sh" "spelltest.sh" "." "..")
+EXCLUDE_PATHS_FILES=("jenkins_data" "docker" ".git" "spellcheck_results.md" ".DS_Store" "spellchech.sh" "spelltest.sh" ".jpi)
 function exists {
     file=$1
     for i in ${EXCLUDE_PATHS_FILES[@]}
