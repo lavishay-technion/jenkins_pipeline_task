@@ -51,7 +51,7 @@ do
             echo "File will be checked $file"
         fi
     done
-    exists "$i"
+    # exists "$i"
     if [[ $? == '0' ]]; then
         cat $i &> /dev/null
         if [[ $? == '0' ]]; then
