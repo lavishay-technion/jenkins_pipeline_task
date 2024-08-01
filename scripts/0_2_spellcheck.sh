@@ -55,7 +55,6 @@ do
             echo "############"
         fi
     else
-        continue
     fi
 done
 
