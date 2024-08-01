@@ -25,10 +25,10 @@
 
 ### Doing the actual testing of every file in the details app project
 report_file= "/home/reports/spell_check_report.md"
-echo '' >> $report_file
 gitdir= $1
 for i in $(find  $gitdir);
 do
+    test=exists "$i"
     cat $i &> /dev/null
     # exists "$i"
     if [[ $? == '0' ]]; then
