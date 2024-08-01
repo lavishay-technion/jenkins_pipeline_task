@@ -19,7 +19,18 @@
 ### Checking if GIT is installed by running the GIT command we need, and checking if this exists or not
 
 
-
+EXCLUDE_PATHS_FILES=("jenkins_data" "docker" ".git" "spellcheck_results.md" ".DS_Store" "spellchech.sh" "spelltest.sh" ".jpi" ".key" ".enc")
+function exists () {
+    file=$1
+    for i in ${EXCLUDE_PATHS_FILES[@]}
+    do
+        if [[ $file =~ $i ]];then       
+            return 1
+        else
+            return 0
+        fi
+    done
+}
 
 ### Checking if the project exists,if yes it pulls 
 
@@ -46,17 +57,6 @@ do
     fi
 done
 
-EXCLUDE_PATHS_FILES=("jenkins_data" "docker" ".git" "spellcheck_results.md" ".DS_Store" "spellchech.sh" "spelltest.sh" ".jpi" ".key" ".enc")
-function exists () {
-    file=$1
-    for i in ${EXCLUDE_PATHS_FILES[@]}
-    do
-        if [[ $file =~ $i ]];then       
-            return 1
-        else
-            return 0
-        fi
-    done
-}
+
 
 
