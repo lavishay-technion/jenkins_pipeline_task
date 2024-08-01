@@ -30,7 +30,7 @@ gitdir= $1
 for i in $(find  $gitdir);
 do
     cat $i &> /dev/null
-    exists "$i"
+    # exists "$i"
     if [[ $? == '0' ]]; then
         printf "\n\n####################\nFile Name with path: %s \n####################\n" $i >> $report_file
         hunspell -u -d en_US $i >> $report_file
