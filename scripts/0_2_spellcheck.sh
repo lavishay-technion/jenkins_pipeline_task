@@ -30,7 +30,7 @@ gitdir= $1
 for i in $(find $gitdir);
 do
     
-    exists() $i
+    exists() "$i"
     if [[ $? == '0' ]]; then
         cat $i &> /dev/null
         if [[ $? == '0' ]]; then
