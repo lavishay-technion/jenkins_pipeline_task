@@ -54,7 +54,6 @@ do
             echo "Skipping item: $i"
             echo "############"
         fi
-    else
     fi
 done
 
