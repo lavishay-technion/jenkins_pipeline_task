@@ -49,6 +49,7 @@ do
             printf "\n\n####################\nFile Name with path: %s \n####################\n" $i >> "/home/reports/spell_check_report"
             hunspell -u -d en_US $i >> "/home/reports/spell_check_report"
             printf "\n\n\n\n"
+            echo "Checked $i"
         fi
     fi
 done
