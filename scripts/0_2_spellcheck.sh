@@ -24,15 +24,16 @@
 ### Checking if the project exists,if yes it pulls 
 
 ### Doing the actual testing of every file in the details app project
-echo '' >> /home/reports/spell_check_report
+report_file= "/home/reports/spell_check_report.md"
+echo '' >> $report_file
 gitdir= $1
 for i in $(find  $gitdir);
 do
     cat $i &> /dev/null
     exists() "$i"
     if [[ $? == '0' ]]; then
-        printf "\n\n####################\nFile Name with path: %s \n####################\n" $i >> /home/reports/spell_check_report
-        hunspell -u -d en_US $i >> /home/reports/spell_check_report
+        printf "\n\n####################\nFile Name with path: %s \n####################\n" $i >> $report_file
+        hunspell -u -d en_US $i >> $report_file
         printf "\n\n\n\n"
     else
         echo "Skipping item: " $i
