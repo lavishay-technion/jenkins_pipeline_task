@@ -42,13 +42,13 @@ report_file="/home/reports/spell_check_report"
 
 for i in $(find /tmp/details_app);
 do
-    for i in ${EXCLUDE_PATHS_FILES[@]}
+    for u in ${EXCLUDE_PATHS_FILES[@]}
     do
-        if [[ $file =~ $i ]];then
-            echo "File is excluded $file"
+        if [[ $i =~ $u ]];then
+            echo "File is excluded $i"
             continue
         else
-            echo "File will be checked $file"
+            echo "File will be checked $i"
         fi
     done
     # exists "$i"
