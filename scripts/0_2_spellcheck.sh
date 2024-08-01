@@ -24,7 +24,7 @@
 ### Checking if the project exists,if yes it pulls 
 
 ### Doing the actual testing of every file in the details app project
-report_file= "/home/reports/spell_check_report.md"
+report_file="/home/reports/spell_check_report.md"
 gitdir= $1
 for i in $(find $gitdir);
 do
