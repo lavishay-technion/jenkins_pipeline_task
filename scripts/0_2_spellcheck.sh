@@ -20,19 +20,19 @@
 
 
 EXCLUDE_PATHS_FILES=("jenkins_data" "docker" ".git" "spellcheck_results.md" ".DS_Store" "spellchech.sh" "spelltest.sh" ".jpi" ".key" ".enc")
-exists () {
-    file=$1
-    for i in ${EXCLUDE_PATHS_FILES[@]}
-    do
-        if [[ $file =~ $i ]];then
-            echo "File is excluded $file"
-            return 1
-        else
-            echo "File will be checked $file"
-            return 0
-        fi
-    done
-}
+# exists () {
+#     file=$1
+#     for i in ${EXCLUDE_PATHS_FILES[@]}
+#     do
+#         if [[ $file =~ $i ]];then
+#             echo "File is excluded $file"
+#             return 1
+#         else
+#             echo "File will be checked $file"
+#             return 0
+#         fi
+#     done
+# }
 
 ### Checking if the project exists,if yes it pulls 
 
@@ -42,6 +42,15 @@ report_file="/home/reports/spell_check_report"
 
 for i in $(find /tmp/details_app);
 do
+    for i in ${EXCLUDE_PATHS_FILES[@]}
+    do
+        if [[ $file =~ $i ]];then
+            echo "File is excluded $file"
+            continue
+        else
+            echo "File will be checked $file"
+        fi
+    done
     exists "$i"
     if [[ $? == '0' ]]; then
         cat $i &> /dev/null
