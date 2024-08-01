@@ -42,25 +42,21 @@ report_file="/home/reports/spell_check_report"
 
 for i in $(find /tmp/details_app);
 do
+    condition=False
     for u in ${EXCLUDE_PATHS_FILES[@]}
     do
         if [[ $i =~ $u ]];then
-            echo "File is excluded $i"
-            continue
-        else
-            echo "File will be checked $i"
+            condition=True
         fi
     done
-    # exists "$i"
-    if [[ $? == '0' ]]; then
-        cat $i &> /dev/null
-        if [[ $? == '0' ]]; then
-            printf "\n\n####################\nFile Name with path: %s \n####################\n" $i >> "/home/reports/spell_check_report"
-            hunspell -u -d en_US $i >> "/home/reports/spell_check_report"
-            printf "\n\n\n\n"
-            echo "Checked $i"
-        fi
+    cat $i &> /dev/null
+    if [[ $? == '0' && $condition=False]]; then
+        printf "\n\n####################\nFile Name with path: %s \n####################\n" $i >> "/home/reports/spell_check_report"
+        hunspell -u -d en_US $i >> "/home/reports/spell_check_report"
+        printf "\n\n\n\n"
+        echo "Checked $i"
     fi
+
 done
 
 

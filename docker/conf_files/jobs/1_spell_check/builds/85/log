@@ -1,0 +1,2076 @@
+Started by user [8mha:////4PfB2hKO65xEFvEkDdbhRTJ2eOvE3AiOpYrplRiydTmuAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Obtained jenkinsfiles/Jenkinsfile_spellcheck from git https://github.com/lavishay-technion/jenkins_pipeline_task.git
+[8mha:////4Eif8i+huO8Du5/2WMuOXf+dab5fsSI1vDt5pS/NdwpcAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4Apv0at6J2gqvo59i13LxYcyn6eumKi2WruAevDpBZf2AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4CBtKh+AcxJ0CQwvB2zxQF01Z1V9Cismn5EqwcMVqnMpAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAx2oBn6yfm5BaUlqUX65flF2alFRvoArATp/ccAAAA=[0mworker2 in /home/jenkins/workspace/1_spell_check
+[8mha:////4IG9NmHoZxScNfzFQR45gkWn0VciPfKVHnfOTy94GebnAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4MSOWT3Pa6/TYp7t5Sulfhv29+aPK5F8c+dvSV5E1zYcAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4Kes4nP1K0oDCUpV+cU5YlBIfyRq/dpNekpMp6z/bKArAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4HeRuTKqvRJYgy2lEc4h1lTE2N77cqRaPoL+wlMq7OztAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+Fetching changes from the remote Git repository
+Checking out Revision 2d082f20eadb823113ca925a89fb40483aaf815a (refs/remotes/origin/main)
+Commit message: "UpdatingGit"
+ > git rev-parse --resolve-git-dir /home/jenkins/workspace/1_spell_check/.git # timeout=10
+ > git config remote.origin.url https://github.com/lavishay-technion/jenkins_pipeline_task.git # timeout=10
+Fetching upstream changes from https://github.com/lavishay-technion/jenkins_pipeline_task.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.5'
+ > git fetch --tags --force --progress -- https://github.com/lavishay-technion/jenkins_pipeline_task.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 2d082f20eadb823113ca925a89fb40483aaf815a # timeout=10
+ > git rev-list --no-walk e552b0b891ba21009f210395a83aeaaa704f36a1 # timeout=10
+[8mha:////4Ht2XOwhwp1/DQub0INbV57LB0maZLmMdPv8CsUX+Vm0AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4CkJLbyzBxQSNABbP9SsTq/el82MBPRj8G2UEPVFG7g8AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4FSplG+QBcf3sVsOldNT8quuaZiLzOFg6DXmLbjX9qk8AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4Gvp5A+qJ/jd+TcIhdJqwOV9nfRkvJ0e5WFqE+nubY9jAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4HEg5hpfD79hNMKisDe41mRa+K7bnyNaWdGdZbYTIXb+AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] stage
+[8mha:////4JUSMOWMTCtx7U28kCmQgLBtB8c1ebVx8X1N2+nmylaJAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (Spellcheck Prerequisitions)
+[8mha:////4OwhtEDgOutQGiYVX8qyBdT0p8GbOjXShKV2qjCY8UqWAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] sh
++ chmod +x ./scripts/0_1_spellcheck.sh
++ bash scripts/0_1_spellcheck.sh
+Last metadata expiration check: 0:46:30 ago on Thu Aug  1 20:17:16 2024.
+Dependencies resolved.
+Nothing to do.
+Complete!
+Last metadata expiration check: 0:46:30 ago on Thu Aug  1 20:17:16 2024.
+Package hunspell-1.7.0-11.el9.x86_64 is already installed.
+Dependencies resolved.
+Nothing to do.
+Complete!
+#######################################
+[+] hunspell installed on Rocky
+#######################################
+[8mha:////4Ims0yx0I2sX+wuG7Q/4KQEZIv7gBLyfK/StC4RvOrLOAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N7BnLt++AAAA[0m[Pipeline] }
+[8mha:////4MXFSbUeBWUOhNWD1yQe/zom3fubRz44WtJkFUXdo4RmAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N4glvS6+AAAA[0m[Pipeline] // stage
+[8mha:////4LD0lYaQTvfQe05QK0jQEQWj15MmpkXZrTWxsocSc9vQAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUnRgQE2uUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hioGOFEwzGnsLMbWst6PZk4sU+hunjJzdGUtYSSvmdBZkNLntQpKGlYVJWw4bDW2nqJFk2DHnXzI2ks09SWFeTtyKK0a4AkFn8lJhvQtU4D9fVSR8Mf5C4CpT1A2zWKH5Vl9ANydZ8vCAAAA[0m[Pipeline] stage
+[8mha:////4HxyuZetRF6oABs3YFbVCBrAejapG5rrnyCoGX7Al34cAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] { (Spellcheck Execution)
+[8mha:////4H0l5bVX5oaO95o2cOAVwJ48/QfOIvfQpXXEFqf8ThjZAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiOhCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBr2eB0O+AAAA[0m[Pipeline] sh
++ chmod +x ./scripts/0_2_spellcheck.sh
++ bash scripts/0_2_spellcheck.sh
+File will be checked /tmp/details_app
+File will be checked /tmp/details_app
+File will be checked /tmp/details_app
+File will be checked /tmp/details_app
+File will be checked /tmp/details_app
+File will be checked /tmp/details_app
+File will be checked /tmp/details_app
+File will be checked /tmp/details_app
+File will be checked /tmp/details_app
+File will be checked /tmp/details_app
+File will be checked /tmp/details_app/Dockerfile
+File will be checked /tmp/details_app/Dockerfile
+File will be checked /tmp/details_app/Dockerfile
+File will be checked /tmp/details_app/Dockerfile
+File will be checked /tmp/details_app/Dockerfile
+File will be checked /tmp/details_app/Dockerfile
+File will be checked /tmp/details_app/Dockerfile
+File will be checked /tmp/details_app/Dockerfile
+File will be checked /tmp/details_app/Dockerfile
+File will be checked /tmp/details_app/Dockerfile
+
+
+
+
+Checked /tmp/details_app/Dockerfile
+File will be checked /tmp/details_app/poetry.lock
+File will be checked /tmp/details_app/poetry.lock
+File will be checked /tmp/details_app/poetry.lock
+File will be checked /tmp/details_app/poetry.lock
+File will be checked /tmp/details_app/poetry.lock
+File will be checked /tmp/details_app/poetry.lock
+File will be checked /tmp/details_app/poetry.lock
+File will be checked /tmp/details_app/poetry.lock
+File will be checked /tmp/details_app/poetry.lock
+File will be checked /tmp/details_app/poetry.lock
+
+
+
+
+Checked /tmp/details_app/poetry.lock
+File will be checked /tmp/details_app/gunicorn_conf.py
+File will be checked /tmp/details_app/gunicorn_conf.py
+File will be checked /tmp/details_app/gunicorn_conf.py
+File will be checked /tmp/details_app/gunicorn_conf.py
+File will be checked /tmp/details_app/gunicorn_conf.py
+File will be checked /tmp/details_app/gunicorn_conf.py
+File will be checked /tmp/details_app/gunicorn_conf.py
+File will be checked /tmp/details_app/gunicorn_conf.py
+File will be checked /tmp/details_app/gunicorn_conf.py
+File will be checked /tmp/details_app/gunicorn_conf.py
+
+
+
+
+Checked /tmp/details_app/gunicorn_conf.py
+File will be checked /tmp/details_app/.gitignore
+File will be checked /tmp/details_app/.gitignore
+File is excluded /tmp/details_app/.gitignore
+File will be checked /tmp/details_app/.gitignore
+File will be checked /tmp/details_app/.gitignore
+File will be checked /tmp/details_app/.gitignore
+File will be checked /tmp/details_app/.gitignore
+File will be checked /tmp/details_app/.gitignore
+File will be checked /tmp/details_app/.gitignore
+File will be checked /tmp/details_app/.gitignore
+
+
+
+
+Checked /tmp/details_app/.gitignore
+File will be checked /tmp/details_app/docker-compose.yaml
+File is excluded /tmp/details_app/docker-compose.yaml
+File will be checked /tmp/details_app/docker-compose.yaml
+File will be checked /tmp/details_app/docker-compose.yaml
+File will be checked /tmp/details_app/docker-compose.yaml
+File will be checked /tmp/details_app/docker-compose.yaml
+File will be checked /tmp/details_app/docker-compose.yaml
+File will be checked /tmp/details_app/docker-compose.yaml
+File will be checked /tmp/details_app/docker-compose.yaml
+File will be checked /tmp/details_app/docker-compose.yaml
+
+
+
+
+Checked /tmp/details_app/docker-compose.yaml
+File will be checked /tmp/details_app/details.py
+File will be checked /tmp/details_app/details.py
+File will be checked /tmp/details_app/details.py
+File will be checked /tmp/details_app/details.py
+File will be checked /tmp/details_app/details.py
+File will be checked /tmp/details_app/details.py
+File will be checked /tmp/details_app/details.py
+File will be checked /tmp/details_app/details.py
+File will be checked /tmp/details_app/details.py
+File will be checked /tmp/details_app/details.py
+
+
+
+
+Checked /tmp/details_app/details.py
+File will be checked /tmp/details_app/pgsql
+File will be checked /tmp/details_app/pgsql
+File will be checked /tmp/details_app/pgsql
+File will be checked /tmp/details_app/pgsql
+File will be checked /tmp/details_app/pgsql
+File will be checked /tmp/details_app/pgsql
+File will be checked /tmp/details_app/pgsql
+File will be checked /tmp/details_app/pgsql
+File will be checked /tmp/details_app/pgsql
+File will be checked /tmp/details_app/pgsql
+File will be checked /tmp/details_app/pgsql/__MACOSX
+File will be checked /tmp/details_app/pgsql/__MACOSX
+File will be checked /tmp/details_app/pgsql/__MACOSX
+File will be checked /tmp/details_app/pgsql/__MACOSX
+File will be checked /tmp/details_app/pgsql/__MACOSX
+File will be checked /tmp/details_app/pgsql/__MACOSX
+File will be checked /tmp/details_app/pgsql/__MACOSX
+File will be checked /tmp/details_app/pgsql/__MACOSX
+File will be checked /tmp/details_app/pgsql/__MACOSX
+File will be checked /tmp/details_app/pgsql/__MACOSX
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql/._data
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql/._data
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql/._data
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql/._data
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql/._data
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql/._data
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql/._data
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql/._data
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql/._data
+File will be checked /tmp/details_app/pgsql/__MACOSX/pgsql/._data
+
+
+
+
+Checked /tmp/details_app/pgsql/__MACOSX/pgsql/._data
+File will be checked /tmp/details_app/.git
+File will be checked /tmp/details_app/.git
+File is excluded /tmp/details_app/.git
+File will be checked /tmp/details_app/.git
+File will be checked /tmp/details_app/.git
+File will be checked /tmp/details_app/.git
+File will be checked /tmp/details_app/.git
+File will be checked /tmp/details_app/.git
+File will be checked /tmp/details_app/.git
+File will be checked /tmp/details_app/.git
+File will be checked /tmp/details_app/.git/hooks
+File will be checked /tmp/details_app/.git/hooks
+File is excluded /tmp/details_app/.git/hooks
+File will be checked /tmp/details_app/.git/hooks
+File will be checked /tmp/details_app/.git/hooks
+File will be checked /tmp/details_app/.git/hooks
+File will be checked /tmp/details_app/.git/hooks
+File will be checked /tmp/details_app/.git/hooks
+File will be checked /tmp/details_app/.git/hooks
+File will be checked /tmp/details_app/.git/hooks
+File will be checked /tmp/details_app/.git/hooks/pre-push.sample
+File will be checked /tmp/details_app/.git/hooks/pre-push.sample
+File is excluded /tmp/details_app/.git/hooks/pre-push.sample
+File will be checked /tmp/details_app/.git/hooks/pre-push.sample
+File will be checked /tmp/details_app/.git/hooks/pre-push.sample
+File will be checked /tmp/details_app/.git/hooks/pre-push.sample
+File will be checked /tmp/details_app/.git/hooks/pre-push.sample
+File will be checked /tmp/details_app/.git/hooks/pre-push.sample
+File will be checked /tmp/details_app/.git/hooks/pre-push.sample
+File will be checked /tmp/details_app/.git/hooks/pre-push.sample
+
+
+
+
+Checked /tmp/details_app/.git/hooks/pre-push.sample
+File will be checked /tmp/details_app/.git/hooks/fsmonitor-watchman.sample
+File will be checked /tmp/details_app/.git/hooks/fsmonitor-watchman.sample
+File is excluded /tmp/details_app/.git/hooks/fsmonitor-watchman.sample
+File will be checked /tmp/details_app/.git/hooks/fsmonitor-watchman.sample
+File will be checked /tmp/details_app/.git/hooks/fsmonitor-watchman.sample
+File will be checked /tmp/details_app/.git/hooks/fsmonitor-watchman.sample
+File will be checked /tmp/details_app/.git/hooks/fsmonitor-watchman.sample
+File will be checked /tmp/details_app/.git/hooks/fsmonitor-watchman.sample
+File will be checked /tmp/details_app/.git/hooks/fsmonitor-watchman.sample
+File will be checked /tmp/details_app/.git/hooks/fsmonitor-watchman.sample
+
+
+
+
+Checked /tmp/details_app/.git/hooks/fsmonitor-watchman.sample
+File will be checked /tmp/details_app/.git/hooks/pre-applypatch.sample
+File will be checked /tmp/details_app/.git/hooks/pre-applypatch.sample
+File is excluded /tmp/details_app/.git/hooks/pre-applypatch.sample
+File will be checked /tmp/details_app/.git/hooks/pre-applypatch.sample
+File will be checked /tmp/details_app/.git/hooks/pre-applypatch.sample
+File will be checked /tmp/details_app/.git/hooks/pre-applypatch.sample
+File will be checked /tmp/details_app/.git/hooks/pre-applypatch.sample
+File will be checked /tmp/details_app/.git/hooks/pre-applypatch.sample
+File will be checked /tmp/details_app/.git/hooks/pre-applypatch.sample
+File will be checked /tmp/details_app/.git/hooks/pre-applypatch.sample
+
+
+
+
+Checked /tmp/details_app/.git/hooks/pre-applypatch.sample
+File will be checked /tmp/details_app/.git/hooks/pre-commit.sample
+File will be checked /tmp/details_app/.git/hooks/pre-commit.sample
+File is excluded /tmp/details_app/.git/hooks/pre-commit.sample
+File will be checked /tmp/details_app/.git/hooks/pre-commit.sample
+File will be checked /tmp/details_app/.git/hooks/pre-commit.sample
+File will be checked /tmp/details_app/.git/hooks/pre-commit.sample
+File will be checked /tmp/details_app/.git/hooks/pre-commit.sample
+File will be checked /tmp/details_app/.git/hooks/pre-commit.sample
+File will be checked /tmp/details_app/.git/hooks/pre-commit.sample
+File will be checked /tmp/details_app/.git/hooks/pre-commit.sample
+
+
+
+
+Checked /tmp/details_app/.git/hooks/pre-commit.sample
+File will be checked /tmp/details_app/.git/hooks/update.sample
+File will be checked /tmp/details_app/.git/hooks/update.sample
+File is excluded /tmp/details_app/.git/hooks/update.sample
+File will be checked /tmp/details_app/.git/hooks/update.sample
+File will be checked /tmp/details_app/.git/hooks/update.sample
+File will be checked /tmp/details_app/.git/hooks/update.sample
+File will be checked /tmp/details_app/.git/hooks/update.sample
+File will be checked /tmp/details_app/.git/hooks/update.sample
+File will be checked /tmp/details_app/.git/hooks/update.sample
+File will be checked /tmp/details_app/.git/hooks/update.sample
+
+
+
+
+Checked /tmp/details_app/.git/hooks/update.sample
+File will be checked /tmp/details_app/.git/hooks/push-to-checkout.sample
+File will be checked /tmp/details_app/.git/hooks/push-to-checkout.sample
+File is excluded /tmp/details_app/.git/hooks/push-to-checkout.sample
+File will be checked /tmp/details_app/.git/hooks/push-to-checkout.sample
+File will be checked /tmp/details_app/.git/hooks/push-to-checkout.sample
+File will be checked /tmp/details_app/.git/hooks/push-to-checkout.sample
+File will be checked /tmp/details_app/.git/hooks/push-to-checkout.sample
+File will be checked /tmp/details_app/.git/hooks/push-to-checkout.sample
+File will be checked /tmp/details_app/.git/hooks/push-to-checkout.sample
+File will be checked /tmp/details_app/.git/hooks/push-to-checkout.sample
+
+
+
+
+Checked /tmp/details_app/.git/hooks/push-to-checkout.sample
+File will be checked /tmp/details_app/.git/hooks/pre-rebase.sample
+File will be checked /tmp/details_app/.git/hooks/pre-rebase.sample
+File is excluded /tmp/details_app/.git/hooks/pre-rebase.sample
+File will be checked /tmp/details_app/.git/hooks/pre-rebase.sample
+File will be checked /tmp/details_app/.git/hooks/pre-rebase.sample
+File will be checked /tmp/details_app/.git/hooks/pre-rebase.sample
+File will be checked /tmp/details_app/.git/hooks/pre-rebase.sample
+File will be checked /tmp/details_app/.git/hooks/pre-rebase.sample
+File will be checked /tmp/details_app/.git/hooks/pre-rebase.sample
+File will be checked /tmp/details_app/.git/hooks/pre-rebase.sample
+
+
+
+
+Checked /tmp/details_app/.git/hooks/pre-rebase.sample
+File will be checked /tmp/details_app/.git/hooks/applypatch-msg.sample
+File will be checked /tmp/details_app/.git/hooks/applypatch-msg.sample
+File is excluded /tmp/details_app/.git/hooks/applypatch-msg.sample
+File will be checked /tmp/details_app/.git/hooks/applypatch-msg.sample
+File will be checked /tmp/details_app/.git/hooks/applypatch-msg.sample
+File will be checked /tmp/details_app/.git/hooks/applypatch-msg.sample
+File will be checked /tmp/details_app/.git/hooks/applypatch-msg.sample
+File will be checked /tmp/details_app/.git/hooks/applypatch-msg.sample
+File will be checked /tmp/details_app/.git/hooks/applypatch-msg.sample
+File will be checked /tmp/details_app/.git/hooks/applypatch-msg.sample
+
+
+
+
+Checked /tmp/details_app/.git/hooks/applypatch-msg.sample
+File will be checked /tmp/details_app/.git/hooks/post-update.sample
+File will be checked /tmp/details_app/.git/hooks/post-update.sample
+File is excluded /tmp/details_app/.git/hooks/post-update.sample
+File will be checked /tmp/details_app/.git/hooks/post-update.sample
+File will be checked /tmp/details_app/.git/hooks/post-update.sample
+File will be checked /tmp/details_app/.git/hooks/post-update.sample
+File will be checked /tmp/details_app/.git/hooks/post-update.sample
+File will be checked /tmp/details_app/.git/hooks/post-update.sample
+File will be checked /tmp/details_app/.git/hooks/post-update.sample
+File will be checked /tmp/details_app/.git/hooks/post-update.sample
+
+
+
+
+Checked /tmp/details_app/.git/hooks/post-update.sample
+File will be checked /tmp/details_app/.git/hooks/pre-receive.sample
+File will be checked /tmp/details_app/.git/hooks/pre-receive.sample
+File is excluded /tmp/details_app/.git/hooks/pre-receive.sample
+File will be checked /tmp/details_app/.git/hooks/pre-receive.sample
+File will be checked /tmp/details_app/.git/hooks/pre-receive.sample
+File will be checked /tmp/details_app/.git/hooks/pre-receive.sample
+File will be checked /tmp/details_app/.git/hooks/pre-receive.sample
+File will be checked /tmp/details_app/.git/hooks/pre-receive.sample
+File will be checked /tmp/details_app/.git/hooks/pre-receive.sample
+File will be checked /tmp/details_app/.git/hooks/pre-receive.sample
+
+
+
+
+Checked /tmp/details_app/.git/hooks/pre-receive.sample
+File will be checked /tmp/details_app/.git/hooks/commit-msg.sample
+File will be checked /tmp/details_app/.git/hooks/commit-msg.sample
+File is excluded /tmp/details_app/.git/hooks/commit-msg.sample
+File will be checked /tmp/details_app/.git/hooks/commit-msg.sample
+File will be checked /tmp/details_app/.git/hooks/commit-msg.sample
+File will be checked /tmp/details_app/.git/hooks/commit-msg.sample
+File will be checked /tmp/details_app/.git/hooks/commit-msg.sample
+File will be checked /tmp/details_app/.git/hooks/commit-msg.sample
+File will be checked /tmp/details_app/.git/hooks/commit-msg.sample
+File will be checked /tmp/details_app/.git/hooks/commit-msg.sample
+
+
+
+
+Checked /tmp/details_app/.git/hooks/commit-msg.sample
+File will be checked /tmp/details_app/.git/hooks/prepare-commit-msg.sample
+File will be checked /tmp/details_app/.git/hooks/prepare-commit-msg.sample
+File is excluded /tmp/details_app/.git/hooks/prepare-commit-msg.sample
+File will be checked /tmp/details_app/.git/hooks/prepare-commit-msg.sample
+File will be checked /tmp/details_app/.git/hooks/prepare-commit-msg.sample
+File will be checked /tmp/details_app/.git/hooks/prepare-commit-msg.sample
+File will be checked /tmp/details_app/.git/hooks/prepare-commit-msg.sample
+File will be checked /tmp/details_app/.git/hooks/prepare-commit-msg.sample
+File will be checked /tmp/details_app/.git/hooks/prepare-commit-msg.sample
+File will be checked /tmp/details_app/.git/hooks/prepare-commit-msg.sample
+
+
+
+
+Checked /tmp/details_app/.git/hooks/prepare-commit-msg.sample
+File will be checked /tmp/details_app/.git/hooks/sendemail-validate.sample
+File will be checked /tmp/details_app/.git/hooks/sendemail-validate.sample
+File is excluded /tmp/details_app/.git/hooks/sendemail-validate.sample
+File will be checked /tmp/details_app/.git/hooks/sendemail-validate.sample
+File will be checked /tmp/details_app/.git/hooks/sendemail-validate.sample
+File will be checked /tmp/details_app/.git/hooks/sendemail-validate.sample
+File will be checked /tmp/details_app/.git/hooks/sendemail-validate.sample
+File will be checked /tmp/details_app/.git/hooks/sendemail-validate.sample
+File will be checked /tmp/details_app/.git/hooks/sendemail-validate.sample
+File will be checked /tmp/details_app/.git/hooks/sendemail-validate.sample
+
+
+
+
+Checked /tmp/details_app/.git/hooks/sendemail-validate.sample
+File will be checked /tmp/details_app/.git/hooks/pre-merge-commit.sample
+File will be checked /tmp/details_app/.git/hooks/pre-merge-commit.sample
+File is excluded /tmp/details_app/.git/hooks/pre-merge-commit.sample
+File will be checked /tmp/details_app/.git/hooks/pre-merge-commit.sample
+File will be checked /tmp/details_app/.git/hooks/pre-merge-commit.sample
+File will be checked /tmp/details_app/.git/hooks/pre-merge-commit.sample
+File will be checked /tmp/details_app/.git/hooks/pre-merge-commit.sample
+File will be checked /tmp/details_app/.git/hooks/pre-merge-commit.sample
+File will be checked /tmp/details_app/.git/hooks/pre-merge-commit.sample
+File will be checked /tmp/details_app/.git/hooks/pre-merge-commit.sample
+
+
+
+
+Checked /tmp/details_app/.git/hooks/pre-merge-commit.sample
+File will be checked /tmp/details_app/.git/index
+File will be checked /tmp/details_app/.git/index
+File is excluded /tmp/details_app/.git/index
+File will be checked /tmp/details_app/.git/index
+File will be checked /tmp/details_app/.git/index
+File will be checked /tmp/details_app/.git/index
+File will be checked /tmp/details_app/.git/index
+File will be checked /tmp/details_app/.git/index
+File will be checked /tmp/details_app/.git/index
+File will be checked /tmp/details_app/.git/index
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+
+
+
+
+Checked /tmp/details_app/.git/index
+File will be checked /tmp/details_app/.git/description
+File will be checked /tmp/details_app/.git/description
+File is excluded /tmp/details_app/.git/description
+File will be checked /tmp/details_app/.git/description
+File will be checked /tmp/details_app/.git/description
+File will be checked /tmp/details_app/.git/description
+File will be checked /tmp/details_app/.git/description
+File will be checked /tmp/details_app/.git/description
+File will be checked /tmp/details_app/.git/description
+File will be checked /tmp/details_app/.git/description
+
+
+
+
+Checked /tmp/details_app/.git/description
+File will be checked /tmp/details_app/.git/refs
+File will be checked /tmp/details_app/.git/refs
+File is excluded /tmp/details_app/.git/refs
+File will be checked /tmp/details_app/.git/refs
+File will be checked /tmp/details_app/.git/refs
+File will be checked /tmp/details_app/.git/refs
+File will be checked /tmp/details_app/.git/refs
+File will be checked /tmp/details_app/.git/refs
+File will be checked /tmp/details_app/.git/refs
+File will be checked /tmp/details_app/.git/refs
+File will be checked /tmp/details_app/.git/refs/remotes
+File will be checked /tmp/details_app/.git/refs/remotes
+File is excluded /tmp/details_app/.git/refs/remotes
+File will be checked /tmp/details_app/.git/refs/remotes
+File will be checked /tmp/details_app/.git/refs/remotes
+File will be checked /tmp/details_app/.git/refs/remotes
+File will be checked /tmp/details_app/.git/refs/remotes
+File will be checked /tmp/details_app/.git/refs/remotes
+File will be checked /tmp/details_app/.git/refs/remotes
+File will be checked /tmp/details_app/.git/refs/remotes
+File will be checked /tmp/details_app/.git/refs/remotes/origin
+File will be checked /tmp/details_app/.git/refs/remotes/origin
+File is excluded /tmp/details_app/.git/refs/remotes/origin
+File will be checked /tmp/details_app/.git/refs/remotes/origin
+File will be checked /tmp/details_app/.git/refs/remotes/origin
+File will be checked /tmp/details_app/.git/refs/remotes/origin
+File will be checked /tmp/details_app/.git/refs/remotes/origin
+File will be checked /tmp/details_app/.git/refs/remotes/origin
+File will be checked /tmp/details_app/.git/refs/remotes/origin
+File will be checked /tmp/details_app/.git/refs/remotes/origin
+File will be checked /tmp/details_app/.git/refs/remotes/origin/HEAD
+File will be checked /tmp/details_app/.git/refs/remotes/origin/HEAD
+File is excluded /tmp/details_app/.git/refs/remotes/origin/HEAD
+File will be checked /tmp/details_app/.git/refs/remotes/origin/HEAD
+File will be checked /tmp/details_app/.git/refs/remotes/origin/HEAD
+File will be checked /tmp/details_app/.git/refs/remotes/origin/HEAD
+File will be checked /tmp/details_app/.git/refs/remotes/origin/HEAD
+File will be checked /tmp/details_app/.git/refs/remotes/origin/HEAD
+File will be checked /tmp/details_app/.git/refs/remotes/origin/HEAD
+File will be checked /tmp/details_app/.git/refs/remotes/origin/HEAD
+
+
+
+
+Checked /tmp/details_app/.git/refs/remotes/origin/HEAD
+File will be checked /tmp/details_app/.git/refs/tags
+File will be checked /tmp/details_app/.git/refs/tags
+File is excluded /tmp/details_app/.git/refs/tags
+File will be checked /tmp/details_app/.git/refs/tags
+File will be checked /tmp/details_app/.git/refs/tags
+File will be checked /tmp/details_app/.git/refs/tags
+File will be checked /tmp/details_app/.git/refs/tags
+File will be checked /tmp/details_app/.git/refs/tags
+File will be checked /tmp/details_app/.git/refs/tags
+File will be checked /tmp/details_app/.git/refs/tags
+File will be checked /tmp/details_app/.git/refs/heads
+File will be checked /tmp/details_app/.git/refs/heads
+File is excluded /tmp/details_app/.git/refs/heads
+File will be checked /tmp/details_app/.git/refs/heads
+File will be checked /tmp/details_app/.git/refs/heads
+File will be checked /tmp/details_app/.git/refs/heads
+File will be checked /tmp/details_app/.git/refs/heads
+File will be checked /tmp/details_app/.git/refs/heads
+File will be checked /tmp/details_app/.git/refs/heads
+File will be checked /tmp/details_app/.git/refs/heads
+File will be checked /tmp/details_app/.git/refs/heads/main
+File will be checked /tmp/details_app/.git/refs/heads/main
+File is excluded /tmp/details_app/.git/refs/heads/main
+File will be checked /tmp/details_app/.git/refs/heads/main
+File will be checked /tmp/details_app/.git/refs/heads/main
+File will be checked /tmp/details_app/.git/refs/heads/main
+File will be checked /tmp/details_app/.git/refs/heads/main
+File will be checked /tmp/details_app/.git/refs/heads/main
+File will be checked /tmp/details_app/.git/refs/heads/main
+File will be checked /tmp/details_app/.git/refs/heads/main
+
+
+
+
+Checked /tmp/details_app/.git/refs/heads/main
+File will be checked /tmp/details_app/.git/HEAD
+File will be checked /tmp/details_app/.git/HEAD
+File is excluded /tmp/details_app/.git/HEAD
+File will be checked /tmp/details_app/.git/HEAD
+File will be checked /tmp/details_app/.git/HEAD
+File will be checked /tmp/details_app/.git/HEAD
+File will be checked /tmp/details_app/.git/HEAD
+File will be checked /tmp/details_app/.git/HEAD
+File will be checked /tmp/details_app/.git/HEAD
+File will be checked /tmp/details_app/.git/HEAD
+
+
+
+
+Checked /tmp/details_app/.git/HEAD
+File will be checked /tmp/details_app/.git/logs
+File will be checked /tmp/details_app/.git/logs
+File is excluded /tmp/details_app/.git/logs
+File will be checked /tmp/details_app/.git/logs
+File will be checked /tmp/details_app/.git/logs
+File will be checked /tmp/details_app/.git/logs
+File will be checked /tmp/details_app/.git/logs
+File will be checked /tmp/details_app/.git/logs
+File will be checked /tmp/details_app/.git/logs
+File will be checked /tmp/details_app/.git/logs
+File will be checked /tmp/details_app/.git/logs/refs
+File will be checked /tmp/details_app/.git/logs/refs
+File is excluded /tmp/details_app/.git/logs/refs
+File will be checked /tmp/details_app/.git/logs/refs
+File will be checked /tmp/details_app/.git/logs/refs
+File will be checked /tmp/details_app/.git/logs/refs
+File will be checked /tmp/details_app/.git/logs/refs
+File will be checked /tmp/details_app/.git/logs/refs
+File will be checked /tmp/details_app/.git/logs/refs
+File will be checked /tmp/details_app/.git/logs/refs
+File will be checked /tmp/details_app/.git/logs/refs/remotes
+File will be checked /tmp/details_app/.git/logs/refs/remotes
+File is excluded /tmp/details_app/.git/logs/refs/remotes
+File will be checked /tmp/details_app/.git/logs/refs/remotes
+File will be checked /tmp/details_app/.git/logs/refs/remotes
+File will be checked /tmp/details_app/.git/logs/refs/remotes
+File will be checked /tmp/details_app/.git/logs/refs/remotes
+File will be checked /tmp/details_app/.git/logs/refs/remotes
+File will be checked /tmp/details_app/.git/logs/refs/remotes
+File will be checked /tmp/details_app/.git/logs/refs/remotes
+File will be checked /tmp/details_app/.git/logs/refs/remotes/origin
+File will be checked /tmp/details_app/.git/logs/refs/remotes/origin
+File is excluded /tmp/details_app/.git/logs/refs/remotes/origin
+File will be checked /tmp/details_app/.git/logs/refs/remotes/origin
+File will be checked /tmp/details_app/.git/logs/refs/remotes/origin
+File will be checked /tmp/details_app/.git/logs/refs/remotes/origin
+File will be checked /tmp/details_app/.git/logs/refs/remotes/origin
+File will be checked /tmp/details_app/.git/logs/refs/remotes/origin
+File will be checked /tmp/details_app/.git/logs/refs/remotes/origin
+File will be checked /tmp/details_app/.git/logs/refs/remotes/origin
+File will be checked /tmp/details_app/.git/logs/refs/remotes/origin/HEAD
+File will be checked /tmp/details_app/.git/logs/refs/remotes/origin/HEAD
+File is excluded /tmp/details_app/.git/logs/refs/remotes/origin/HEAD
+File will be checked /tmp/details_app/.git/logs/refs/remotes/origin/HEAD
+File will be checked /tmp/details_app/.git/logs/refs/remotes/origin/HEAD
+File will be checked /tmp/details_app/.git/logs/refs/remotes/origin/HEAD
+File will be checked /tmp/details_app/.git/logs/refs/remotes/origin/HEAD
+File will be checked /tmp/details_app/.git/logs/refs/remotes/origin/HEAD
+File will be checked /tmp/details_app/.git/logs/refs/remotes/origin/HEAD
+File will be checked /tmp/details_app/.git/logs/refs/remotes/origin/HEAD
+
+
+
+
+Checked /tmp/details_app/.git/logs/refs/remotes/origin/HEAD
+File will be checked /tmp/details_app/.git/logs/refs/heads
+File will be checked /tmp/details_app/.git/logs/refs/heads
+File is excluded /tmp/details_app/.git/logs/refs/heads
+File will be checked /tmp/details_app/.git/logs/refs/heads
+File will be checked /tmp/details_app/.git/logs/refs/heads
+File will be checked /tmp/details_app/.git/logs/refs/heads
+File will be checked /tmp/details_app/.git/logs/refs/heads
+File will be checked /tmp/details_app/.git/logs/refs/heads
+File will be checked /tmp/details_app/.git/logs/refs/heads
+File will be checked /tmp/details_app/.git/logs/refs/heads
+File will be checked /tmp/details_app/.git/logs/refs/heads/main
+File will be checked /tmp/details_app/.git/logs/refs/heads/main
+File is excluded /tmp/details_app/.git/logs/refs/heads/main
+File will be checked /tmp/details_app/.git/logs/refs/heads/main
+File will be checked /tmp/details_app/.git/logs/refs/heads/main
+File will be checked /tmp/details_app/.git/logs/refs/heads/main
+File will be checked /tmp/details_app/.git/logs/refs/heads/main
+File will be checked /tmp/details_app/.git/logs/refs/heads/main
+File will be checked /tmp/details_app/.git/logs/refs/heads/main
+File will be checked /tmp/details_app/.git/logs/refs/heads/main
+
+
+
+
+Checked /tmp/details_app/.git/logs/refs/heads/main
+File will be checked /tmp/details_app/.git/logs/HEAD
+File will be checked /tmp/details_app/.git/logs/HEAD
+File is excluded /tmp/details_app/.git/logs/HEAD
+File will be checked /tmp/details_app/.git/logs/HEAD
+File will be checked /tmp/details_app/.git/logs/HEAD
+File will be checked /tmp/details_app/.git/logs/HEAD
+File will be checked /tmp/details_app/.git/logs/HEAD
+File will be checked /tmp/details_app/.git/logs/HEAD
+File will be checked /tmp/details_app/.git/logs/HEAD
+File will be checked /tmp/details_app/.git/logs/HEAD
+
+
+
+
+Checked /tmp/details_app/.git/logs/HEAD
+File will be checked /tmp/details_app/.git/info
+File will be checked /tmp/details_app/.git/info
+File is excluded /tmp/details_app/.git/info
+File will be checked /tmp/details_app/.git/info
+File will be checked /tmp/details_app/.git/info
+File will be checked /tmp/details_app/.git/info
+File will be checked /tmp/details_app/.git/info
+File will be checked /tmp/details_app/.git/info
+File will be checked /tmp/details_app/.git/info
+File will be checked /tmp/details_app/.git/info
+File will be checked /tmp/details_app/.git/info/exclude
+File will be checked /tmp/details_app/.git/info/exclude
+File is excluded /tmp/details_app/.git/info/exclude
+File will be checked /tmp/details_app/.git/info/exclude
+File will be checked /tmp/details_app/.git/info/exclude
+File will be checked /tmp/details_app/.git/info/exclude
+File will be checked /tmp/details_app/.git/info/exclude
+File will be checked /tmp/details_app/.git/info/exclude
+File will be checked /tmp/details_app/.git/info/exclude
+File will be checked /tmp/details_app/.git/info/exclude
+
+
+
+
+Checked /tmp/details_app/.git/info/exclude
+File will be checked /tmp/details_app/.git/branches
+File will be checked /tmp/details_app/.git/branches
+File is excluded /tmp/details_app/.git/branches
+File will be checked /tmp/details_app/.git/branches
+File will be checked /tmp/details_app/.git/branches
+File will be checked /tmp/details_app/.git/branches
+File will be checked /tmp/details_app/.git/branches
+File will be checked /tmp/details_app/.git/branches
+File will be checked /tmp/details_app/.git/branches
+File will be checked /tmp/details_app/.git/branches
+File will be checked /tmp/details_app/.git/objects
+File will be checked /tmp/details_app/.git/objects
+File is excluded /tmp/details_app/.git/objects
+File will be checked /tmp/details_app/.git/objects
+File will be checked /tmp/details_app/.git/objects
+File will be checked /tmp/details_app/.git/objects
+File will be checked /tmp/details_app/.git/objects
+File will be checked /tmp/details_app/.git/objects
+File will be checked /tmp/details_app/.git/objects
+File will be checked /tmp/details_app/.git/objects
+File will be checked /tmp/details_app/.git/objects/pack
+File will be checked /tmp/details_app/.git/objects/pack
+File is excluded /tmp/details_app/.git/objects/pack
+File will be checked /tmp/details_app/.git/objects/pack
+File will be checked /tmp/details_app/.git/objects/pack
+File will be checked /tmp/details_app/.git/objects/pack
+File will be checked /tmp/details_app/.git/objects/pack
+File will be checked /tmp/details_app/.git/objects/pack
+File will be checked /tmp/details_app/.git/objects/pack
+File will be checked /tmp/details_app/.git/objects/pack
+File will be checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.rev
+File will be checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.rev
+File is excluded /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.rev
+File will be checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.rev
+File will be checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.rev
+File will be checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.rev
+File will be checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.rev
+File will be checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.rev
+File will be checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.rev
+File will be checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.rev
+
+
+
+
+Checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.rev
+File will be checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.pack
+File will be checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.pack
+File is excluded /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.pack
+File will be checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.pack
+File will be checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.pack
+File will be checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.pack
+File will be checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.pack
+File will be checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.pack
+File will be checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.pack
+File will be checked /tmp/details_app/.git/objects/pack/pack-7cebb0fff700165feaa9d6a78a045d3a2316e6fd.pack
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
+error - iconv: ISO8859-1 -> UTF-8
