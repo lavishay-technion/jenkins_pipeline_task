@@ -32,8 +32,8 @@ do
     cat $i &> /dev/null
     # exists "$i"
     if [[ $? == '0' ]]; then
-        printf "\n\n####################\nFile Name with path: %s \n####################\n" $i >> "$report_file"
-        hunspell -u -d en_US $i >> "$report_file"
+        printf "\n\n####################\nFile Name with path: %s \n####################\n" $i >> "/home/reports/spell_check_report.md"
+        hunspell -u -d en_US $i >> "/home/reports/spell_check_report.md"
         printf "\n\n\n\n"
     else
         echo "Skipping item: " $i
