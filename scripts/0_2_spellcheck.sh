@@ -12,6 +12,18 @@
 #   A report will be saved in /home/reports and it's volumed to the VM at ./docker/reports as spell_check_report
 #################################################
 
+### Initial step to clone the Details App project into /tmp folder for the testing
+git clone
+if [[ $? == 0 ]]; then
+    git clone https://github.com/lavishay-technion/details_app.git /tmp/details_app
+    echo "Project cloned to /tmp/details_app"
+else
+    echo "[!] GIT is not installed - Exiting"
+    exit 1
+fi
+
+
+
 ### Doing the actual testing of every file in the details app project
 echo '' >> /home/reports/spell_check_report
 for i in $(find  /tmp/details_app/);

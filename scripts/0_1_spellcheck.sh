@@ -6,10 +6,7 @@
 ##  Collaborator: Ori Nahum
 ################################################################################
 
-### Initial step to clone the Details App project into /tmp folder for the testing
-cd /tmp/
-git clone https://github.com/lavishay-technion/details_app.git
-cd details_app
+
 ### Checking if the OS is Debian, Rocky or Alpine and running installations for hunspell accordingly
 . /etc/os-release
 
@@ -31,6 +28,7 @@ elif [[ $ID = 'alpine' ]]
 then
     apk add hunspell 
     echo "#######################################"
+    echo " "
     echo "[+] hunspell installed on Alpine"
     echo "#######################################"
 else
@@ -40,6 +38,14 @@ else
     exit 1
 fi
 
+git --version 2> /dev/null
 
+if [[ $? == 0 ]]; then
+
+    echo "Project cloned to /tmp/details_app"
+else
+    echo "[!] GIT is not installed - Exiting"
+    exit 1
+fi
 
 

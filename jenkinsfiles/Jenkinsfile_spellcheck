@@ -4,8 +4,10 @@ pipeline {
         stage('Spellcheck') {
             steps {
                 sh '''
-                chmod +x ./scripts/spellcheck.sh
-                bash ./scripts/spellcheck.sh
+                chmod +x ./scripts/0_2_spellcheck.sh
+                chmod +x ./scripts/0_1_spellcheck.sh
+                bash scripts/0_1_spellcheck.sh
+                bash scripts/0_2_spellcheck.sh
                 '''
             }
         }
