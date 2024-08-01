@@ -1,0 +1,216 @@
+Started by user [8mha:////4PfB2hKO65xEFvEkDdbhRTJ2eOvE3AiOpYrplRiydTmuAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Obtained jenkinsfiles/Jenkinsfile_spellcheck from git https://github.com/lavishay-technion/jenkins_pipeline_task.git
+[8mha:////4Eif8i+huO8Du5/2WMuOXf+dab5fsSI1vDt5pS/NdwpcAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4Apv0at6J2gqvo59i13LxYcyn6eumKi2WruAevDpBZf2AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4CioWp4s975HSL2z/7AjIQxVXSgHfskWncjS3GFs4agJAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAx2oBn6yfm5BaUlqUX65flF2alFhvoAb1fE1scAAAA=[0mworker1 in /home/jenkins/workspace/1_spell_check
+[8mha:////4IG9NmHoZxScNfzFQR45gkWn0VciPfKVHnfOTy94GebnAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4MSOWT3Pa6/TYp7t5Sulfhv29+aPK5F8c+dvSV5E1zYcAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4Kes4nP1K0oDCUpV+cU5YlBIfyRq/dpNekpMp6z/bKArAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4HeRuTKqvRJYgy2lEc4h1lTE2N77cqRaPoL+wlMq7OztAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+Fetching changes from the remote Git repository
+Checking out Revision 6724951d000f86b78fdf3e00ae3aa72eb7cca383 (refs/remotes/origin/main)
+Commit message: "UpdatingGit"
+ > git rev-parse --resolve-git-dir /home/jenkins/workspace/1_spell_check/.git # timeout=10
+ > git config remote.origin.url https://github.com/lavishay-technion/jenkins_pipeline_task.git # timeout=10
+Fetching upstream changes from https://github.com/lavishay-technion/jenkins_pipeline_task.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+ > git fetch --tags --force --progress -- https://github.com/lavishay-technion/jenkins_pipeline_task.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6724951d000f86b78fdf3e00ae3aa72eb7cca383 # timeout=10
+ > git rev-list --no-walk 6724951d000f86b78fdf3e00ae3aa72eb7cca383 # timeout=10
+[8mha:////4Ht2XOwhwp1/DQub0INbV57LB0maZLmMdPv8CsUX+Vm0AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4CkJLbyzBxQSNABbP9SsTq/el82MBPRj8G2UEPVFG7g8AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4FSplG+QBcf3sVsOldNT8quuaZiLzOFg6DXmLbjX9qk8AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4Gvp5A+qJ/jd+TcIhdJqwOV9nfRkvJ0e5WFqE+nubY9jAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4HEg5hpfD79hNMKisDe41mRa+K7bnyNaWdGdZbYTIXb+AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] stage
+[8mha:////4JUSMOWMTCtx7U28kCmQgLBtB8c1ebVx8X1N2+nmylaJAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (Spellcheck Prerequisitions)
+[8mha:////4OwhtEDgOutQGiYVX8qyBdT0p8GbOjXShKV2qjCY8UqWAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] sh
++ chmod +x ./scripts/0_1_spellcheck.sh
++ bash scripts/0_1_spellcheck.sh
+Hit:1 https://download.docker.com/linux/debian bookworm InRelease
+Hit:2 http://deb.debian.org/debian bookworm InRelease
+Hit:3 http://deb.debian.org/debian bookworm-updates InRelease
+Hit:4 http://deb.debian.org/debian-security bookworm-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+hunspell is already the newest version (1.7.1-1).
+The following packages were automatically installed and are no longer required:
+  black python3-ansible-compat python3-attr python3-bracex python3-enrich
+  python3-filelock python3-json-pointer python3-jsonschema
+  python3-mypy-extensions python3-pathspec python3-pbr python3-platformdirs
+  python3-pyrsistent python3-rfc3987 python3-ruamel.yaml
+  python3-ruamel.yaml.clib python3-subprocess-tee python3-tenacity
+  python3-uritemplate python3-wcmatch python3-webcolors yamllint
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+#######################################
+[+] hunspell installed on Debian
+#######################################
+[8mha:////4Ims0yx0I2sX+wuG7Q/4KQEZIv7gBLyfK/StC4RvOrLOAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N7BnLt++AAAA[0m[Pipeline] }
+[8mha:////4MXFSbUeBWUOhNWD1yQe/zom3fubRz44WtJkFUXdo4RmAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N4glvS6+AAAA[0m[Pipeline] // stage
+[8mha:////4LD0lYaQTvfQe05QK0jQEQWj15MmpkXZrTWxsocSc9vQAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUnRgQE2uUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hioGOFEwzGnsLMbWst6PZk4sU+hunjJzdGUtYSSvmdBZkNLntQpKGlYVJWw4bDW2nqJFk2DHnXzI2ks09SWFeTtyKK0a4AkFn8lJhvQtU4D9fVSR8Mf5C4CpT1A2zWKH5Vl9ANydZ8vCAAAA[0m[Pipeline] stage
+[8mha:////4HxyuZetRF6oABs3YFbVCBrAejapG5rrnyCoGX7Al34cAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] { (Spellcheck Execution)
+[8mha:////4H0l5bVX5oaO95o2cOAVwJ48/QfOIvfQpXXEFqf8ThjZAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiOhCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBr2eB0O+AAAA[0m[Pipeline] sh
++ chmod +x ./scripts/0_2_spellcheck.sh
++ bash scripts/0_2_spellcheck.sh /tmp/details_app/
+scripts/0_2_spellcheck.sh: line 28: /tmp/details_app/: No such file or directory
+Skipping item:  .
+############
+Skipping item:  ./jenkinsfiles
+############
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skipping item:  ./scripts
+############
+
+
+
+
+
+
+
+
+Skipping item:  ./docker
+############
+
+
+
+
+
+
+
+
+
+
+
+
+Skipping item:  ./docker/conf_files
+############
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skipping item:  ./docker/conf_files/.config
+############
+Skipping item:  ./docker/conf_files/.config/jgit
+############
+
+
+
+
+
+
+
+
+Skipping item:  ./docker/conf_files/plugins
+############
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Skipping item:  ./docker/conf_files/plugins/pipeline-graph-analysis
+############
+
+
+
+
+Skipping item:  ./docker/conf_files/plugins/pipeline-graph-analysis/META-INF
+############
+Skipping item:  ./docker/conf_files/plugins/pipeline-graph-analysis/META-INF/maven
+############
+Skipping item:  ./docker/conf_files/plugins/pipeline-graph-analysis/META-INF/maven/org.jenkins-ci.plugins
+############
+Skipping item:  ./docker/conf_files/plugins/pipeline-graph-analysis/META-INF/maven/org.jenkins-ci.plugins/pipeline-graph-analysis
+############
+
+
+
+
+
+
+
+
+
+
+
+
+Skipping item:  ./docker/conf_files/plugins/pipeline-graph-analysis/WEB-INF
+############
+Skipping item:  ./docker/conf_files/plugins/pipeline-graph-analysis/WEB-INF/lib
+############
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

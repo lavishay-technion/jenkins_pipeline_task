@@ -42,8 +42,8 @@ do
 
 done
 
-EXCLUDE_PATHS_FILES=("jenkins_data" "docker" ".git" "spellcheck_results.md" ".DS_Store" "spellchech.sh" "spelltest.sh" ".jpi)
-function exists {
+EXCLUDE_PATHS_FILES=("jenkins_data" "docker" ".git" "spellcheck_results.md" ".DS_Store" "spellchech.sh" "spelltest.sh" ".jpi" ".key" ".enc")
+function exists (){
     file=$1
     for i in ${EXCLUDE_PATHS_FILES[@]}
     do
