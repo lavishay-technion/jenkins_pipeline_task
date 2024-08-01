@@ -18,7 +18,7 @@
 
 ### Checking if GIT is installed by running the GIT command we need, and checking if this exists or not
 
-EXCLUDE_PATHS_FILES=(".git" ".DS_Store" ".jpi" ".key" ".enc" ".lock" ".jpg" ".mp4")
+EXCLUDE_PATHS_FILES=(".git" ".DS_Store" ".jpi" ".key" ".enc" ".lock" ".jpg" ".mp4" ".ico" ".css")
 # exists () {
 #     file=$1
 #     for i in ${EXCLUDE_PATHS_FILES[@]}
