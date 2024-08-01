@@ -7,9 +7,10 @@
 ################################################################################
 
 
-### Checking if the OS is Debian, Rocky or Alpine and running installations for hunspell accordingly
-. /etc/os-release
 
+. /etc/os-release ## Loading variables in that file to RAM, to check $ID content
+
+### Checking if the OS is Debian, Rocky or Alpine and running installations for hunspell accordingly
 if [[ $ID = "debian" || $ID = "ubuntu" ]]
 then
     sudo apt-get update
@@ -39,9 +40,9 @@ else
 fi
 
 
-git --version 2> /dev/null
+git --version 2> /dev/null  ## Checking if GIT is installed
 
-if [[ $? != 0 ]]; 
+if [[ $? != 0 ]]; ## If GIT is not installed, install GIT according to the correct OS
 then
     if [[ $ID = "debian" || $ID = "ubuntu" ]]
     then
@@ -74,10 +75,11 @@ else
     echo "[+] GIT is already installed"
 fi
 
-if [[ ! -d "/tmp/details_app"  ]]; then
+### Checking if the GIT repo was already cloned on that worker
+if [[ ! -d "/tmp/details_app"  ]]; then  ## If folder not found, clone it
     git clone https://github.com/lavishay-technion/details_app.git /tmp/details_app/
     echo "Project cloned to /tmp/details_app"
-else    
+else  ## If folder found, update it with pull
     git pull https://github.com/lavishay-technion/details_app.git /tmp/details_app/
     echo "Project updated in /tmp/details_app"
 fi

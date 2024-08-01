@@ -4,16 +4,16 @@ pipeline {
         stage('Spellcheck Prerequisitions') {
             steps {
                 sh '''
-                chmod +x ./scripts/0_1_spellcheck.sh
-                bash scripts/0_1_spellcheck.sh 
+                chmod +x ./scripts/0_1_spellcheck_prerequisitions.sh
+                bash scripts/0_1_spellcheck_prerequisitions.sh 
                 '''
             }
         }
         stage('Spellcheck Execution') {
             steps {
                 sh '''
-                chmod +x ./scripts/0_2_spellcheck.sh
-                bash scripts/0_2_spellcheck.sh
+                chmod +x ./scripts/0_2_spellcheck_exec.sh
+                bash scripts/0_2_spellcheck_exec.sh
                 '''
             }
         }
