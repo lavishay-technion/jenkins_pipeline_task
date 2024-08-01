@@ -19,7 +19,7 @@
 ### Checking if GIT is installed by running the GIT command we need, and checking if this exists or not
 
 
-EXCLUDE_PATHS_FILES=("jenkins_data" "docker" ".git" "spellcheck_results.md" ".DS_Store" "spellchech.sh" "spelltest.sh" ".jpi" ".key" ".enc")
+EXCLUDE_PATHS_FILES=("jenkins_data" "docker" ".git" "spellcheck_results.md" ".DS_Store" "spellchech.sh" "spelltest.sh" ".jpi" ".key" ".enc" ".lock")
 # exists () {
 #     file=$1
 #     for i in ${EXCLUDE_PATHS_FILES[@]}
