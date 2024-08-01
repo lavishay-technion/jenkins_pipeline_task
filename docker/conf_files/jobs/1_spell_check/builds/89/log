@@ -10,7 +10,8 @@ Running on [8mha:////4CBtKh+AcxJ0CQwvB2zxQF01Z1V9Cismn5EqwcMVqnMpAAAAnR+LCAAAAA
 The recommended git tool is: git
 No credentials specified
 Fetching changes from the remote Git repository
-Checking out Revision 807a34015a709fdc5b3d537cbf5f33adf2b63553 (refs/remotes/origin/main)
+Checking out Revision 48edf5efd406b0f3a8c739c580d13dc045830827 (refs/remotes/origin/main)
+Commit message: "UpdatingGit"
  > git rev-parse --resolve-git-dir /home/jenkins/workspace/1_spell_check/.git # timeout=10
  > git config remote.origin.url https://github.com/lavishay-technion/jenkins_pipeline_task.git # timeout=10
 Fetching upstream changes from https://github.com/lavishay-technion/jenkins_pipeline_task.git
@@ -19,9 +20,8 @@ Fetching upstream changes from https://github.com/lavishay-technion/jenkins_pipe
  > git fetch --tags --force --progress -- https://github.com/lavishay-technion/jenkins_pipeline_task.git +refs/heads/*:refs/remotes/origin/* # timeout=10
  > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
  > git config core.sparsecheckout # timeout=10
- > git checkout -f 807a34015a709fdc5b3d537cbf5f33adf2b63553 # timeout=10
-Commit message: "UpdatingGit"
- > git rev-list --no-walk ab2e831a9c3242e7d961f32f422fa55a3c4747f0 # timeout=10
+ > git checkout -f 48edf5efd406b0f3a8c739c580d13dc045830827 # timeout=10
+ > git rev-list --no-walk 807a34015a709fdc5b3d537cbf5f33adf2b63553 # timeout=10
 [8mha:////4Ht2XOwhwp1/DQub0INbV57LB0maZLmMdPv8CsUX+Vm0AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
 [8mha:////4CkJLbyzBxQSNABbP9SsTq/el82MBPRj8G2UEPVFG7g8AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
 [8mha:////4FSplG+QBcf3sVsOldNT8quuaZiLzOFg6DXmLbjX9qk8AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
@@ -31,11 +31,11 @@ Commit message: "UpdatingGit"
 [8mha:////4OwhtEDgOutQGiYVX8qyBdT0p8GbOjXShKV2qjCY8UqWAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] sh
 + chmod +x ./scripts/0_1_spellcheck.sh
 + bash scripts/0_1_spellcheck.sh
-Last metadata expiration check: 1:02:00 ago on Thu Aug  1 20:17:16 2024.
+Last metadata expiration check: 1:02:55 ago on Thu Aug  1 20:17:16 2024.
 Dependencies resolved.
 Nothing to do.
 Complete!
-Last metadata expiration check: 1:02:01 ago on Thu Aug  1 20:17:16 2024.
+Last metadata expiration check: 1:02:56 ago on Thu Aug  1 20:17:16 2024.
 Package hunspell-1.7.0-11.el9.x86_64 is already installed.
 Dependencies resolved.
 Nothing to do.
@@ -50,54 +50,20 @@ Complete!
 [8mha:////4H0l5bVX5oaO95o2cOAVwJ48/QfOIvfQpXXEFqf8ThjZAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiOhCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBr2eB0O+AAAA[0m[Pipeline] sh
 + chmod +x ./scripts/0_2_spellcheck.sh
 + bash scripts/0_2_spellcheck.sh
+Skipping file /tmp/details_app
 
 
 
 
 Checked /tmp/details_app/Dockerfile
-
-
-
-
-Checked /tmp/details_app/poetry.lock
-
-
-
-
-Checked /tmp/details_app/gunicorn_conf.py
-
-
-
-
-Checked /tmp/details_app/details.py
-
-
-
-
-Checked /tmp/details_app/pgsql/__MACOSX/pgsql/._data
-
-
-
-
-Checked /tmp/details_app/build.sh
-
-
-
-
-Checked /tmp/details_app/README.md
 Aborted by [8mha:////4PfB2hKO65xEFvEkDdbhRTJ2eOvE3AiOpYrplRiydTmuAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
 Sending interrupt signal to process
-
-
-
-
-Checked /tmp/details_app/src/details/__init__.py
 Terminated
 
 
 
 
-Checked /tmp/details_app/src/details/libs/__init__.py
+Checked /tmp/details_app/poetry.lock
 Terminated
 script returned exit code 143
 [8mha:////4IabRDGCXUWYAdW772d2y0hKYeBGIUs7Kz0XjjpjbuyAAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICVEgoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AEWNdkpvgAAAA==[0m[Pipeline] }
@@ -107,5 +73,5 @@ script returned exit code 143
 [8mha:////4FiL1BVgh+vwoqiH1M5kk7uzZOO3Mfx+FQS+ls6U4Q7zAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6Ikhs04uTYsfkGFWgvNe9g+hMkv8tf8B4kkTt7pnrOc1xvrFHHk6FRrqfOUaq/6MLj5qZFjdw08qpYvqmZKHKyq7FhxY08LViwWy7IcK42NpTpw8uQEW92ahymCIVecJc7uoJH75o4nMj2XxUT5whSxuw1NYvp1/gYw9b0g35eCrPwA6/9Rob0AAAA=[0m[Pipeline] }
 [8mha:////4EKeGdAFst0NIXaCBShF8gpfvXaEQN5Aw5Uq5f5DOwwcAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsP+ENVAr0AAAA=[0m[Pipeline] // node
 [8mha:////4INoBUTWZoXhIXssOVDeMMhoz7lHKpfyxUWz/SnA4U5AAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkDC7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FebkXZOUHvgnyMr0AAAA=[0m[Pipeline] End of Pipeline
-org.jenkinsci.plugins.workflow.actions.ErrorAction$ErrorId: 1a724d03-0c5f-4fa4-aee9-95a3608d077a
+org.jenkinsci.plugins.workflow.actions.ErrorAction$ErrorId: 31973540-a2a2-44d4-b6b7-021b7183c850
 Finished: ABORTED
