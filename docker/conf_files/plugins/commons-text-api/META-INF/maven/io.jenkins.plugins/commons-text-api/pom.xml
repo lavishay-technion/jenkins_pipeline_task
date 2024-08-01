@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.jenkins.plugins</groupId>
   <artifactId>commons-text-api</artifactId>
-  <version>1.12.0-119.v73ef73f2345d</version>
+  <version>1.12.0-129.v99a_50df237f7</version>
   <packaging>hpi</packaging>
   <name>commons-text API Plugin</name>
   <description>Jenkins Api Plugin to provide org.apache.commons:commons-text:1.12.0.</description>
@@ -19,7 +19,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/commons-text-api-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/commons-text-api-plugin.git</developerConnection>
-    <tag>73ef73f2345d04c65752e16f785e646d45fad1f2</tag>
+    <tag>99a50df237f7882060e5c1022ac607177869ca39</tag>
     <url>https://github.com/jenkinsci/commons-text-api-plugin</url>
   </scm>
   <distributionManagement>
@@ -57,7 +57,7 @@
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>3.55</version>
+        <version>3.56</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>
