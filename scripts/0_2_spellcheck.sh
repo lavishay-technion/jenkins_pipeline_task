@@ -38,7 +38,7 @@ EXCLUDE_PATHS_FILES=(".git" ".DS_Store" ".jpi" ".key" ".enc" ".lock" ".jpg" ".mp
 ### Doing the actual testing of every file in the details app project
 sudo chown -R jenkins:jenkins /home/reports
 report_file="/home/reports/spell_check_report"
-
+echo "##############" > /home/reports/spell_check_report
 for i in $(find /tmp/details_app);
 do
     condition=False

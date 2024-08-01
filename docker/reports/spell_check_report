@@ -7592,3 +7592,284 @@ Line 15: validators -> liquidators
 Line 16: validator -> lavatorial
 Line 21: backend -> backed
 Line 21: api -> API
+
+
+####################
+File Name with path: /tmp/details_app/Dockerfile 
+####################
+Line 3: apk -> pk
+Line 3: python3 -> python
+Line 3: dev -> deb
+Line 3: libffi -> bailiff
+Line 3: dev -> deb
+Line 5: config -> con fig
+Line 5: virtualenvs -> virtual
+Line 6: dev -> deb
+Line 9: ARG -> RAG
+Line 10: ENV -> ENC
+Line 11: Avishay -> Avis hay
+Line 12: WORKDIR -> WORKDAY
+Line 13: apk -> pk
+Line 13: tini -> tin
+Line 18: gunicorn -> unicorn
+Line 18: config -> con fig
+Line 18: src -> arc
+Line 19: CMD -> CM
+Line 20: ENTRYPOINT -> ENTRY POINT
+Line 20: gunicorn -> unicorn
+Line 20: config -> con fig
+Line 20: src -> arc
+
+
+####################
+File Name with path: /tmp/details_app/docker-compose.yaml 
+####################
+Line 1: api -> API
+Line 4: POSTGRES -> POSTURES
+Line 4: pgadmin -> pg admin
+Line 5: POSTGRES -> POSTURES
+Line 5: pgadmin -> pg admin
+Line 6: DBHOST -> DB HOST
+Line 6: postgres -> postures
+Line 7: DBNAME -> DB NAME
+Line 7: postgres -> postures
+Line 12: cpus -> cups
+Line 20: api -> API
+Line 22: postgresql -> postgraduate
+Line 23: ansible -> expansible
+Line 27: postgresql -> postgraduate
+Line 28: postgres -> postures
+Line 29: postgres -> postures
+Line 34: POSTGRES -> POSTURES
+Line 34: pgadmin -> pg admin
+Line 35: POSTGRES -> POSTURES
+Line 35: pgadmin -> pg admin
+Line 36: POSTGRES -> POSTURES
+Line 36: postgres -> postures
+
+
+####################
+File Name with path: /tmp/details_app/details.py 
+####################
+Line 1: src -> arc
+Line 3: '0 -> 0
+Line 3: 0' -> 0
+
+
+####################
+File Name with path: /tmp/details_app/pgsql/__MACOSX/pgsql/._data 
+####################
+
+
+####################
+File Name with path: /tmp/details_app/build.sh 
+####################
+Line 2: '0 -> 0
+Line 2: 1' -> 1
+
+
+####################
+File Name with path: /tmp/details_app/.dockerignore 
+####################
+Line 1: pycache -> cache
+Line 2: venv -> vent
+Line 3: vscodium -> sodium
+Line 4: csv -> cs
+
+
+####################
+File Name with path: /tmp/details_app/README.md 
+####################
+Line 3: html -> HTML
+Line 8: SQLite3 -> Satellite
+Line 11: Postgresql -> Postgraduate
+Line 12: multi -> mulch
+Line 13: k3s -> ks
+Line 14: Virtualbox -> Virtual box
+Line 14: k8s -> ks
+
+
+####################
+File Name with path: /tmp/details_app/src/details/__init__.py 
+####################
+Line 1: src -> arc
+
+
+####################
+File Name with path: /tmp/details_app/src/details/libs/__init__.py 
+####################
+Line 1: src -> arc
+Line 1: libs -> lobs
+Line 1: libs -> lobs
+Line 2: src -> arc
+Line 2: libs -> lobs
+Line 2: libs -> lobs
+Line 2: connectionForm -> connection Form
+
+
+####################
+File Name with path: /tmp/details_app/src/details/libs/libs.py 
+####################
+Line 1: wtf -> wt
+Line 1: FlaskForm -> Flask Form
+Line 2: wtforms -> wt forms
+Line 2: StringField -> String Field
+Line 2: SubmitField -> Submit Field
+Line 3: wtforms -> wt forms
+Line 3: validators -> liquidators
+Line 3: DataRequired -> Data Required
+Line 5: connectionForm -> connection Form
+Line 5: FlaskForm -> Flask Form
+Line 6: StringField -> String Field
+Line 6: 'Name' -> name's
+Line 6: validators -> liquidators
+Line 6: DataRequired -> Data Required
+Line 7: StringField -> String Field
+Line 7: 'Email' -> email
+Line 7: validators -> liquidators
+Line 7: DataRequired -> Data Required
+Line 8: SubmitField -> Submit Field
+Line 8: 'Send' -> seed's
+
+
+####################
+File Name with path: /tmp/details_app/src/details/app.py 
+####################
+Line 1: os -> OS
+Line 2: jsonify -> personify
+Line 3: sqlalchemy -> alchemy
+Line 3: SQLAlchemy -> Alchemy
+Line 4: wtforms -> wt forms
+Line 4: StringField -> String Field
+Line 4: SubmitField -> Submit Field
+Line 4: validators -> liquidators
+Line 5: wtf -> wt
+Line 5: FlaskForm -> Flask Form
+Line 8: dbuser -> abuser
+Line 8: os -> OS
+Line 8: getenv -> genteel
+Line 8: POSTGRES -> POSTURES
+Line 9: dbpass -> db pass
+Line 9: os -> OS
+Line 9: getenv -> genteel
+Line 9: POSTGRES -> POSTURES
+Line 10: dbhost -> db host
+Line 10: os -> OS
+Line 10: getenv -> genteel
+Line 10: 'DBHOST' -> FROST'S
+Line 11: dbname -> db name
+Line 11: os -> OS
+Line 11: getenv -> genteel
+Line 11: 'DBNAME' -> N'DJAMENA
+Line 12: skey -> ska
+Line 12: os -> OS
+Line 12: getenv -> genteel
+Line 12: 'SECRET -> SECRET
+Line 12: KEY' -> KEY
+Line 15: config -> con fig
+Line 15: 'SECRET -> SECRET
+Line 15: KEY' -> KEY
+Line 15: skey -> ska
+Line 16: config -> con fig
+Line 16: SQLALCHEMY -> ALCHEMY
+Line 16: URI -> URIC
+Line 16: f'postgresql -> postgraduate
+Line 16: psycopg2 -> psychology
+Line 16: dbuser -> abuser
+Line 16: dbpass -> db pass
+Line 16: dbhost -> db host
+Line 16: dbname -> db name
+Line 16: ' -> e
+Line 17: config -> con fig
+Line 17: 'SQLALCHEMY -> ALCHEMY
+Line 17: MODIFICATIONS' -> MODIFICATION'S
+Line 19: SQLAlchemy -> Alchemy
+Line 22: tablename -> table name
+Line 22: 'contacts' -> contact
+Line 24: nullable -> null able
+Line 25: nullable -> null able
+Line 27: repr -> rep
+Line 28: f' -> f
+Line 28: ' -> e
+Line 30: ConnectionForm -> Connection Form
+Line 30: FlaskForm -> Flask Form
+Line 31: StringField -> String Field
+Line 31: 'Name' -> name's
+Line 31: validators -> liquidators
+Line 31: validators -> liquidators
+Line 31: DataRequired -> Data Required
+Line 32: StringField -> String Field
+Line 32: 'Email' -> email
+Line 32: validators -> liquidators
+Line 32: validators -> liquidators
+Line 32: DataRequired -> Data Required
+Line 33: SubmitField -> Submit Field
+Line 33: 'Submit' -> submit
+Line 36: ' -> e
+Line 36: ' -> e
+Line 36: 'GET' -> GET
+Line 36: 'POST' -> FROST'S
+Line 38: ConnectionForm -> Connection Form
+Line 46: ' -> e
+Line 46: ' -> e
+Line 51: 'index -> index
+Line 51: html' -> HTML
+Line 53: ' -> e
+Line 53: contacts' -> contact's
+Line 53: 'GET' -> GET
+Line 57: 'id' -> didn't
+Line 57: 'name' -> name's
+Line 57: 'email' -> email
+Line 58: jsonify -> personify
+Line 60: jsonify -> personify
+Line 62: ' -> e
+Line 62: ' -> e
+Line 62: 'DELETE' -> DELETE
+Line 67: jsonify -> personify
+Line 70: jsonify -> personify
+Line 73: jsonify -> personify
+Line 76: '0 -> 0
+Line 76: 0' -> 0
+
+
+####################
+File Name with path: /tmp/details_app/src/details/templates/index.html 
+####################
+Line 9: html -> HTML
+Line 25: contactsCount -> contacts Count
+Line 45: btn -> tn
+Line 45: btn -> tn
+Line 45: btn -> tn
+Line 45: sm -> chm
+Line 56: endfor -> end for
+Line 129: endblock -> end block
+
+
+####################
+File Name with path: /tmp/details_app/src/details/templates/layout.html 
+####################
+Line 23: endblock -> end block
+
+
+####################
+File Name with path: /tmp/details_app/src/details/static/js/scripts.js 
+####################
+Line 2: v6 -> v
+Line 2: https -> HTTP
+
+
+####################
+File Name with path: /tmp/details_app/pyproject.toml 
+####################
+Line 5: Ori -> Orin
+Line 6: readme -> reamed
+Line 6: README -> REAMED
+Line 6: md -> MD
+Line 11: sqlalchemy -> alchemy
+Line 12: wtf -> wt
+Line 13: gunicorn -> unicorn
+Line 14: psycopg2 -> psychology
+Line 15: validators -> liquidators
+Line 16: validator -> lavatorial
+Line 21: backend -> backed
+Line 21: api -> API
