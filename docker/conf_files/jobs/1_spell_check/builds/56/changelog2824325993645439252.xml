@@ -1,0 +1,21 @@
+commit 0f56a2dcd016499846a74dc38211d150bddbf6aa
+tree c154a7cca77a16d4e6c048537d9401721e3a06f7
+parent 5827af08801e7b6340dcfe2ebad570cc194626a0
+author lavishay <lavishay@campus.technion.ac.il> 2024-08-01 23:29:41 +0300
+committer lavishay <lavishay@campus.technion.ac.il> 2024-08-01 23:29:41 +0300
+
+    UpdatingGit
+
+
+:000000 100644 0000000000000000000000000000000000000000 819a1daba4a78b2eb12404ec880a52aacd63337d A	docker/conf_files/jobs/1_spell_check/builds/55/build.xml
+:000000 100644 0000000000000000000000000000000000000000 b1c7c075362895a9ec09260b40024676c05be91e A	docker/conf_files/jobs/1_spell_check/builds/55/changelog8144431934853243894.xml
+:000000 100644 0000000000000000000000000000000000000000 c9ab4b9bcce25d7ee7475c8efc216252913a7492 A	docker/conf_files/jobs/1_spell_check/builds/55/log
+:000000 100644 0000000000000000000000000000000000000000 f2630f70805ae38c52172e1ca6cc0f31a385898b A	docker/conf_files/jobs/1_spell_check/builds/55/log-index
+:000000 100644 0000000000000000000000000000000000000000 8029c1c72174b13fc246f8b2d3e6745eb0b48459 A	docker/conf_files/jobs/1_spell_check/builds/55/workflow-completed/flowNodeStore.xml
+:100644 100644 0e77dc5c4dbb3929d616b6565a9245d1a4b7dc20 9c9c0f9963c96aeb843946dcc5152c785a128b55 M	docker/conf_files/jobs/1_spell_check/builds/permalinks
+:100644 100644 c3f407c0955bb5738e40a82664c79b63f04a9adb f6b91e0e1f8dddaac700b51aa7a66f29fc135a02 M	docker/conf_files/jobs/1_spell_check/nextBuildNumber
+:100755 100755 d11b33a2df116bd1ae623d212a498d70e96ca5ae b17eeb744e1c92ec567bf43c73285393fa3a83e8 M	docker/conf_files/logs/health-checker.log
+:100644 100644 d7eb346b5a450b557671c558fce5043a3490bc37 cf1d976c2059cd29afbb45555ced1680c75a310f M	docker/conf_files/logs/tasks/Periodic background build discarder.log
+:100755 100644 6bd0ce222ce3b269f68f1d2aa8527db288fa7b16 d7eb346b5a450b557671c558fce5043a3490bc37 M	docker/conf_files/logs/tasks/Periodic background build discarder.log.1
+:100755 100755 9539257a3c836fc1e561205a908411960c666bb0 6bd0ce222ce3b269f68f1d2aa8527db288fa7b16 M	docker/conf_files/logs/tasks/Periodic background build discarder.log.2
+:000000 100755 0000000000000000000000000000000000000000 9539257a3c836fc1e561205a908411960c666bb0 A	docker/conf_files/logs/tasks/Periodic background build discarder.log.3
