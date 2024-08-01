@@ -30,7 +30,7 @@ gitdir= $1
 for i in $(find $gitdir);
 do
     
-    exists() "$i"
+    exists "$i"
     if [[ $? == '0' ]]; then
         cat $i &> /dev/null
         if [[ $? == '0' ]]; then
@@ -47,7 +47,7 @@ do
 done
 
 EXCLUDE_PATHS_FILES=("jenkins_data" "docker" ".git" "spellcheck_results.md" ".DS_Store" "spellchech.sh" "spelltest.sh" ".jpi" ".key" ".enc")
-function exists (){
+exists (){
     file=$1
     for i in ${EXCLUDE_PATHS_FILES[@]}
     do
