@@ -10,10 +10,10 @@
 cd /tmp/
 git clone https://github.com/lavishay-technion/details_app.git
 cd details_app
-### Checking if the OS is Debian, Rocky or Alpine and running installations accordingly
+### Checking if the OS is Debian, Rocky or Alpine and running installations for hunspell accordingly
 . /etc/os-release
 
-if [[ $ID = "debian" ]]
+if [[ $ID = "debian" || $ID = "ubuntu"]]
 then
     sudo apt-get update
     sudo apt-get install -y hunspell
@@ -40,30 +40,6 @@ else
     exit 1
 fi
 
-
-
-
-EXCLUDE_PATHS_FILES=("jenkins_data" "docker" ".git" "spellcheck_results.md" ".DS_Store" "spellchech.sh" "spelltest.sh" "." "..")
-echo ${EXCLUDE_PATHS_FILES[@]} > temp.txt
-### Doing the actual testing of every file in the details app project
-echo '' >> /home/reports/spell_check_report
-for i in $(ls -Ra /tmp/details_app/);
-do
-    if grep "$i" temp.txt; then
-        echo "Skipping" $i
-        continue
-    else
-        cat $i &> /dev/null
-        if [[ $? == '0' ]]; then
-            printf "\n\n####################\nFile %s \n####################\n" $i >> /home/reports/spell_check_report
-            hunspell -u -d en_US $i >> /home/reports/spell_check_report
-            printf "\n\n\n\n"
-        else
-            echo "Skipping in the second step" $i
-            echo "############"
-        fi
-    fi
-done
 
 
 
