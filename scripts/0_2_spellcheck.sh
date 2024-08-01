@@ -4,6 +4,7 @@
 ##  This Script runs spell check for all Python files in the details-app project
 ##  Author: Avishay Layani
 ##  Collaborator: Ori Nahum
+##  Packages needed for 
 ################################################################################
 
 #################################################
@@ -12,17 +13,15 @@
 #   A report will be saved in /home/reports and it's volumed to the VM at ./docker/reports as spell_check_report
 #################################################
 
-### Initial step to clone the Details App project into /tmp folder for the testing
-git clone
-if [[ $? == 0 ]]; then
-    git clone https://github.com/lavishay-technion/details_app.git /tmp/details_app
-    echo "Project cloned to /tmp/details_app"
-else
-    echo "[!] GIT is not installed - Exiting"
-    exit 1
-fi
+### Initial step to clone the Details App project into /tmp folder for the testing. 
 
 
+### Checking if GIT is installed by running the GIT command we need, and checking if this exists or not
+
+
+
+
+### Checking if the project exists,if yes it pulls 
 
 ### Doing the actual testing of every file in the details app project
 echo '' >> /home/reports/spell_check_report
@@ -34,8 +33,10 @@ do
         hunspell -u -d en_US $i >> /home/reports/spell_check_report
         printf "\n\n\n\n"
     else
-        echo "Skipping in the second step" $i
+        echo "Skipping item: " $i
         echo "############"
     fi
 
 done
+
+
