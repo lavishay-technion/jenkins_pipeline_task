@@ -19,6 +19,7 @@ services:
         build:
             context: .
             dockerfile: Dockerfile.deb.worker
+     
 
         networks:
             - jenkins
@@ -27,6 +28,7 @@ services:
             SSH_USERPASS: jenkins
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock    
+            - ./reports:/home/reports/
     worker2-task:
         hostname: jenkins-worker2-task
         build:
@@ -39,6 +41,7 @@ services:
             SSH_USERNAME: jenkins
             SSH_USERPASS: jenkins
         volumes:
+            - ./reports:/home/reports/
             - /var/run/docker.sock:/var/run/docker.sock   
 networks:
     jenkins:
