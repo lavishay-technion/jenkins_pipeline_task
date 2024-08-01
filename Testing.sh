@@ -1,12 +1,12 @@
 #!/bin/bash
-EXCLUDE_PATHS_FILES=("jenkins_data" "docker" ".git" "spellcheck_results.md" ".DS_Store" "spellchech.sh" "spelltest.sh" "." "..")
+EXCLUDE_PATHS_FILES=("*jenkins_data*" "*docker*" "*.git*" "*spellcheck_results.md*" "*.DS_Store*" "*spellchech.sh*" "*spelltest.sh*" "." "..")
 echo ${EXCLUDE_PATHS_FILES[@]} > temp.txt
 ### Doing the actual testing of every file in the details app project
-echo '' > /home/reports/spell_check_report
+echo '' > ./spell_check_report
 for i in $(find $PWD);
 do  
-
-    if grep "$i" temp.txt; then
+    exists() "$i"
+    if ( exists "$i" ); then
         echo "Skipping" $i
         continue
     else
@@ -23,6 +23,19 @@ do
 done
 
 
+function exists {
+    file=$1
+    if [[ jenkins_data =~ $file || \
+        docker =~ $file || \
+        .git =~ $file || \
+        spellcheck_results.md =~ $file || \
+        .DS_Store =~ $file || \
+        spellcheck.sh =~ $file || \
+        spelltest.sh =~ $file || \]]; then
+        return 1
+    else
+        return 0
+}
 
 # # Define the list of paths to exclude(aspell list <cat $i) >> testing.txt
 # EXCLUDE_PATHS_FILES=("jenkins_data" "docker" ".git" "spellcheck_results.md" ".DS_Store" "spellcheck.sh" "spelltest.sh" "." "..")
