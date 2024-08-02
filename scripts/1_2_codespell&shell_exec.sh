@@ -70,6 +70,3 @@ codespell $APP_DIR *.py,*.sh >> /home/reports/codespell.md
 # done
 
 
-
-
-AX

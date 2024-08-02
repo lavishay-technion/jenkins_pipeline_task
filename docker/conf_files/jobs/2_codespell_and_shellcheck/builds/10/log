@@ -10,18 +10,18 @@ Running on [8mha:////4CioWp4s975HSL2z/7AjIQxVXSgHfskWncjS3GFs4agJAAAAnR+LCAAAAA
 The recommended git tool is: git
 No credentials specified
 Fetching changes from the remote Git repository
-Checking out Revision 5bd777f4263906647503842e14ad6a69ece37be7 (refs/remotes/origin/main)
-Commit message: "UpdatingGit"
  > git rev-parse --resolve-git-dir /home/jenkins/workspace/2_codespell_and_shellcheck/.git # timeout=10
  > git config remote.origin.url https://github.com/lavishay-technion/jenkins_pipeline_task.git # timeout=10
 Fetching upstream changes from https://github.com/lavishay-technion/jenkins_pipeline_task.git
  > git --version # timeout=10
  > git --version # 'git version 2.39.2'
  > git fetch --tags --force --progress -- https://github.com/lavishay-technion/jenkins_pipeline_task.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking out Revision 729a0ae24b86fe97f4fbf2a138213dd1ea6a002b (refs/remotes/origin/main)
+Commit message: "UpdatingGit"
  > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
  > git config core.sparsecheckout # timeout=10
- > git checkout -f 5bd777f4263906647503842e14ad6a69ece37be7 # timeout=10
- > git rev-list --no-walk de83962495f8ff76f8a80e7fabd293aa1f69d2f3 # timeout=10
+ > git checkout -f 729a0ae24b86fe97f4fbf2a138213dd1ea6a002b # timeout=10
+ > git rev-list --no-walk 5bd777f4263906647503842e14ad6a69ece37be7 # timeout=10
 [8mha:////4Ht2XOwhwp1/DQub0INbV57LB0maZLmMdPv8CsUX+Vm0AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
 [8mha:////4CkJLbyzBxQSNABbP9SsTq/el82MBPRj8G2UEPVFG7g8AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
 [8mha:////4FSplG+QBcf3sVsOldNT8quuaZiLzOFg6DXmLbjX9qk8AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
@@ -40,10 +40,24 @@ Reading package lists...
 Reading package lists...
 Building dependency tree...
 Reading state information...
-snapd is already the newest version (2.57.6-1+b5).
-0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-error: cannot communicate with server: Post "http://localhost/v2/snaps/snapd": dial unix /run/snapd.socket: connect: no such file or directory
-error: cannot communicate with server: Post "http://localhost/v2/snaps/codespell": dial unix /run/snapd.socket: connect: no such file or directory
+The following NEW packages will be installed:
+  apt-utils codespell
+0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+Need to get 495 kB of archives.
+After this operation, 2136 kB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian bookworm/main amd64 apt-utils amd64 2.6.1 [309 kB]
+Get:2 http://deb.debian.org/debian bookworm/main amd64 codespell all 2.2.2-1 [185 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 495 kB in 0s (1538 kB/s)
+Selecting previously unselected package apt-utils.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 61444 files and directories currently installed.)
+Preparing to unpack .../apt-utils_2.6.1_amd64.deb ...
+Unpacking apt-utils (2.6.1) ...
+Selecting previously unselected package codespell.
+Preparing to unpack .../codespell_2.2.2-1_all.deb ...
+Unpacking codespell (2.2.2-1) ...
+Setting up apt-utils (2.6.1) ...
+Setting up codespell (2.2.2-1) ...
 [+] codespell installed on Debian
 #######################################
 ShellCheck - shell script analysis tool
@@ -61,7 +75,6 @@ Project updated in /tmp/details_app
 [8mha:////4H0l5bVX5oaO95o2cOAVwJ48/QfOIvfQpXXEFqf8ThjZAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiOhCiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBr2eB0O+AAAA[0m[Pipeline] sh
 + chmod +x scripts/1_2_codespell&shell_exec.sh
 + bash scripts/1_2_codespell&shell_exec.sh
-scripts/1_2_codespell&shell_exec.sh: line 44: codespell: command not found
 scripts/1_2_codespell&shell_exec.sh: line 75: AX: command not found
 [8mha:////4IabRDGCXUWYAdW772d2y0hKYeBGIUs7Kz0XjjpjbuyAAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICVEgoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcr9Ntfu8AEWNdkpvgAAAA==[0m[Pipeline] }
 [8mha:////4C7bVdSN76CIE+GjjJaVfdn+0HiJ7TJGLcwuKB29AaC+AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0FAgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJyj3da768AEi+zpyvgAAAA==[0m[Pipeline] // stage
