@@ -1,0 +1,19 @@
+commit 72736bcac056726042036903ddc70a48104a7f94
+tree 495a960bab49d7b0c2837b0c936da81954275266
+parent 050050b7b8697e5de4bd3351725c3557d3c2b6b9
+author lavishay <lavishay@campus.technion.ac.il> 2024-08-02 16:58:01 +0300
+committer lavishay <lavishay@campus.technion.ac.il> 2024-08-02 16:58:01 +0300
+
+    UpdatingGit
+
+
+:000000 100644 0000000000000000000000000000000000000000 d43b0cdfb4a4b1d23a7bbe3770e854f372a6ef76 A	docker/conf_files/jobs/2_codespell_and_shellcheck/builds/3/build.xml
+:000000 100644 0000000000000000000000000000000000000000 78ee2079cded91366f8fb8819f12752b474b307c A	docker/conf_files/jobs/2_codespell_and_shellcheck/builds/3/changelog14671424816735088929.xml
+:000000 100644 0000000000000000000000000000000000000000 35c1743545f68cc575f990fc273673e18e430167 A	docker/conf_files/jobs/2_codespell_and_shellcheck/builds/3/log
+:000000 100644 0000000000000000000000000000000000000000 56c001081220ba1972a8a158b7ab18636fa8f4c7 A	docker/conf_files/jobs/2_codespell_and_shellcheck/builds/3/log-index
+:000000 100644 0000000000000000000000000000000000000000 4288d2a527d32761da8a6eca92cf40c7bd267f4b A	docker/conf_files/jobs/2_codespell_and_shellcheck/builds/3/workflow-completed/flowNodeStore.xml
+:100644 100644 f8d43987530769940545ebe9ac48f881fd5a58af 00c9473d03046b5c2616cea14aa2fb29f38497bc M	docker/conf_files/jobs/2_codespell_and_shellcheck/builds/permalinks
+:100644 100644 632d4da2f8d1f8d4bacf0a9432925e8cd9e0fbbf 244d624536f86a9ff563e59c675192f62a2657d7 M	docker/conf_files/jobs/2_codespell_and_shellcheck/config.xml
+:100644 100644 00750edc07d6415dcc07ae0351e9397b0222b7ba b8626c4cff2849624fb67f87cd0ad72b163671ad M	docker/conf_files/jobs/2_codespell_and_shellcheck/nextBuildNumber
+:100755 100755 48d7da8f235338762bf54d4d74aa87ba24035e3c 52de6e489d1227e708e038aaec5706d6aae6ce90 M	docker/conf_files/logs/health-checker.log
+:100755 100755 e5572c478533fd4eb2250fb9cca00c4dc8d8bf6d f456f1b5b62fc0bb190ab9d491e20e23430c9bb8 M	jenkinsfiles/Jenkinsfile_codespell&shell

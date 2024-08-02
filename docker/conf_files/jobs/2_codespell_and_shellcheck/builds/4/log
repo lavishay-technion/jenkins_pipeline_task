@@ -16,12 +16,12 @@ Fetching upstream changes from https://github.com/lavishay-technion/jenkins_pipe
  > git --version # timeout=10
  > git --version # 'git version 2.39.2'
  > git fetch --tags --force --progress -- https://github.com/lavishay-technion/jenkins_pipeline_task.git +refs/heads/*:refs/remotes/origin/* # timeout=10
-Checking out Revision 050050b7b8697e5de4bd3351725c3557d3c2b6b9 (refs/remotes/origin/main)
+Checking out Revision 72736bcac056726042036903ddc70a48104a7f94 (refs/remotes/origin/main)
 Commit message: "UpdatingGit"
  > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
  > git config core.sparsecheckout # timeout=10
- > git checkout -f 050050b7b8697e5de4bd3351725c3557d3c2b6b9 # timeout=10
- > git rev-list --no-walk c45511194708db283166ffeb787d7d75a79ec315 # timeout=10
+ > git checkout -f 72736bcac056726042036903ddc70a48104a7f94 # timeout=10
+ > git rev-list --no-walk 050050b7b8697e5de4bd3351725c3557d3c2b6b9 # timeout=10
 [8mha:////4Ht2XOwhwp1/DQub0INbV57LB0maZLmMdPv8CsUX+Vm0AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
 [8mha:////4CkJLbyzBxQSNABbP9SsTq/el82MBPRj8G2UEPVFG7g8AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
 [8mha:////4FSplG+QBcf3sVsOldNT8quuaZiLzOFg6DXmLbjX9qk8AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
@@ -30,9 +30,9 @@ Commit message: "UpdatingGit"
 [8mha:////4JUSMOWMTCtx7U28kCmQgLBtB8c1ebVx8X1N2+nmylaJAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (Codespell and Shellcheck Prerequisitions)
 [8mha:////4OwhtEDgOutQGiYVX8qyBdT0p8GbOjXShKV2qjCY8UqWAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] sh
 + shell_pre.sh
-+ chmod +x ./scripts/1_1_codespell
-/home/jenkins/workspace/2_codespell_and_shellcheck@tmp/durable-c14f9a0a/script.sh.copy: 2: shell_pre.sh: not found
-chmod: cannot access './scripts/1_1_codespell': No such file or directory
+/home/jenkins/workspace/2_codespell_and_shellcheck@tmp/durable-63aacb23/script.sh.copy: 2: shell_pre.sh: not found
++ chmod +x scripts/1_1_codespell
+chmod: cannot access 'scripts/1_1_codespell': No such file or directory
 [8mha:////4Ims0yx0I2sX+wuG7Q/4KQEZIv7gBLyfK/StC4RvOrLOAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N7BnLt++AAAA[0m[Pipeline] }
 [8mha:////4MXFSbUeBWUOhNWD1yQe/zom3fubRz44WtJkFUXdo4RmAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKGgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7N4glvS6+AAAA[0m[Pipeline] // stage
 [8mha:////4LD0lYaQTvfQe05QK0jQEQWj15MmpkXZrTWxsocSc9vQAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUnRgQE2uUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hioGOFEwzGnsLMbWst6PZk4sU+hunjJzdGUtYSSvmdBZkNLntQpKGlYVJWw4bDW2nqJFk2DHnXzI2ks09SWFeTtyKK0a4AkFn8lJhvQtU4D9fVSR8Mf5C4CpT1A2zWKH5Vl9ANydZ8vCAAAA[0m[Pipeline] stage
