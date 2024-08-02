@@ -8,16 +8,16 @@ pipeline {
         stage('Codespell and Shellcheck Prerequisitions') {
             steps {
                 sh '''
-                chmod +x ./scripts/1_1_codespell&shell_pre.sh
-                bash ./scripts/1_1_codespell&shell_pre.sh
+                chmod +x scripts/1_1_codespell&shell_pre.sh
+                bash scripts/1_1_codespell&shell_pre.sh
                 '''
             }
         }
         stage('Codespell and Shellcheck Execution') {
             steps {
                 sh '''
-                chmod +x ./scripts/1_1_codespell&shell_exec.sh
-                bash ./scripts/1_1_codespell&shell_exec.sh
+                chmod +x scripts/1_1_codespell&shell_exec.sh
+                bash scripts/1_1_codespell&shell_exec.sh
                 '''
             }
         }
