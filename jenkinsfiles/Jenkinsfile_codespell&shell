@@ -2,8 +2,8 @@ pipeline {
     agent {label 'workers'}
     parameters{
         string(name: 'APP_DIR', defaultValue: '/tmp/details_app', description: 'The Directory the app  project will be cloned to')
-
-    }
+        string(name: 'SCRIPTS_EXT', defaultValue: '*.sh *.py', description: 'The extensions of all files we want to test, default is bash and python files')
+        }
     stages {
         stage('Codespell and Shellcheck Prerequisitions') {
             steps {

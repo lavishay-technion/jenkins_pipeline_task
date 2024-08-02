@@ -37,8 +37,7 @@ sudo chown -R jenkins:jenkins /home/reports
 
 ### Stating first line of the file, cleaning it from past scripts' data.
 echo "##############" > /home/reports/codespell.md
-
-
-codespell $APP_DIR *.sh,*.py >> /home/reports/codespell.md
+### Running codespell recursively on all files that end with .sh or .py in the application's directory
+codespell $APP_DIR $SCRIPTS_EXT >> /home/reports/codespell.md
 
 echo "##############"

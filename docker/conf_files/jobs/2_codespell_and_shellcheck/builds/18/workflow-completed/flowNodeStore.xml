@@ -9,7 +9,7 @@
       </node>
       <actions>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610803615</startTime>
+          <startTime>1722610972419</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -37,10 +37,10 @@
           <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
         </cps.a.ArgumentsActionImpl>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610803794</startTime>
+          <startTime>1722610972635</startTime>
         </wf.a.TimingAction>
         <org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution_-QueueItemActionImpl plugin="workflow-durable-task-step@1364.v2fd76fb_6fd41">
-          <id>232</id>
+          <id>234</id>
         </org.jenkinsci.plugins.workflow.support.steps.ExecutorStepExecution_-QueueItemActionImpl>
         <s.a.WorkspaceActionImpl>
           <node>worker1</node>
@@ -65,7 +65,7 @@
       <actions>
         <wf.a.BodyInvocationAction plugin="workflow-api@1322.v857eeeea_9902"/>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610803821</startTime>
+          <startTime>1722610972665</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -93,7 +93,7 @@
           <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
         </cps.a.ArgumentsActionImpl>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610803861</startTime>
+          <startTime>1722610972684</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -114,7 +114,7 @@
           <displayName>Declarative: Checkout SCM</displayName>
         </wf.a.LabelAction>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610803865</startTime>
+          <startTime>1722610972688</startTime>
         </wf.a.TimingAction>
         <wf.a.TagsAction plugin="workflow-api@1322.v857eeeea_9902">
           <tags>
@@ -192,7 +192,7 @@
           <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
         </cps.a.ArgumentsActionImpl>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610803882</startTime>
+          <startTime>1722610972714</startTime>
         </wf.a.TimingAction>
         <s.a.LogStorageAction/>
       </actions>
@@ -211,7 +211,7 @@
       <actions>
         <wf.a.BodyInvocationAction plugin="workflow-api@1322.v857eeeea_9902"/>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610805177</startTime>
+          <startTime>1722610973775</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -228,7 +228,7 @@
       </node>
       <actions>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610805192</startTime>
+          <startTime>1722610973793</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -251,9 +251,9 @@
               <string>overrides</string>
               <list>
                 <string>GIT_BRANCH=origin/main</string>
-                <string>GIT_COMMIT=4472c39300bae2624b1deb7a41070f638723d371</string>
-                <string>GIT_PREVIOUS_COMMIT=b48bb324e1d06c3043a86cee1212f6beb0eb7304</string>
-                <string>GIT_PREVIOUS_SUCCESSFUL_COMMIT=b48bb324e1d06c3043a86cee1212f6beb0eb7304</string>
+                <string>GIT_COMMIT=8adaa07db02937c30003c0996203f3bd7af852f7</string>
+                <string>GIT_PREVIOUS_COMMIT=4472c39300bae2624b1deb7a41070f638723d371</string>
+                <string>GIT_PREVIOUS_SUCCESSFUL_COMMIT=4472c39300bae2624b1deb7a41070f638723d371</string>
                 <string>GIT_URL=https://github.com/lavishay-technion/jenkins_pipeline_task.git</string>
               </list>
             </entry>
@@ -262,7 +262,7 @@
           <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
         </cps.a.ArgumentsActionImpl>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610805207</startTime>
+          <startTime>1722610973813</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -280,7 +280,7 @@
       <actions>
         <wf.a.BodyInvocationAction plugin="workflow-api@1322.v857eeeea_9902"/>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610805211</startTime>
+          <startTime>1722610973816</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -308,7 +308,7 @@
           <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
         </cps.a.ArgumentsActionImpl>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610805229</startTime>
+          <startTime>1722610973843</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -329,7 +329,7 @@
           <displayName>Codespell and Shellcheck Prerequisitions</displayName>
         </wf.a.LabelAction>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610805232</startTime>
+          <startTime>1722610973848</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -359,7 +359,7 @@
           <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
         </cps.a.ArgumentsActionImpl>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610805263</startTime>
+          <startTime>1722610973906</startTime>
         </wf.a.TimingAction>
         <s.a.LogStorageAction/>
       </actions>
@@ -378,7 +378,7 @@
       <actions>
         <wf.a.BodyInvocationAction plugin="workflow-api@1322.v857eeeea_9902"/>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610805549</startTime>
+          <startTime>1722610974218</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -395,7 +395,7 @@
       </node>
       <actions>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610805569</startTime>
+          <startTime>1722610974241</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -423,7 +423,7 @@
           <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
         </cps.a.ArgumentsActionImpl>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610805590</startTime>
+          <startTime>1722610974254</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -444,7 +444,7 @@
           <displayName>Codespell and Shellcheck Execution</displayName>
         </wf.a.LabelAction>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610805593</startTime>
+          <startTime>1722610974258</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -474,7 +474,7 @@
           <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
         </cps.a.ArgumentsActionImpl>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610805664</startTime>
+          <startTime>1722610974287</startTime>
         </wf.a.TimingAction>
         <s.a.LogStorageAction/>
       </actions>
@@ -493,7 +493,7 @@
       <actions>
         <wf.a.BodyInvocationAction plugin="workflow-api@1322.v857eeeea_9902"/>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610805960</startTime>
+          <startTime>1722610974581</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -510,7 +510,7 @@
       </node>
       <actions>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610805987</startTime>
+          <startTime>1722610974606</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -528,7 +528,7 @@
       <actions>
         <wf.a.BodyInvocationAction plugin="workflow-api@1322.v857eeeea_9902"/>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610805996</startTime>
+          <startTime>1722610974614</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -545,7 +545,7 @@
       </node>
       <actions>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610806012</startTime>
+          <startTime>1722610974629</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -563,7 +563,7 @@
       <actions>
         <wf.a.BodyInvocationAction plugin="workflow-api@1322.v857eeeea_9902"/>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610806020</startTime>
+          <startTime>1722610974635</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -580,7 +580,7 @@
       </node>
       <actions>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610806043</startTime>
+          <startTime>1722610974652</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
@@ -603,7 +603,7 @@
       </node>
       <actions>
         <wf.a.TimingAction plugin="workflow-api@1322.v857eeeea_9902">
-          <startTime>1722610806055</startTime>
+          <startTime>1722610974659</startTime>
         </wf.a.TimingAction>
       </actions>
     </Tag>
