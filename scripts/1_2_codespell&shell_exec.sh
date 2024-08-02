@@ -39,6 +39,6 @@ sudo chown -R jenkins:jenkins /home/reports
 echo "##############" > /home/reports/codespell.md
 
 
+codespell $APP_DIR *.sh,*.py >> /home/reports/codespell.md
 
-    codespell $i *.sh,*.py >> /home/reports/codespell.md
-    echo "##############" >> /home/reports/codespell.md
+echo "##############"
