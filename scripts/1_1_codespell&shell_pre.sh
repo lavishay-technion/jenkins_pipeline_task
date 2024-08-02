@@ -18,7 +18,7 @@ codespell --version 2> /dev/null ## Checking if codespell is installed
 if [[ $? != 0 ]]; ## If codespell and is not installed, install codespell and according to the correct OS
 then
     echo "#######################################"
-    ### Checking if the OS is Debian, Rocky or Alpine and running installations for hunspell accordingly
+    ### Checking if the OS is Debian, Rocky or Alpine and running installations for hunspell accordingly.
     if [[ $ID = "debian" || $ID = "ubuntu" ]]
     then
         sudo apt-get update -y

@@ -32,6 +32,24 @@
         </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <org.jenkinsci.plugins.gwt.GenericTrigger plugin="generic-webhook-trigger@2.2.2">
+          <spec></spec>
+          <regexpFilterText></regexpFilterText>
+          <regexpFilterExpression></regexpFilterExpression>
+          <printPostContent>false</printPostContent>
+          <printContributedVariables>false</printContributedVariables>
+          <causeString>Generic Cause</causeString>
+          <token></token>
+          <tokenCredentialId></tokenCredentialId>
+          <silentResponse>false</silentResponse>
+          <overrideQuietPeriod>false</overrideQuietPeriod>
+          <shouldNotFlattern>false</shouldNotFlattern>
+          <allowSeveralTriggersPerBuild>false</allowSeveralTriggersPerBuild>
+        </org.jenkinsci.plugins.gwt.GenericTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
   </properties>
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@3922.va_f73b_7c4246b_">
     <scm class="hudson.plugins.git.GitSCM" plugin="git@5.2.2">
