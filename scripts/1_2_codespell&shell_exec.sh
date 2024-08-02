@@ -38,13 +38,7 @@ sudo chown -R jenkins:jenkins /home/reports
 ### Stating first line of the file, cleaning it from past scripts' data.
 echo "##############" > /home/reports/codespell.md
 
-for i in $(find "$APP_DIR");
-do
-    if [[ -d $i ]]; then
-        echo "##############" >> /home/reports/codespell.md
-        echo "Checking all files in directory: $i" >> /home/reports/codespell.md
-        codespell $i *.sh,*.py >> /home/reports/codespell.md
-        printf "\n\n\n\n"
-        echo "##############" >> /home/reports/codespell.md
-    fi
-done
+
+
+    codespell $i *.sh,*.py >> /home/reports/codespell.md
+    echo "##############" >> /home/reports/codespell.md
