@@ -1,9 +1,24 @@
 pipeline {
     agent {label 'workers'}
+    parameters{
+        string(name: 'APP_DIR', defaultValue: '/tmp/details_app', description: 'The Directory the app  project will be cloned to')
+
+    }
     stages {
-        stage('Codespell and Shellcheck') {
+        stage('Codespell and Shellcheck Prerequisitions') {
             steps {
-                sh ''
+                sh '''
+                chmod +x ./scripts/1_1_codespell&shell_pre.sh
+                bash ./scripts/1_1_codespell&shell_pre.sh
+                '''
+            }
+        }
+        stage('Codespell and Shellcheck Execution') {
+            steps {
+                sh '''
+                chmod +x ./scripts/1_1_codespell&shell_exec.sh
+                bash ./scripts/1_1_codespell&shell_exec.sh
+                '''
             }
         }
     }
