@@ -16,8 +16,8 @@ pipeline {
         stage('Codespell and Shellcheck Execution') {
             steps {
                 sh '''
-                chmod +x "scripts/1_1_codespell&shell_exec.sh"
-                bash "scripts/1_1_codespell&shell_exec.sh"
+                chmod +x "scripts/1_2_codespell&shell_exec.sh"
+                bash "scripts/1_2_codespell&shell_exec.sh"
                 '''
             }
         }
