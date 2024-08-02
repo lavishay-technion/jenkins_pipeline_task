@@ -12,7 +12,7 @@ services:
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock    
             - ./conf_files:/var/jenkins_home/
-            - ./reports:/home/reports/
+            - ../reports:/home/reports/
     
     worker1-task:
         hostname: jenkins-worker1-task
@@ -28,7 +28,7 @@ services:
             SSH_USERPASS: jenkins
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock    
-            - ./reports:/home/reports/
+            - ../reports:/home/reports/
     worker2-task:
         hostname: jenkins-worker2-task
         build:
@@ -41,7 +41,7 @@ services:
             SSH_USERNAME: jenkins
             SSH_USERPASS: jenkins
         volumes:
-            - ./reports:/home/reports/
+            - ../reports:/home/reports/
             - /var/run/docker.sock:/var/run/docker.sock   
 networks:
     jenkins:
