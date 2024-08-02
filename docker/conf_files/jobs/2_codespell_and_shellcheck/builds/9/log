@@ -10,18 +10,18 @@ Running on [8mha:////4CioWp4s975HSL2z/7AjIQxVXSgHfskWncjS3GFs4agJAAAAnR+LCAAAAA
 The recommended git tool is: git
 No credentials specified
 Fetching changes from the remote Git repository
+Checking out Revision 5bd777f4263906647503842e14ad6a69ece37be7 (refs/remotes/origin/main)
+Commit message: "UpdatingGit"
  > git rev-parse --resolve-git-dir /home/jenkins/workspace/2_codespell_and_shellcheck/.git # timeout=10
  > git config remote.origin.url https://github.com/lavishay-technion/jenkins_pipeline_task.git # timeout=10
 Fetching upstream changes from https://github.com/lavishay-technion/jenkins_pipeline_task.git
  > git --version # timeout=10
  > git --version # 'git version 2.39.2'
  > git fetch --tags --force --progress -- https://github.com/lavishay-technion/jenkins_pipeline_task.git +refs/heads/*:refs/remotes/origin/* # timeout=10
-Checking out Revision de83962495f8ff76f8a80e7fabd293aa1f69d2f3 (refs/remotes/origin/main)
-Commit message: "UpdatingGit"
  > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
  > git config core.sparsecheckout # timeout=10
- > git checkout -f de83962495f8ff76f8a80e7fabd293aa1f69d2f3 # timeout=10
- > git rev-list --no-walk 2b53b7f54267f04152de1ef97444056eb2f6bb3a # timeout=10
+ > git checkout -f 5bd777f4263906647503842e14ad6a69ece37be7 # timeout=10
+ > git rev-list --no-walk de83962495f8ff76f8a80e7fabd293aa1f69d2f3 # timeout=10
 [8mha:////4Ht2XOwhwp1/DQub0INbV57LB0maZLmMdPv8CsUX+Vm0AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
 [8mha:////4CkJLbyzBxQSNABbP9SsTq/el82MBPRj8G2UEPVFG7g8AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
 [8mha:////4FSplG+QBcf3sVsOldNT8quuaZiLzOFg6DXmLbjX9qk8AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
@@ -32,18 +32,18 @@ Commit message: "UpdatingGit"
 + chmod +x scripts/1_1_codespell&shell_pre.sh
 + bash scripts/1_1_codespell&shell_pre.sh
 #######################################
-Hit:1 http://deb.debian.org/debian bookworm InRelease
-Hit:2 http://deb.debian.org/debian bookworm-updates InRelease
-Hit:3 http://deb.debian.org/debian-security bookworm-security InRelease
-Hit:4 https://download.docker.com/linux/debian bookworm InRelease
+Hit:1 https://download.docker.com/linux/debian bookworm InRelease
+Hit:2 http://deb.debian.org/debian bookworm InRelease
+Hit:3 http://deb.debian.org/debian bookworm-updates InRelease
+Hit:4 http://deb.debian.org/debian-security bookworm-security InRelease
 Reading package lists...
 Reading package lists...
 Building dependency tree...
 Reading state information...
 snapd is already the newest version (2.57.6-1+b5).
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
-error: unknown flag `y'
-error: unknown flag `y'
+error: cannot communicate with server: Post "http://localhost/v2/snaps/snapd": dial unix /run/snapd.socket: connect: no such file or directory
+error: cannot communicate with server: Post "http://localhost/v2/snaps/codespell": dial unix /run/snapd.socket: connect: no such file or directory
 [+] codespell installed on Debian
 #######################################
 ShellCheck - shell script analysis tool

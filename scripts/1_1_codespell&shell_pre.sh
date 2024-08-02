@@ -22,9 +22,7 @@ then
     if [[ $ID = "debian" || $ID = "ubuntu" ]]
     then
         sudo apt-get update -y
-        sudo apt-get install snapd -y
-        sudo snap install snapd 
-        sudo snap install codespell
+        sudo apt-get install apt-utils codespell -y
         echo "[+] codespell installed on Debian"
 
     elif [[ $ID = "rocky" ]]
