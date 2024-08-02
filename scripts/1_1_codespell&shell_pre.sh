@@ -23,8 +23,8 @@ then
     then
         sudo apt-get update -y
         sudo apt-get install snapd -y
-        sudo snap install snapd -y
-        sudo snap install codespell -y
+        sudo snap install snapd 
+        sudo snap install codespell
         echo "[+] codespell installed on Debian"
 
     elif [[ $ID = "rocky" ]]
