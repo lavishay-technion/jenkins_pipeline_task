@@ -25,16 +25,16 @@
       </causeBag>
     </hudson.model.CauseAction>
     <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.2.21-451.vd51df8df52ec">
-      <queuingDurationMillis>2</queuingDurationMillis>
+      <queuingDurationMillis>3</queuingDurationMillis>
       <blockedDurationMillis>0</blockedDurationMillis>
       <buildableDurationMillis>0</buildableDurationMillis>
-      <waitingDurationMillis>0</waitingDurationMillis>
+      <waitingDurationMillis>1</waitingDurationMillis>
     </jenkins.metrics.impl.TimeInQueueAction>
     <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@727.ve832a_9244dfa_">
       <libraries/>
     </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
     <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@2.2205.vc9522a_9d5711">
-      <stagesUUID>0d749d67-0c78-42f8-b8a4-57b12b64b1cf</stagesUUID>
+      <stagesUUID>37f39375-e37d-414f-bffd-6e4e8051b28a</stagesUUID>
       <pipelineDefs>
         <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@2.2205.vc9522a_9d5711">
           <stages>
@@ -83,8 +83,8 @@
                               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
                               <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
                                 <value class="string">
-                chmod +x &quot;scripts/1_1_codespell&amp;shell_exec.sh&quot;
-                bash &quot;scripts/1_1_codespell&amp;shell_exec.sh&quot;
+                chmod +x &quot;scripts/1_2_codespell&amp;shell_exec.sh&quot;
+                bash &quot;scripts/1_2_codespell&amp;shell_exec.sh&quot;
                 </value>
                               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
                             </entry>
@@ -96,7 +96,7 @@
                 </branches>
               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
             </stages>
-            <uuid>0d749d67-0c78-42f8-b8a4-57b12b64b1cf</uuid>
+            <uuid>37f39375-e37d-414f-bffd-6e4e8051b28a</uuid>
           </stages>
           <agent>
             <variables class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue$ConstantValue">
@@ -148,7 +148,7 @@
           <string>refs/remotes/origin/main</string>
           <hudson.plugins.git.util.Build>
             <marked plugin="git-client@5.0.0">
-              <sha1>b4a6953692fa0b91b826feae12f1be076939499e</sha1>
+              <sha1>5addb05918b31a62bbb3dd7ddf2edd753e9a9667</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -157,7 +157,7 @@
               </branches>
             </marked>
             <revision reference="../marked"/>
-            <hudsonBuildNumber>5</hudsonBuildNumber>
+            <hudsonBuildNumber>6</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -180,15 +180,15 @@
       <blockedDurationMillis>0</blockedDurationMillis>
       <buildableDurationMillis>3</buildableDurationMillis>
       <waitingDurationMillis>0</waitingDurationMillis>
-      <executingDurationMillis>13549</executingDurationMillis>
+      <executingDurationMillis>5671</executingDurationMillis>
       <workUnitCount>1</workUnitCount>
     </jenkins.metrics.impl.SubTaskTimeInQueueAction>
   </actions>
-  <queueId>207</queueId>
-  <timestamp>1722607153709</timestamp>
-  <startTime>1722607153714</startTime>
+  <queueId>209</queueId>
+  <timestamp>1722607244998</timestamp>
+  <startTime>1722607245002</startTime>
   <result>FAILURE</result>
-  <duration>14985</duration>
+  <duration>7029</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
@@ -211,8 +211,8 @@
         stage(&apos;Codespell and Shellcheck Execution&apos;) {
             steps {
                 sh &apos;&apos;&apos;
-                chmod +x &quot;scripts/1_1_codespell&amp;shell_exec.sh&quot;
-                bash &quot;scripts/1_1_codespell&amp;shell_exec.sh&quot;
+                chmod +x &quot;scripts/1_2_codespell&amp;shell_exec.sh&quot;
+                bash &quot;scripts/1_2_codespell&amp;shell_exec.sh&quot;
                 &apos;&apos;&apos;
             }
         }
@@ -224,23 +224,23 @@
     <timings class="map">
       <entry>
         <string>flowNode</string>
-        <long>136619664</long>
+        <long>136997412</long>
       </entry>
       <entry>
         <string>classLoad</string>
-        <long>197226401</long>
+        <long>173454293</long>
       </entry>
       <entry>
         <string>run</string>
-        <long>835588602</long>
+        <long>750720912</long>
       </entry>
       <entry>
         <string>parse</string>
-        <long>34042950</long>
+        <long>28854446</long>
       </entry>
       <entry>
         <string>saveProgram</string>
-        <long>282881065</long>
+        <long>214151313</long>
       </entry>
     </timings>
     <internalCalls class="sorted-set">
@@ -329,7 +329,7 @@
       </scm>
       <node>worker1</node>
       <workspace>/home/jenkins/workspace/2_codespell_and_shellcheck</workspace>
-      <changelogFile>/var/jenkins_home/jobs/2_codespell_and_shellcheck/builds/5/changelog3339794108095945630.xml</changelogFile>
+      <changelogFile>/var/jenkins_home/jobs/2_codespell_and_shellcheck/builds/6/changelog23209324797117458.xml</changelogFile>
       <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
     </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
   </checkouts>

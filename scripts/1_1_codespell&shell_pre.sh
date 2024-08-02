@@ -21,10 +21,10 @@ then
     ### Checking if the OS is Debian, Rocky or Alpine and running installations for hunspell accordingly
     if [[ $ID = "debian" || $ID = "ubuntu" ]]
     then
-        sudo apt-get update
-        sudo apt-get install snapd
-        sudo snap install snapd
-        sudo snap install codespell
+        sudo apt-get update -y
+        sudo apt-get install snapd -y
+        sudo snap install snapd -y
+        sudo snap install codespell -y
         echo "[+] codespell installed on Debian"
 
     elif [[ $ID = "rocky" ]]
