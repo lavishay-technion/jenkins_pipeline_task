@@ -29,6 +29,8 @@ for i in $(find $APP_DIR)  ## Running on every file in the app's dir
 do
     if [[ $i =~ ".sh" ]]; then ## Checking if it's a bash script
         shellcheck $i >> /home/reports/shellcheck.md ## If yes, running shellcheck on it, and sending it to a report
+    fi
+done
 
 echo "##############" >> /home/reports/codespell.md
 echo "##############" >> /home/reports/shellcheck.md
