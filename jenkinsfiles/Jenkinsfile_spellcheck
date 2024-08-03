@@ -1,8 +1,8 @@
 pipeline {
     agent {label 'workers'}
     parameters{
-        String(name: 'APP_DIR', defaultValue: '/tmp/details_app', description: 'The Directory the app  project will be cloned to')
-        String(name: 'EXCLUSION_LIST', defaultValue:'.git .DS_Store .jpi .key .enc .lock .jpg .mp4 .ico .css', description:'The list of keywords that will not go through spell chek')
+        string(name: 'APP_DIR', defaultValue: '/tmp/details_app', description: 'The Directory the app  project will be cloned to')
+        string(name: 'EXCLUSION_LIST', defaultValue:'.git .DS_Store .jpi .key .enc .lock .jpg .mp4 .ico .css', description:'The list of keywords that will not go through spell check')
     }
     stages {
         stage('Spellcheck Prerequisitions') {
