@@ -4,9 +4,7 @@ pipeline {
     stages {
         stage('Spellcheck Pipeline') {
             steps {
-                sh '''
-                curl -u admin:admin http://localhost/job/1_spell_check/buildWithParameters?token=spellcheck
-                '''
+                sh 'curl -u admin:admin http://localhost/job/1_spell_check/buildWithParameters?token=spellcheck'
             }
         }
         stage('Codespell and Shellcheck Pipeline') {
