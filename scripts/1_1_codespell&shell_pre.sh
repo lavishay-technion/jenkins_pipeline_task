@@ -6,7 +6,8 @@
 ##  Collaborator: Ori Nahum - 50%
 ##  Resources: 
 ##      https://github.com/codespell-project/codespell
-##      
+##      https://github.com/koalaman/shellcheck
+##      https://www.cyberciti.biz/faq/how-to-install-shellcheck-on-alpine-linux/
 ################################################################################
 
 

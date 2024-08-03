@@ -1,1 +1,2 @@
 docker/conf_files/caches/git-*
+.pytest_cache
