@@ -10,7 +10,8 @@ Running on [8mha:////4CioWp4s975HSL2z/7AjIQxVXSgHfskWncjS3GFs4agJAAAAnR+LCAAAAA
 The recommended git tool is: git
 No credentials specified
 Fetching changes from the remote Git repository
-Checking out Revision 8adaa07db02937c30003c0996203f3bd7af852f7 (refs/remotes/origin/main)
+Checking out Revision 8e012c404482de7f241171ce647b75743e576de4 (refs/remotes/origin/main)
+Commit message: "UpdatingGit"
  > git rev-parse --resolve-git-dir /home/jenkins/workspace/2_codespell_and_shellcheck/.git # timeout=10
  > git config remote.origin.url https://github.com/lavishay-technion/jenkins_pipeline_task.git # timeout=10
 Fetching upstream changes from https://github.com/lavishay-technion/jenkins_pipeline_task.git
@@ -19,9 +20,8 @@ Fetching upstream changes from https://github.com/lavishay-technion/jenkins_pipe
  > git fetch --tags --force --progress -- https://github.com/lavishay-technion/jenkins_pipeline_task.git +refs/heads/*:refs/remotes/origin/* # timeout=10
  > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
  > git config core.sparsecheckout # timeout=10
- > git checkout -f 8adaa07db02937c30003c0996203f3bd7af852f7 # timeout=10
-Commit message: "UpdatingGit"
- > git rev-list --no-walk 4472c39300bae2624b1deb7a41070f638723d371 # timeout=10
+ > git checkout -f 8e012c404482de7f241171ce647b75743e576de4 # timeout=10
+ > git rev-list --no-walk 8adaa07db02937c30003c0996203f3bd7af852f7 # timeout=10
 [8mha:////4Ht2XOwhwp1/DQub0INbV57LB0maZLmMdPv8CsUX+Vm0AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
 [8mha:////4CkJLbyzBxQSNABbP9SsTq/el82MBPRj8G2UEPVFG7g8AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
 [8mha:////4FSplG+QBcf3sVsOldNT8quuaZiLzOFg6DXmLbjX9qk8AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
