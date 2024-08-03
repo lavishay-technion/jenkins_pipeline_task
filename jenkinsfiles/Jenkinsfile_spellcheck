@@ -24,7 +24,7 @@ pipeline {
     }
     post {
         always{
-            archiveArtifacts artifacts: '/home/reports/spell_check_report', followSymlinks: false, onlyIfSuccessful: true
+            archiveArtifacts artifacts: 'reports/spell_check_report', followSymlinks: false, onlyIfSuccessful: true
         }
     }
     
