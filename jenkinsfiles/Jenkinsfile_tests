@@ -1,10 +1,30 @@
 pipeline {
     agent {label 'workers'}
+    parameters{
+        string(name: 'APP_DIR', defaultValue: '/tmp/details_app', description: 'The Directory the app  project will be cloned to')
+    }
     stages {
-        stage('Tests') {
+        stage('PyTest Prerequisitions') {
             steps {
-                sh ''
+                sh '''
+                chmod +x scripts/2_1_pytest_pre.sh
+                bash scripts/2_1_pytest_pre.sh 
+                '''
+            }
+        }
+        stage('Spellcheck Execution') {
+            steps {
+                sh '''
+                chmod +x scripts/2_2_pytest_exec.sh
+                bash scripts/2_2_pytest_exec.sh
+                '''
             }
         }
     }
+    post {
+        always{
+            archiveArtifacts artifacts: 'reports/pytest.md', followSymlinks: false, onlyIfSuccessful: true
+        }
+    }
+    
 }
