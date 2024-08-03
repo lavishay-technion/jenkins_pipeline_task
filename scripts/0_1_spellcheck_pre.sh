@@ -3,7 +3,10 @@
 ################################################################################
 ##  This Script runs spell check for all text containing files in the details-app project
 ##  Author: Avishay Layani
-##  Collaborator: Ori Nahum
+##  Collaborator: Ori Nahum - 50%
+##  Resources: 
+##      https://github.com/hunspell/hunspell
+
 ################################################################################
 
 

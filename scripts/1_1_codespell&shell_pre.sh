@@ -3,7 +3,10 @@
 ################################################################################
 ##  This Script runs codespell and shell check for all text containing files in the details-app project
 ##  Author: Avishay Layani
-##  Collaborator: Ori Nahum
+##  Collaborator: Ori Nahum - 50%
+##  Resources: 
+##      https://github.com/codespell-project/codespell
+##      
 ################################################################################
 
 

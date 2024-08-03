@@ -3,8 +3,11 @@
 #################################################################################
 ##  This Script runs spell check for all Python files in the details-app project
 ##  Author: Avishay Layani
-##  Collaborator: Ori Nahum
+##  Collaborator: Ori Nahum - 50%
 ##  Packages needed: hunspell 
+##  Resources:
+##      https://github.com/hunspell/hunspell
+##      https://stackoverflow.com/questions/17241531/examples-tutorials-of-hunspell
 #################################################################################
 
 ##################################################################################################

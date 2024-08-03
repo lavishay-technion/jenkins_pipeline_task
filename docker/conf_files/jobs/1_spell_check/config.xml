@@ -5,14 +5,34 @@
     <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2205.vc9522a_9d5711">
       <jobProperties/>
       <triggers/>
-      <parameters/>
+      <parameters>
+        <string>APP_DIR</string>
+        <string>EXCLUSION_LIST</string>
+      </parameters>
       <options/>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
   </actions>
   <description></description>
   <keepDependencies>false</keepDependencies>
-  <properties/>
-  <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@3908.vd6b_b_5a_a_54010">
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>APP_DIR</name>
+          <description>The Directory the app  project will be cloned to</description>
+          <defaultValue>/tmp/details_app</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>EXCLUSION_LIST</name>
+          <description>The list of keywords that will not go through spell check</description>
+          <defaultValue>.git .DS_Store .jpi .key .enc .lock .jpg .mp4 .ico .css</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsScmFlowDefinition" plugin="workflow-cps@3922.va_f73b_7c4246b_">
     <scm class="hudson.plugins.git.GitSCM" plugin="git@5.2.2">
       <configVersion>2</configVersion>
       <userRemoteConfigs>
