@@ -26,20 +26,20 @@ then
     then
         sudo apt-get update -y
         sudo apt-get install python3-pip -y
-        pip3 install py3-pytest
+        pip3 install pytest
         echo "[+] pytest installed on Debian"
 
     elif [[ $ID = "rocky" ]]
     then
         sudo dnf install python3-pip -y
-        pip install py3-pytest
+        pip install pytest
         echo "[+] pytest installed on Rocky"
 
 
     elif [[ $ID = 'alpine' ]]
     then
         apk add py3-pip
-        pip install py3-pytest
+        pip install pytest
         echo "[+] pytest installed on Alpine"
 
     else
