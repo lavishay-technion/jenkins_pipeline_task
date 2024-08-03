@@ -32,7 +32,7 @@ then
     elif [[ $ID = "rocky" ]]
     then
         sudo dnf install python3-pip -y
-        pip3 install py3-pytest
+        pip install py3-pytest
         echo "[+] pytest installed on Rocky"
 
 
