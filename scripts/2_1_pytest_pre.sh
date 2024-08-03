@@ -21,25 +21,25 @@ pytest --version 2> /dev/null ## Checking if pytest is installed
 if [[ $? != 0 ]]; ## If pytest and is not installed, install pytest and according to the correct OS
 then
     echo "#######################################"
-    ### Checking if the OS is Debian, Rocky or Alpine and running installations for hunspell accordingly.
+    ## Checking if the OS is Debian, Rocky or Alpine and running installations for hunspell accordingly.
     if [[ $ID = "debian" || $ID = "ubuntu" ]]
     then
         sudo apt-get update -y
         sudo apt-get install python3-pip -y
-        pip3 install py3-pyspelling
+        pip3 install py3-pytest
         echo "[+] pytest installed on Debian"
 
     elif [[ $ID = "rocky" ]]
     then
         sudo dnf install python3-pip -y
-        pip3 install py3-pyspelling
+        pip3 install py3-pytest
         echo "[+] pytest installed on Rocky"
 
 
     elif [[ $ID = 'alpine' ]]
     then
         apk add py3-pip
-        pip install py3-pyspelling
+        pip install py3-pytest
         echo "[+] pytest installed on Alpine"
 
     else
