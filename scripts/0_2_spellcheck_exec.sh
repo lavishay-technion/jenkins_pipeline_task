@@ -45,12 +45,8 @@ do
     ## The output of hunspell command, along with other strings to sort out the report, will be saved at a volume in 
     ## "/home/reports/spell_check_report" in the docker, and JENKINS_PIPELINE_TASK/docker/reports/spell_check_report on the VM
     if [[ $? == '0' && $condition == 'False' ]]; then  
-        echo "Checking $i"
         printf "\n\n####################\nFile Name with path: %s \n####################\n" $i >> "/home/reports/spell_check_report"
         hunspell -u -d en_US $i >> "/home/reports/spell_check_report"
-        printf "\n\n\n\n"
-    else
-        echo "Skipping file $i"  ## Printing skipped files that cannot be printed, or found in the exclusion list.
     fi
 done
 
