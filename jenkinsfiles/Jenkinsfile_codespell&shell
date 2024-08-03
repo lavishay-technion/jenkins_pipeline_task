@@ -22,4 +22,10 @@ pipeline {
             }
         }
     }
+    post {
+        always{
+            archiveArtifacts artifacts: '/home/reports/codespell.md', followSymlinks: false, onlyIfSuccessful: True
+            archiveArtifacts artifacts: '/home/reports/shellcheck.md', followSymlinks: false, onlyIfSuccessful: True
+        }
+    }
 }

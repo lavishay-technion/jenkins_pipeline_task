@@ -88,16 +88,3 @@ then
 else
     echo "[+] GIT is already installed"
 fi
-
-#######################################################
-### Cloning Repo
-#######################################################
-
-### Checking if the GIT repo was already cloned on that worker
-if [[ ! -d "/tmp/details_app"  ]]; then  ## If folder not found, clone it
-    git clone https://github.com/lavishay-technion/details_app.git /tmp/details_app/
-    echo "Project cloned to /tmp/details_app"
-else  ## If folder found, update it with pull
-    git pull https://github.com/lavishay-technion/details_app.git /tmp/details_app/
-    echo "Project updated in /tmp/details_app"
-fi

@@ -22,4 +22,10 @@ pipeline {
             }
         }
     }
+    post {
+        always{
+            archiveArtifacts artifacts: '/home/reports/spell_check_report', followSymlinks: false, onlyIfSuccessful: True
+        }
+    }
+    
 }
