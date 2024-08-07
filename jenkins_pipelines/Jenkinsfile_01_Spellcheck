@@ -1,0 +1,45 @@
+
+pipeline {
+    agent {label 'workers'}
+    parameters {
+        string(name: 'APP_DIR', 
+            defaultValue: '/tmp/Details_App/',
+            description: 'The path Directory for project Details_app'
+        )
+        string(name: 'OUTPUT_DIR',
+            defaultValue: "/home/jenkins/reports",
+            description: 'report directory'
+        )
+        string(name: 'EXCLUDE_PATHS_FILES',
+        defaultValue: ".git .DS_Store .jpi .key .enc .lock .jpg .mp4 .ico .css",
+        description: 'exclusion files'
+        )
+    }
+
+    stages {
+        stage('Clone/Pull Git Details_App') {
+            steps {
+                script{
+                sh "chmod +x scripts/00_git_details_app.sh"
+                sh "bash scripts/00_git_details_app.sh"
+                }
+            }
+        }
+        stage('Install spellcheck') {
+            steps {
+                script{
+                sh "chmod +x scripts/01_install_spellcheck.sh"
+                sh "bash scripts/01_install_spellcheck.sh"
+                }
+            }
+        }
+        stage('Exec spellcheck') {
+            steps {
+                script{
+                sh "chmod +x scripts/01_exec_spellcheck.sh"
+                sh "bash scripts/01_exec_spellcheck.sh"
+                }
+            }
+        }
+    }
+}

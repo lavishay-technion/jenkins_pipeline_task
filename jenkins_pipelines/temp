@@ -1,0 +1,22 @@
+".git" ".DS_Store" ".jpi" ".key" ".enc" ".lock" ".jpg" ".mp4" ".ico" ".css"
+parameters{
+        String(name: 'APP_DIR', defaultValue: '/tmp/details_app', description: 'The Directory the app  project will be cloned to')
+        String(name: 'EXCLUSION_LIST', defaultValue:'.git .DS_Store .jpi .key .enc .lock .jpg .mp4 .ico .css', description:'The list of keywords that will not go through spell chek')
+    }
+
+
+pytest ../Details_App --log-file=/Users/ori/Documents/Git_Repositories/Jenkins_Pipeline_Task/reports/pytest.md
+
+
+
+    alias pushgit='echo "Enter Commit Note"; read p;git add .;git commit -m "$p";git push origin main'
+
+
+poetry init --no-interaction --directory=$APP_DIR
+poetry lock [--no-update]
+poetry add pytest-html
+poetry -C $APP_DIR install
+export TEST_DB=True
+cd $APP_DIR
+poetry run pytest --html=$OUTPUT_HTML_FILE #--self-contained-html
+poetry run pytest > $OUTPUT_FILE

@@ -1,0 +1,78 @@
+
+pipeline {
+    agent {label 'workers'}
+    parameters {
+        string(
+            name: 'APP_DIR', 
+            defaultValue: '/tmp/Details_App/',
+            description: 'The path Directory for project Details_app'
+        )
+        string(
+            name: 'IMAGE_NAME',
+            defaultValue: 'details_app_pipeline'
+        )
+        string(
+            name: 'IMAGE_TAG',
+            defaultValue: 'v1.0'
+        )
+    }
+
+    stages {
+        stage('Clone/Pull Git Details_App') {
+            steps {
+                sh 'chmod +x scripts/00_git_details_app.sh'
+                sh 'bash scripts/00_git_details_app.sh'
+            }
+        }
+    
+        stage('Install Docker and Docker Compose') {
+            steps {
+                sh 'chmod +x scripts/04_install_build.sh'
+                sh 'bash scripts/04_install_build.sh'
+            }
+        }
+
+        stage('Build Details_App docker IMAGE') {
+            steps{
+                sh '''
+                cd $APP_DIR
+                sudo docker build . -t details_app
+                sudo docker images
+                '''
+            }
+        }
+
+        stage('Prepare docker login') {
+            steps {
+                withCredentials([usernamePassword(credentialsId: 'dockerhub_credentials_id', 
+                usernameVariable: 'DOCKER_HUB_USERNAME', 
+                passwordVariable: 'DOCKER_HUB_PASSWORD')]) {
+                    sh 'sudo docker logout'
+                    sh 'echo "${DOCKER_HUB_PASSWORD}" | sudo docker login -u "${DOCKER_HUB_USERNAME}" --password-stdin'
+                }
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                script {
+                    sh '''
+                    cd $APP_DIR
+                    sudo docker build -t ${IMAGE_NAME}:${IMAGE_TAG} .
+                    '''
+                }
+            }
+        }
+
+        stage('Push Docker Image') {
+            steps {
+                withCredentials([usernamePassword(credentialsId: '51bd7d4c-f8c4-4ce9-92ef-1532023bf941', 
+                usernameVariable: 'DOCKER_HUB_USERNAME',
+                passwordVariable: 'DOCKER_HUB_PASSWORD')]) {
+                    sh 'sudo docker tag details_app:latest ${DOCKER_HUB_USERNAME}/${IMAGE_NAME}:${IMAGE_TAG}'
+                    sh 'sudo docker push ${DOCKER_HUB_USERNAME}/${IMAGE_NAME}:${IMAGE_TAG}'
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+
+pipeline {
+    agent {label 'workers'}
+    parameters {
+        string(name: 'APP_DIR', 
+            defaultValue: '/tmp/Details_App/',
+            description: 'The path Directory for project Details_app'
+        )
+        string(name: 'OUTPUT_DIR',
+            defaultValue: "/home/jenkins/reports",
+            description: 'report directory'
+        )
+    }
+
+    stages {
+        stage('Clone/Pull Git Details_App') {
+            steps {
+                sh "chmod +x scripts/00_git_details_app.sh"
+                sh "bash scripts/00_git_details_app.sh"
+            }
+        }
+
+        stage('Install pytest') {
+            steps {
+                sh "chmod +x scripts/03_install_tests.sh"
+                sh "bash scripts/03_install_tests.sh"
+            }
+        }
+
+        stage('Exec pytest') {
+            steps {
+                sh "chmod +x scripts/03_exec_tests.sh"
+                sh "bash scripts/03_exec_tests.sh"
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+
+pipeline {
+    agent {label 'workers'}
+    parameters {
+        string(name: 'APP_DIR', 
+            defaultValue: '/tmp/Details_App/',
+            description: 'The path Directory for project Details_app'
+        )
+        string(name: 'OUTPUT_DIR',
+            defaultValue: "/home/jenkins/reports",
+            description: 'report directory'
+        )
+    }
+
+    stages {
+        stage('Clone/Pull Git Details_App') {
+            steps {
+                sh "chmod +x scripts/00_git_details_app.sh"
+                sh "bash scripts/00_git_details_app.sh"
+            }
+        }
+
+        stage('Install Shellcheck') {
+            steps {
+                sh "chmod +x scripts/02_install_shellcheck.sh"
+                sh "bash scripts/02_install_shellcheck.sh"
+            }
+        }
+
+        stage('Exec Shell Check') {
+            steps {
+                sh "chmod +x scripts/02_exec_shellcheck.sh"
+                sh "bash scripts/02_exec_shellcheck.sh"
+            }
+        }
+
+        stage('Install Codespell') {
+            steps {
+                sh "chmod +x scripts/02_install_codespell.sh"
+                sh "bash scripts/02_install_codespell.sh"
+            }
+        }
+
+        stage('Exec Code Spell') {
+            steps {
+                sh "chmod +x scripts/02_exec_codespell.sh"
+                sh "bash scripts/02_exec_codespell.sh"
+            }
+        }
+    }
+}
