@@ -1,0 +1,550 @@
+Started by upstream project "[8mha:////4L+u4ovHuHTEppfRGTJR7F2Kh4TJCPOcueaFIkkYtX7yAAAApB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgZJ/az8JP2CzIJUoI2p8QYG8bmJeYnpqUX6AMBJpHLOAAAA[0mpipeline_00_manager" build number [8mha:////4P5l00SHrIk5ljJ///Y3nXbm7BYBTx+Vq5eUv18exR8OAAAAph+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZp/az8JP2CzIJUoI2p8QYG8bmJeYnpqUX6xiYAX0AOs9AAAAA=[0m34
+originally caused by:
+ Started by remote host 172.19.0.1
+Obtained jenkins_pipelines/Jenkinsfile_04_Build from git https://github.com/lavishay-technion/jenkins_pipeline_task.git
+[8mha:////4Eif8i+huO8Du5/2WMuOXf+dab5fsSI1vDt5pS/NdwpcAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4Apv0at6J2gqvo59i13LxYcyn6eumKi2WruAevDpBZf2AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4CBtKh+AcxJ0CQwvB2zxQF01Z1V9Cismn5EqwcMVqnMpAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAx2oBn6yfm5BaUlqUX65flF2alFRvoArATp/ccAAAA=[0mworker2 in /home/jenkins/workspace/pipeline_04_build
+[8mha:////4IG9NmHoZxScNfzFQR45gkWn0VciPfKVHnfOTy94GebnAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4MSOWT3Pa6/TYp7t5Sulfhv29+aPK5F8c+dvSV5E1zYcAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4Kes4nP1K0oDCUpV+cU5YlBIfyRq/dpNekpMp6z/bKArAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Declarative: Checkout SCM)
+[8mha:////4HeRuTKqvRJYgy2lEc4h1lTE2N77cqRaPoL+wlMq7OztAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] checkout
+The recommended git tool is: git
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/lavishay-technion/jenkins_pipeline_task.git
+ > git init /home/jenkins/workspace/pipeline_04_build # timeout=10
+Fetching upstream changes from https://github.com/lavishay-technion/jenkins_pipeline_task.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.5'
+ > git fetch --tags --force --progress -- https://github.com/lavishay-technion/jenkins_pipeline_task.git +refs/heads/*:refs/remotes/pipeline_04_build_id/* # timeout=10
+Avoid second fetch
+Checking out Revision df8e43f9afdfcd41716f72435fc26175f033670a (refs/remotes/pipeline_04_build_id/main)
+Commit message: "updating repo"
+First time build. Skipping changelog.
+ > git config remote.pipeline_04_build_id.url https://github.com/lavishay-technion/jenkins_pipeline_task.git # timeout=10
+ > git config --add remote.pipeline_04_build_id.fetch +refs/heads/*:refs/remotes/pipeline_04_build_id/* # timeout=10
+ > git rev-parse refs/remotes/pipeline_04_build_id/main^{commit} # timeout=10
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f df8e43f9afdfcd41716f72435fc26175f033670a # timeout=10
+[8mha:////4Ht2XOwhwp1/DQub0INbV57LB0maZLmMdPv8CsUX+Vm0AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4CkJLbyzBxQSNABbP9SsTq/el82MBPRj8G2UEPVFG7g8AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4FSplG+QBcf3sVsOldNT8quuaZiLzOFg6DXmLbjX9qk8AAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] withEnv
+[8mha:////4Gvp5A+qJ/jd+TcIhdJqwOV9nfRkvJ0e5WFqE+nubY9jAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] {
+[8mha:////4HEg5hpfD79hNMKisDe41mRa+K7bnyNaWdGdZbYTIXb+AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUVMrFEWThCaEJJG/7dJSjpxIq7GHWipxIQHy7ZkvdcbqhjgRMEwp7GzGFvLej+aObFMobt5yszRlbWEkbxmQmdBSp/XKihpWFWUsOGw1dh6ihZNgh138iFrL9HUlxTm7cihtGqAJxR8JicZ0rdMAfb3UUXCH+cvAKY+Qdk0ix2WZ/UBbwyqm8IAAAA=[0m[Pipeline] stage
+[8mha:////4JUSMOWMTCtx7U28kCmQgLBtB8c1ebVx8X1N2+nmylaJAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLdfrbD/Cw+y7kUycIAAAA=[0m[Pipeline] { (Clone/Pull Git Details_App)
+[8mha:////4OwhtEDgOutQGiYVX8qyBdT0p8GbOjXShKV2qjCY8UqWAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiBB2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyu3uU/vwBgq0rvS+AAAA[0m[Pipeline] sh
++ chmod +x scripts/00_git_details_app.sh
+[8mha:////4P4jLoeLWbJdhYjPYPM7jh+FF85MV/TaFftZiEwcTVjtAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGPIUG53n9qHN0uFte2+AAAA[0m[Pipeline] sh
++ bash scripts/00_git_details_app.sh
+git version 2.43.5
+[+] Git is already installed
+Already up to date.
+[+] Project Details App successfully updated
+[8mha:////4EvfQWgbyPZld9bbez9XApD/6z74tKTOcf4KUavkryMlAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihESDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFBu95/avQEeFbpZvgAAAA==[0m[Pipeline] }
+[8mha:////4EGvMSiTow5V6/pznNNWvKdLZNKvgAslrzVw9I7H3LqTAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiaCgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7Ny324eW+AAAA[0m[Pipeline] // stage
+[8mha:////4Cyud4eghzNwEokMAcTmV97U5ZJlkI14zqBfgSVrEGsCAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohU3ZAQE2uUhROEJoSk0f9tkpJOnIircQdaKjHhwbItWe/1hioGOFEwzGnsLMbWst6PZk4sU+hunjJzdGUtYSSvmdBZkNLntQpKGlYVJWw4bDW2nqJFk2DHnXzI2ks09SWFeTtyKK0a4AkFn8lJhvQtU4D9fVSR8Mf5C4CpT1A2zWKH5Vl9AAkvMTrCAAAA[0m[Pipeline] stage
+[8mha:////4A6CK1gSj67gz9DW/lz3a18IL2QhhbfsNCGIC6OrWaKFAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] { (Install Docker and Docker Compose)
+[8mha:////4IcxAqFOxFIX/jaTWBJuFYPzrZ8pFUSCWGYOzMtrTmGfAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICdAilorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYI5e6Qa78dPhmQ9Da+AAAA[0m[Pipeline] sh
++ chmod +x scripts/04_install_build.sh
+[8mha:////4KZUc5utt166C6qK5G9BM5g+AsdFEPyKsbDd5XdnS2nKAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0CFEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNknKOtDrn3tP1ih7y++AAAA[0m[Pipeline] sh
++ bash scripts/04_install_build.sh
+[+] Docker is already installed
+[+] Docker Compose is already installed
+[8mha:////4F963dNBWKo3hiwR/yNb2DHJTA7eXQEppROUdkxbOOFxAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIR6RCiSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNn7BGVd59ofPoukFhO+AAAA[0m[Pipeline] }
+[8mha:////4LBZA68H9mgcSUKZOq45T06fmsj1/CmkuccfrJx0W3gjAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEFCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw+4R02vvgAAAA==[0m[Pipeline] // stage
+[8mha:////4HKlC0PX+UiCKqW5zy01ZEppmu/8HCbFX+1Jbs7SjBWoAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohURWyIqWvUhROEJoSk0f8lSUknTsTVuAOBSkx4sGxL1nu+oAoejuQ1swoHg6E3bHSTzokl8sPFUWKWzqwnDOQU61TqSKp2qR1FBYuKElYc1gp7R8GgjrDhVtxF7QTq+hR93g4cSiNv8ICCZ3IUPn7L7GF7nWQg/HH+AmAeI5RNk223/zyrN+/1G3zCAAAA[0m[Pipeline] stage
+[8mha:////4IY3LHM/6jY9UADf2sKnQb1J2BbHGZfJcVDBmydoxxdKAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUQjAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/hYjrHCAAAA[0m[Pipeline] { (Build Details_App docker IMAGE)
+[8mha:////4FXL8XnveRiM4mhodn0nwYcrxLgtpMkon7F1ogoHAYm1AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIUGDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDhnK7+9Q+vAEIWoEpvgAAAA==[0m[Pipeline] sh
++ cd /tmp/Details_App/
++ sudo docker build . -t details_app
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 684B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-alpine
+#2 DONE 8.6s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 96B done
+#3 DONE 0.0s
+
+#4 [base 1/6] FROM docker.io/library/python:3.11-alpine@sha256:700b4aa84090748aafb348fc042b5970abb0a73c8f1b4fcfe0f4e3c2a4a9fcca
+#4 resolve docker.io/library/python:3.11-alpine@sha256:700b4aa84090748aafb348fc042b5970abb0a73c8f1b4fcfe0f4e3c2a4a9fcca 0.0s done
+#4 ...
+
+#5 [internal] load build context
+#5 transferring context: 27.81MB 0.2s done
+#5 DONE 0.2s
+
+#4 [base 1/6] FROM docker.io/library/python:3.11-alpine@sha256:700b4aa84090748aafb348fc042b5970abb0a73c8f1b4fcfe0f4e3c2a4a9fcca
+#4 sha256:545d94f91829cfc9031a9578cf5a2238f285cc0f2e04203dd32613f2a55cfeb6 0B / 12.67MB 0.2s
+#4 sha256:4271f5ef1d3946e791b3cf6b9748767d9c8a5a299fc0ddc3d0dffcc2bec5b52c 0B / 230B 0.2s
+#4 sha256:700b4aa84090748aafb348fc042b5970abb0a73c8f1b4fcfe0f4e3c2a4a9fcca 9.02kB / 9.02kB done
+#4 sha256:2fb442e6424d3431ee85466f8aca1de27735c65fdac9a6ea36cad5f59ea5ef33 1.93kB / 1.93kB done
+#4 sha256:a6fe4140edeac28aa05e297f56dc624a8189104928309b6178e680e5ca92ac63 6.31kB / 6.31kB done
+#4 sha256:b9dc4119f2ec8172c585e3a6b9dd1dead61612cab2ebab820703fd122a07129b 0B / 461.81kB 0.2s
+#4 sha256:b9dc4119f2ec8172c585e3a6b9dd1dead61612cab2ebab820703fd122a07129b 461.81kB / 461.81kB 0.5s done
+#4 extracting sha256:b9dc4119f2ec8172c585e3a6b9dd1dead61612cab2ebab820703fd122a07129b 0.1s
+#4 sha256:780f71a8607261eb6b1fea0f26d806767a3730696c0ff0a99ca4fad403c01839 0B / 3.13MB 0.6s
+#4 sha256:545d94f91829cfc9031a9578cf5a2238f285cc0f2e04203dd32613f2a55cfeb6 2.10MB / 12.67MB 0.7s
+#4 extracting sha256:b9dc4119f2ec8172c585e3a6b9dd1dead61612cab2ebab820703fd122a07129b 0.2s done
+#4 sha256:545d94f91829cfc9031a9578cf5a2238f285cc0f2e04203dd32613f2a55cfeb6 12.67MB / 12.67MB 0.9s done
+#4 sha256:4271f5ef1d3946e791b3cf6b9748767d9c8a5a299fc0ddc3d0dffcc2bec5b52c 230B / 230B 0.9s done
+#4 sha256:780f71a8607261eb6b1fea0f26d806767a3730696c0ff0a99ca4fad403c01839 1.05MB / 3.13MB 0.9s
+#4 sha256:780f71a8607261eb6b1fea0f26d806767a3730696c0ff0a99ca4fad403c01839 3.13MB / 3.13MB 0.9s done
+#4 extracting sha256:545d94f91829cfc9031a9578cf5a2238f285cc0f2e04203dd32613f2a55cfeb6 0.1s
+#4 extracting sha256:545d94f91829cfc9031a9578cf5a2238f285cc0f2e04203dd32613f2a55cfeb6 0.7s done
+#4 extracting sha256:4271f5ef1d3946e791b3cf6b9748767d9c8a5a299fc0ddc3d0dffcc2bec5b52c
+#4 extracting sha256:4271f5ef1d3946e791b3cf6b9748767d9c8a5a299fc0ddc3d0dffcc2bec5b52c done
+#4 extracting sha256:780f71a8607261eb6b1fea0f26d806767a3730696c0ff0a99ca4fad403c01839 0.1s
+#4 extracting sha256:780f71a8607261eb6b1fea0f26d806767a3730696c0ff0a99ca4fad403c01839 0.4s done
+#4 DONE 2.2s
+
+#6 [stage-1 2/6] WORKDIR /home/app
+#6 DONE 1.2s
+
+#7 [base 2/6] COPY ./pyproject.toml ./
+#7 DONE 1.2s
+
+#8 [base 3/6] RUN apk add --no-cache --update build-base git python3-dev libffi-dev
+#8 0.572 fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz
+#8 1.899 fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/x86_64/APKINDEX.tar.gz
+#8 2.250 (1/40) Installing libgcc (13.2.1_git20240309-r0)
+#8 2.304 (2/40) Installing jansson (2.14-r4)
+#8 2.356 (3/40) Installing libstdc++ (13.2.1_git20240309-r0)
+#8 2.440 (4/40) Installing zstd-libs (1.5.6-r0)
+#8 2.507 (5/40) Installing binutils (2.42-r0)
+#8 2.696 (6/40) Installing libmagic (5.45-r1)
+#8 2.783 (7/40) Installing file (5.45-r1)
+#8 ...
+
+#9 [stage-1 3/6] RUN apk add git
+#9 0.480 fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/main/x86_64/APKINDEX.tar.gz
+#9 1.383 fetch https://dl-cdn.alpinelinux.org/alpine/v3.20/community/x86_64/APKINDEX.tar.gz
+#9 1.862 (1/11) Installing brotli-libs (1.1.0-r2)
+#9 1.925 (2/11) Installing c-ares (1.28.1-r0)
+#9 1.980 (3/11) Installing libunistring (1.2-r0)
+#9 2.047 (4/11) Installing libidn2 (2.3.7-r0)
+#9 2.103 (5/11) Installing nghttp2-libs (1.62.1-r0)
+#9 2.170 (6/11) Installing libpsl (0.21.5-r1)
+#9 2.224 (7/11) Installing zstd-libs (1.5.6-r0)
+#9 2.323 (8/11) Installing libcurl (8.9.0-r0)
+#9 2.384 (9/11) Installing pcre2 (10.43-r0)
+#9 2.444 (10/11) Installing git (2.45.2-r0)
+#9 2.584 (11/11) Installing git-init-template (2.45.2-r0)
+#9 2.639 Executing busybox-1.36.1-r29.trigger
+#9 2.651 OK: 27 MiB in 48 packages
+#9 DONE 2.8s
+
+#8 [base 3/6] RUN apk add --no-cache --update build-base git python3-dev libffi-dev
+#8 2.835 (8/40) Installing libgomp (13.2.1_git20240309-r0)
+#8 2.891 (9/40) Installing libatomic (13.2.1_git20240309-r0)
+#8 2.944 (10/40) Installing gmp (6.3.0-r1)
+#8 3.002 (11/40) Installing isl26 (0.26-r1)
+#8 3.081 (12/40) Installing mpfr4 (4.2.1-r0)
+#8 3.142 (13/40) Installing mpc1 (1.3.1-r1)
+#8 3.195 (14/40) Installing gcc (13.2.1_git20240309-r0)
+#8 4.371 (15/40) Installing libstdc++-dev (13.2.1_git20240309-r0)
+#8 4.781 (16/40) Installing musl-dev (1.2.5-r0)
+#8 5.000 (17/40) Installing g++ (13.2.1_git20240309-r0)
+#8 5.619 (18/40) Installing make (4.4.1-r2)
+#8 5.675 (19/40) Installing fortify-headers (1.1-r3)
+#8 5.727 (20/40) Installing patch (2.7.6-r10)
+#8 5.783 (21/40) Installing build-base (0.5-r3)
+#8 5.834 (22/40) Installing brotli-libs (1.1.0-r2)
+#8 5.896 (23/40) Installing c-ares (1.28.1-r0)
+#8 5.949 (24/40) Installing libunistring (1.2-r0)
+#8 6.013 (25/40) Installing libidn2 (2.3.7-r0)
+#8 6.066 (26/40) Installing nghttp2-libs (1.62.1-r0)
+#8 6.118 (27/40) Installing libpsl (0.21.5-r1)
+#8 6.170 (28/40) Installing libcurl (8.9.0-r0)
+#8 6.227 (29/40) Installing pcre2 (10.43-r0)
+#8 6.283 (30/40) Installing git (2.45.2-r0)
+#8 6.404 (31/40) Installing git-init-template (2.45.2-r0)
+#8 6.456 (32/40) Installing linux-headers (6.6-r0)
+#8 6.615 (33/40) Installing pkgconf (2.2.0-r0)
+#8 6.667 (34/40) Installing libffi-dev (3.4.6-r0)
+#8 6.748 (35/40) Installing mpdecimal (4.0.0-r0)
+#8 6.817 (36/40) Installing python3 (3.12.3-r1)
+#8 7.065 (37/40) Installing python3-pycache-pyc0 (3.12.3-r1)
+#8 7.243 (38/40) Installing pyc (3.12.3-r1)
+#8 7.292 (39/40) Installing python3-pyc (3.12.3-r1)
+#8 7.343 (40/40) Installing python3-dev (3.12.3-r1)
+#8 8.910 Executing busybox-1.36.1-r29.trigger
+#8 8.920 OK: 379 MiB in 77 packages
+#8 DONE 9.3s
+
+#10 [base 4/6] RUN pip install poetry
+#10 2.523 Collecting poetry
+#10 3.700   Downloading poetry-1.8.3-py3-none-any.whl.metadata (6.8 kB)
+#10 3.798 Collecting build<2.0.0,>=1.0.3 (from poetry)
+#10 3.856   Downloading build-1.2.1-py3-none-any.whl.metadata (4.3 kB)
+#10 3.932 Collecting cachecontrol<0.15.0,>=0.14.0 (from cachecontrol[filecache]<0.15.0,>=0.14.0->poetry)
+#10 3.987   Downloading cachecontrol-0.14.0-py3-none-any.whl.metadata (3.1 kB)
+#10 4.072 Collecting cleo<3.0.0,>=2.1.0 (from poetry)
+#10 4.127   Downloading cleo-2.1.0-py3-none-any.whl.metadata (12 kB)
+#10 4.201 Collecting crashtest<0.5.0,>=0.4.1 (from poetry)
+#10 4.255   Downloading crashtest-0.4.1-py3-none-any.whl.metadata (1.1 kB)
+#10 4.494 Collecting dulwich<0.22.0,>=0.21.2 (from poetry)
+#10 4.550   Downloading dulwich-0.21.7-cp311-cp311-musllinux_1_1_x86_64.whl.metadata (4.3 kB)
+#10 4.631 Collecting fastjsonschema<3.0.0,>=2.18.0 (from poetry)
+#10 4.688   Downloading fastjsonschema-2.20.0-py3-none-any.whl.metadata (2.1 kB)
+#10 4.756 Collecting installer<0.8.0,>=0.7.0 (from poetry)
+#10 4.812   Downloading installer-0.7.0-py3-none-any.whl.metadata (936 bytes)
+#10 4.923 Collecting keyring<25.0.0,>=24.0.0 (from poetry)
+#10 4.980   Downloading keyring-24.3.1-py3-none-any.whl.metadata (20 kB)
+#10 5.078 Collecting packaging>=23.1 (from poetry)
+#10 5.133   Downloading packaging-24.1-py3-none-any.whl.metadata (3.2 kB)
+#10 5.198 Collecting pexpect<5.0.0,>=4.7.0 (from poetry)
+#10 5.252   Downloading pexpect-4.9.0-py2.py3-none-any.whl.metadata (2.5 kB)
+#10 5.322 Collecting pkginfo<2.0,>=1.10 (from poetry)
+#10 5.376   Downloading pkginfo-1.11.1-py3-none-any.whl.metadata (11 kB)
+#10 5.460 Collecting platformdirs<5,>=3.0.0 (from poetry)
+#10 5.517   Downloading platformdirs-4.2.2-py3-none-any.whl.metadata (11 kB)
+#10 5.606 Collecting poetry-core==1.9.0 (from poetry)
+#10 5.661   Downloading poetry_core-1.9.0-py3-none-any.whl.metadata (3.5 kB)
+#10 5.731 Collecting poetry-plugin-export<2.0.0,>=1.6.0 (from poetry)
+#10 5.786   Downloading poetry_plugin_export-1.8.0-py3-none-any.whl.metadata (2.8 kB)
+#10 5.865 Collecting pyproject-hooks<2.0.0,>=1.0.0 (from poetry)
+#10 5.919   Downloading pyproject_hooks-1.1.0-py3-none-any.whl.metadata (1.3 kB)
+#10 6.013 Collecting requests<3.0,>=2.26 (from poetry)
+#10 6.067   Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+#10 6.138 Collecting requests-toolbelt<2.0.0,>=1.0.0 (from poetry)
+#10 6.193   Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)
+#10 6.276 Collecting shellingham<2.0,>=1.5 (from poetry)
+#10 6.334   Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+#10 6.422 Collecting tomlkit<1.0.0,>=0.11.4 (from poetry)
+#10 6.477   Downloading tomlkit-0.13.0-py3-none-any.whl.metadata (2.7 kB)
+#10 6.567 Collecting trove-classifiers>=2022.5.19 (from poetry)
+#10 6.623   Downloading trove_classifiers-2024.7.2-py3-none-any.whl.metadata (2.2 kB)
+#10 6.767 Collecting virtualenv<21.0.0,>=20.23.0 (from poetry)
+#10 6.822   Downloading virtualenv-20.26.3-py3-none-any.whl.metadata (4.5 kB)
+#10 7.018 Collecting msgpack<2.0.0,>=0.5.2 (from cachecontrol<0.15.0,>=0.14.0->cachecontrol[filecache]<0.15.0,>=0.14.0->poetry)
+#10 7.162   Downloading msgpack-1.0.8-cp311-cp311-musllinux_1_1_x86_64.whl.metadata (9.1 kB)
+#10 7.261 Collecting filelock>=3.8.0 (from cachecontrol[filecache]<0.15.0,>=0.14.0->poetry)
+#10 7.315   Downloading filelock-3.15.4-py3-none-any.whl.metadata (2.9 kB)
+#10 8.110 Collecting rapidfuzz<4.0.0,>=3.0.0 (from cleo<3.0.0,>=2.1.0->poetry)
+#10 8.250   Downloading rapidfuzz-3.9.6-cp311-cp311-musllinux_1_2_x86_64.whl.metadata (12 kB)
+#10 8.361 Collecting urllib3>=1.25 (from dulwich<0.22.0,>=0.21.2->poetry)
+#10 8.416   Downloading urllib3-2.2.2-py3-none-any.whl.metadata (6.4 kB)
+#10 8.514 Collecting jaraco.classes (from keyring<25.0.0,>=24.0.0->poetry)
+#10 8.571   Downloading jaraco.classes-3.4.0-py3-none-any.whl.metadata (2.6 kB)
+#10 8.696 Collecting importlib-metadata>=4.11.4 (from keyring<25.0.0,>=24.0.0->poetry)
+#10 8.753   Downloading importlib_metadata-8.2.0-py3-none-any.whl.metadata (4.7 kB)
+#10 8.823 Collecting SecretStorage>=3.2 (from keyring<25.0.0,>=24.0.0->poetry)
+#10 8.878   Downloading SecretStorage-3.3.3-py3-none-any.whl.metadata (4.0 kB)
+#10 8.976 Collecting jeepney>=0.4.2 (from keyring<25.0.0,>=24.0.0->poetry)
+#10 9.033   Downloading jeepney-0.8.0-py3-none-any.whl.metadata (1.3 kB)
+#10 9.102 Collecting ptyprocess>=0.5 (from pexpect<5.0.0,>=4.7.0->poetry)
+#10 9.158   Downloading ptyprocess-0.7.0-py2.py3-none-any.whl.metadata (1.3 kB)
+#10 9.334 Collecting charset-normalizer<4,>=2 (from requests<3.0,>=2.26->poetry)
+#10 9.391   Downloading charset_normalizer-3.3.2-cp311-cp311-musllinux_1_1_x86_64.whl.metadata (33 kB)
+#10 9.493 Collecting idna<4,>=2.5 (from requests<3.0,>=2.26->poetry)
+#10 9.547   Downloading idna-3.7-py3-none-any.whl.metadata (9.9 kB)
+#10 9.640 Collecting certifi>=2017.4.17 (from requests<3.0,>=2.26->poetry)
+#10 9.696   Downloading certifi-2024.7.4-py3-none-any.whl.metadata (2.2 kB)
+#10 9.871 Collecting distlib<1,>=0.3.7 (from virtualenv<21.0.0,>=20.23.0->poetry)
+#10 9.925   Downloading distlib-0.3.8-py2.py3-none-any.whl.metadata (5.1 kB)
+#10 10.08 Collecting zipp>=0.5 (from importlib-metadata>=4.11.4->keyring<25.0.0,>=24.0.0->poetry)
+#10 10.13   Downloading zipp-3.19.2-py3-none-any.whl.metadata (3.6 kB)
+#10 10.44 Collecting cryptography>=2.0 (from SecretStorage>=3.2->keyring<25.0.0,>=24.0.0->poetry)
+#10 10.49   Downloading cryptography-43.0.0-cp39-abi3-musllinux_1_2_x86_64.whl.metadata (5.4 kB)
+#10 10.61 Collecting more-itertools (from jaraco.classes->keyring<25.0.0,>=24.0.0->poetry)
+#10 10.66   Downloading more_itertools-10.4.0-py3-none-any.whl.metadata (36 kB)
+#10 10.89 Collecting cffi>=1.12 (from cryptography>=2.0->SecretStorage>=3.2->keyring<25.0.0,>=24.0.0->poetry)
+#10 10.95   Downloading cffi-1.17.0-cp311-cp311-musllinux_1_1_x86_64.whl.metadata (1.5 kB)
+#10 11.06 Collecting pycparser (from cffi>=1.12->cryptography>=2.0->SecretStorage>=3.2->keyring<25.0.0,>=24.0.0->poetry)
+#10 11.12   Downloading pycparser-2.22-py3-none-any.whl.metadata (943 bytes)
+#10 11.19 Downloading poetry-1.8.3-py3-none-any.whl (249 kB)
+#10 11.30    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 249.9/249.9 kB 2.3 MB/s eta 0:00:00
+#10 11.36 Downloading poetry_core-1.9.0-py3-none-any.whl (309 kB)
+#10 11.39    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 309.5/309.5 kB 12.6 MB/s eta 0:00:00
+#10 11.44 Downloading build-1.2.1-py3-none-any.whl (21 kB)
+#10 11.51 Downloading cachecontrol-0.14.0-py3-none-any.whl (22 kB)
+#10 11.57 Downloading cleo-2.1.0-py3-none-any.whl (78 kB)
+#10 11.58    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.7/78.7 kB 13.0 MB/s eta 0:00:00
+#10 11.63 Downloading crashtest-0.4.1-py3-none-any.whl (7.6 kB)
+#10 11.70 Downloading dulwich-0.21.7-cp311-cp311-musllinux_1_1_x86_64.whl (531 kB)
+#10 11.75    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 531.8/531.8 kB 9.9 MB/s eta 0:00:00
+#10 11.81 Downloading fastjsonschema-2.20.0-py3-none-any.whl (23 kB)
+#10 11.88 Downloading installer-0.7.0-py3-none-any.whl (453 kB)
+#10 11.90    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 453.8/453.8 kB 34.0 MB/s eta 0:00:00
+#10 11.96 Downloading keyring-24.3.1-py3-none-any.whl (38 kB)
+#10 12.02 Downloading packaging-24.1-py3-none-any.whl (53 kB)
+#10 12.03    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.0/54.0 kB 6.4 MB/s eta 0:00:00
+#10 12.08 Downloading pexpect-4.9.0-py2.py3-none-any.whl (63 kB)
+#10 12.09    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.8/63.8 kB 15.1 MB/s eta 0:00:00
+#10 12.14 Downloading pkginfo-1.11.1-py3-none-any.whl (31 kB)
+#10 12.20 Downloading platformdirs-4.2.2-py3-none-any.whl (18 kB)
+#10 12.26 Downloading poetry_plugin_export-1.8.0-py3-none-any.whl (10 kB)
+#10 12.32 Downloading pyproject_hooks-1.1.0-py3-none-any.whl (9.2 kB)
+#10 12.38 Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+#10 12.39    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.9/64.9 kB 8.1 MB/s eta 0:00:00
+#10 12.45 Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+#10 12.46    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.5/54.5 kB 13.7 MB/s eta 0:00:00
+#10 12.51 Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+#10 12.57 Downloading tomlkit-0.13.0-py3-none-any.whl (37 kB)
+#10 12.63 Downloading trove_classifiers-2024.7.2-py3-none-any.whl (13 kB)
+#10 12.69 Downloading virtualenv-20.26.3-py3-none-any.whl (5.7 MB)
+#10 12.92    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.7/5.7 MB 25.0 MB/s eta 0:00:00
+#10 12.98 Downloading certifi-2024.7.4-py3-none-any.whl (162 kB)
+#10 12.99    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.0/163.0 kB 38.6 MB/s eta 0:00:00
+#10 13.04 Downloading charset_normalizer-3.3.2-cp311-cp311-musllinux_1_1_x86_64.whl (140 kB)
+#10 13.05    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 140.9/140.9 kB 36.0 MB/s eta 0:00:00
+#10 13.11 Downloading distlib-0.3.8-py2.py3-none-any.whl (468 kB)
+#10 13.12    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 468.9/468.9 kB 64.8 MB/s eta 0:00:00
+#10 13.17 Downloading filelock-3.15.4-py3-none-any.whl (16 kB)
+#10 13.23 Downloading idna-3.7-py3-none-any.whl (66 kB)
+#10 13.24    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.8/66.8 kB 13.3 MB/s eta 0:00:00
+#10 13.29 Downloading importlib_metadata-8.2.0-py3-none-any.whl (25 kB)
+#10 13.35 Downloading jeepney-0.8.0-py3-none-any.whl (48 kB)
+#10 13.36    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 kB 6.5 MB/s eta 0:00:00
+#10 13.42 Downloading msgpack-1.0.8-cp311-cp311-musllinux_1_1_x86_64.whl (409 kB)
+#10 13.43    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 409.1/409.1 kB 44.3 MB/s eta 0:00:00
+#10 13.49 Downloading ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+#10 13.75 Downloading rapidfuzz-3.9.6-cp311-cp311-musllinux_1_2_x86_64.whl (4.4 MB)
+#10 14.46    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.4/4.4 MB 6.2 MB/s eta 0:00:00
+#10 14.52 Downloading SecretStorage-3.3.3-py3-none-any.whl (15 kB)
+#10 14.57 Downloading urllib3-2.2.2-py3-none-any.whl (121 kB)
+#10 14.59    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.4/121.4 kB 13.2 MB/s eta 0:00:00
+#10 14.64 Downloading jaraco.classes-3.4.0-py3-none-any.whl (6.8 kB)
+#10 14.70 Downloading cryptography-43.0.0-cp39-abi3-musllinux_1_2_x86_64.whl (4.1 MB)
+#10 14.76    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.1/4.1 MB 74.6 MB/s eta 0:00:00
+#10 14.82 Downloading zipp-3.19.2-py3-none-any.whl (9.0 kB)
+#10 14.88 Downloading more_itertools-10.4.0-py3-none-any.whl (60 kB)
+#10 14.88    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.9/60.9 kB 14.5 MB/s eta 0:00:00
+#10 14.94 Downloading cffi-1.17.0-cp311-cp311-musllinux_1_1_x86_64.whl (478 kB)
+#10 14.95    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 478.3/478.3 kB 45.7 MB/s eta 0:00:00
+#10 15.01 Downloading pycparser-2.22-py3-none-any.whl (117 kB)
+#10 15.02    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.6/117.6 kB 25.5 MB/s eta 0:00:00
+#10 15.41 Installing collected packages: trove-classifiers, ptyprocess, fastjsonschema, distlib, zipp, urllib3, tomlkit, shellingham, rapidfuzz, pyproject-hooks, pycparser, poetry-core, platformdirs, pkginfo, pexpect, packaging, msgpack, more-itertools, jeepney, installer, idna, filelock, crashtest, charset-normalizer, certifi, virtualenv, requests, jaraco.classes, importlib-metadata, dulwich, cleo, cffi, build, requests-toolbelt, cryptography, cachecontrol, SecretStorage, keyring, poetry-plugin-export, poetry
+#10 19.07 Successfully installed SecretStorage-3.3.3 build-1.2.1 cachecontrol-0.14.0 certifi-2024.7.4 cffi-1.17.0 charset-normalizer-3.3.2 cleo-2.1.0 crashtest-0.4.1 cryptography-43.0.0 distlib-0.3.8 dulwich-0.21.7 fastjsonschema-2.20.0 filelock-3.15.4 idna-3.7 importlib-metadata-8.2.0 installer-0.7.0 jaraco.classes-3.4.0 jeepney-0.8.0 keyring-24.3.1 more-itertools-10.4.0 msgpack-1.0.8 packaging-24.1 pexpect-4.9.0 pkginfo-1.11.1 platformdirs-4.2.2 poetry-1.8.3 poetry-core-1.9.0 poetry-plugin-export-1.8.0 ptyprocess-0.7.0 pycparser-2.22 pyproject-hooks-1.1.0 rapidfuzz-3.9.6 requests-2.32.3 requests-toolbelt-1.0.0 shellingham-1.5.4 tomlkit-0.13.0 trove-classifiers-2024.7.2 urllib3-2.2.2 virtualenv-20.26.3 zipp-3.19.2
+#10 19.07 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#10 19.41 
+#10 19.41 [notice] A new release of pip is available: 24.0 -> 24.2
+#10 19.41 [notice] To update, run: pip install --upgrade pip
+#10 DONE 20.0s
+
+#11 [base 5/6] RUN poetry config virtualenvs.create false
+#11 DONE 1.0s
+
+#12 [base 6/6] RUN poetry install --no-dev
+#12 0.894 Skipping virtualenv creation, as specified in config file.
+#12 1.175 The `--no-dev` option is deprecated, use the `--only main` notation instead.
+#12 1.176 Updating dependencies
+#12 1.177 Resolving dependencies...
+#12 9.244 
+#12 9.244 Package operations: 31 installs, 2 updates, 0 removals
+#12 9.244 
+#12 9.245   - Installing attrs (24.2.0)
+#12 9.246   - Installing rpds-py (0.20.0)
+#12 9.752   - Installing iniconfig (2.0.0)
+#12 9.752   - Installing markupsafe (2.1.5)
+#12 9.754   - Installing pluggy (1.5.0)
+#12 9.755   - Installing referencing (0.35.1)
+#12 10.00   - Installing blinker (1.8.2)
+#12 10.00   - Installing click (8.1.7)
+#12 10.01   - Installing itsdangerous (2.2.0)
+#12 10.01   - Installing jinja2 (3.1.4)
+#12 10.01   - Installing greenlet (3.0.3)
+#12 10.01   - Installing pytest (8.3.2)
+#12 10.01   - Installing jsonschema-specifications (2023.12.1)
+#12 10.01   - Installing typing-extensions (4.12.2)
+#12 10.01   - Installing werkzeug (3.0.3)
+#12 10.55   - Installing dnspython (2.6.1)
+#12 10.55   - Installing flask (3.0.3)
+#12 10.56   - Installing jsonschema (4.23.0)
+#12 10.56   - Updating setuptools (65.5.1 -> 72.1.0)
+#12 10.56   - Installing sqlalchemy (2.0.32)
+#12 10.56   - Updating wheel (0.43.0 -> 0.44.0)
+#12 10.56   - Installing wtforms (3.1.2)
+#12 10.57   - Installing pytest-metadata (3.1.1)
+#12 10.57   - Installing toml (0.10.2)
+#12 11.98   - Installing email-validator (2.2.0)
+#12 11.98   - Installing flask-sqlalchemy (3.1.1)
+#12 11.98   - Installing gunicorn (22.0.0)
+#12 11.99   - Installing flask-wtf (1.2.1)
+#12 11.99   - Installing psycopg2-binary (2.9.9)
+#12 11.99   - Installing pytest-html (4.1.1)
+#12 11.99   - Installing pyproject-toml (0.0.10)
+#12 12.00   - Installing python-dotenv (1.0.1)
+#12 12.00   - Installing validators (0.28.3)
+#12 12.47 
+#12 12.47 Writing lock file
+#12 12.47 
+#12 12.47 Installing the current project: details (0.1.0)
+#12 12.47 Warning: The current project could not be installed: [Errno 2] No such file or directory: '/README.md'
+#12 12.47 If you do not want to install the current project use --no-root.
+#12 12.47 If you want to use Poetry only for dependency management but not for packaging, you can disable package mode by setting package-mode = false in your pyproject.toml file.
+#12 12.47 In a future version of Poetry this warning will become an error!
+#12 12.47 
+#12 DONE 12.9s
+
+#13 [stage-1 4/6] COPY --from=base /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
+#13 DONE 1.0s
+
+#14 [stage-1 5/6] COPY --from=base /usr/local/bin /usr/local/bin
+#14 DONE 0.0s
+
+#15 [stage-1 6/6] COPY . /home/app/
+#15 DONE 0.1s
+
+#16 exporting to image
+#16 exporting layers
+#16 exporting layers 0.9s done
+#16 writing image sha256:894eaa1e95831aa0ba6118fd9a00dcc3d704e8209021d45e690fbed6675bb03b done
+#16 naming to docker.io/library/details_app done
+#16 DONE 0.9s
++ sudo docker images
+REPOSITORY                       TAG                 IMAGE ID       CREATED        SIZE
+details_app                      latest              894eaa1e9583   1 second ago   204MB
+docker-worker2                   latest              51873e20e9b5   5 days ago     1.91GB
+docker-worker1                   latest              b682b2ba9a9b   5 days ago     2.04GB
+docker-main                      latest              658dd0769c19   5 days ago     797MB
+docker-worker2-task              latest              1cf7a799906e   5 days ago     1.91GB
+docker-worker1-task              latest              f6be40f616d1   5 days ago     2.04GB
+docker-main-task                 latest              2ca200e6639c   5 days ago     797MB
+<none>                           <none>              2018f1975a14   5 days ago     1.91GB
+<none>                           <none>              4946b913299c   5 days ago     2.04GB
+<none>                           <none>              da105ba7acce   5 days ago     797MB
+<none>                           <none>              07a2862c9092   5 days ago     1.91GB
+<none>                           <none>              6f4338ff673a   5 days ago     2.04GB
+<none>                           <none>              bc60b681323a   5 days ago     797MB
+<none>                           <none>              04c2431e0c26   6 days ago     1.91GB
+<none>                           <none>              613bb8351fb0   6 days ago     2.04GB
+<none>                           <none>              864c6b849aed   6 days ago     797MB
+<none>                           <none>              90abfd806b0e   6 days ago     1.91GB
+<none>                           <none>              d333807ef50c   6 days ago     1.91GB
+<none>                           <none>              102e5b2c6d74   7 days ago     1.91GB
+<none>                           <none>              7f2763fc6504   7 days ago     2.04GB
+<none>                           <none>              8166de363771   7 days ago     797MB
+<none>                           <none>              ece0dbc32981   7 days ago     797MB
+<none>                           <none>              a4ecb67116f0   7 days ago     1.91GB
+<none>                           <none>              7569705cf6a3   7 days ago     2.04GB
+<none>                           <none>              c0a84c5caffb   7 days ago     797MB
+<none>                           <none>              c59bd78a6ba9   8 days ago     1.91GB
+<none>                           <none>              75a4f179d3fd   8 days ago     1.91GB
+<none>                           <none>              c1cc21913e7a   8 days ago     2.04GB
+<none>                           <none>              24bd1a24be2c   8 days ago     2.04GB
+<none>                           <none>              d6897d1caa24   8 days ago     797MB
+<none>                           <none>              d6a5524d581a   8 days ago     797MB
+<none>                           <none>              c2564517d9d2   8 days ago     2.04GB
+<none>                           <none>              8c253f680dfc   8 days ago     797MB
+alayani/project                  details_app         db2a1ddc56a9   12 days ago    197MB
+alayani/project                  <none>              8b517ff6064e   12 days ago    197MB
+<none>                           <none>              4548e49165ba   12 days ago    197MB
+alayani/newproject/details_app   latest              5eea836f4769   2 weeks ago    269MB
+<none>                           <none>              49b223efcb28   2 weeks ago    1.91GB
+<none>                           <none>              7811dca53771   2 weeks ago    1.72GB
+<none>                           <none>              be41c2db1dd5   2 weeks ago    796MB
+python                           3.12.4-alpine3.20   143abac68ee4   4 weeks ago    55.3MB
+[8mha:////4F6IT2fMURM4r2cf+P/KCXLQ4ouHZi8QOf5sRGeq8BcIAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiISEKRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g3QKkBhvgAAAA==[0m[Pipeline] }
+[8mha:////4Aj5zPDknbzVCTClTrRMoUrC1hCyqSJXQhe4ECklmqkTAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiIQokRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g2TqBHnvgAAAA==[0m[Pipeline] // stage
+[8mha:////4Jgj6STFh9FR+94UL+Z3YnO/Q1N9mpC4tXQXjW8Moz/rAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUZUOIqWvUhROEJoSk0f8lSUknTsTVuAOBSkx4sGxL1nu+oAoejuQ1swoHg6E3bHSTzokl8sPFUWKWzqwnDOQU61TqSKp2qR1FBYuKElYc1gp7R8GgjrDhVtxF7QTq+hR93g4cSiNv8ICCZ3IUPn7L7GF7nWQg/HH+AmAeI5RNk223/zyrNzHmhcDCAAAA[0m[Pipeline] stage
+[8mha:////4DT+bPorI1B8hosIefsRPtBt42/gH2WL6tbq7xCugexeAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUwYRQJ9aoCycITQhJo/9LkpJOnIircQcClZjwYNmWrPd8QRU8NOQ1swp7g6EzbHCjzokl8v3FUWKWzqwjDOQUa1VqSarjXFuKCmYVJSw4LBV2joJBHWHFrbiL2gnU9Sn6vB04lEbe4AEFz+QofPyWycP6OspA+OP8BcA0RCi3+2y7zedZvQH4j6CMwgAAAA==[0m[Pipeline] { (Prepare docker login)
+[8mha:////4LQuUgz4xBru19xsFVhHi4d6yhpvgzQ8tWbKLiX9zdH+AAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUxIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+ty4Up8IAAAA=[0m[Pipeline] withCredentials
+Masking supported pattern matches of $DOCKER_HUB_PASSWORD
+[8mha:////4LciCzA9SkZTnangRDjU2l+4+nCkyaTlwmFPGa1VcLbMAAAAph+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUwIiYukZZOEFoQkgb/V9+UtqJE3E17kBLJSY8WLYl673eUESGE7ETjcXWY6y96ELvpiQG4vYaaBANXURNGClYoeygyNhqqYqShUVZDisJa4t1oOjRJdjIRj90GTS68px42o4Scm/u8IRMTuSkOX3LyLC99SYS/jh/ATB2CfLDbrb9/Cw+2YMO4MIAAAA=[0m[Pipeline] {
+[8mha:////4LFd439bxYQG1rMeOoeGXTZd1LUqtPn4eqDjol3FlO+KAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikRJR0VppeIFJjLFj3Tm2g1PxIr7GHwhEomKL1c4283zBOgY4ctBoFfWGYmvQu1HPCzOH/uo4o+ULtkyRncJG5YY7dVqw4aRgSVHCSsBGUes4GtIJtsLKu6ycJF2dU5i/g4DSdAM8oBCzOcmQvjAF2N3GLjL9PH8FMPkEZb3/VO3favo5XL4AAAA=[0m[Pipeline] sh
++ sudo docker logout
+Removing login credentials for https://index.docker.io/v1/
+[8mha:////4B8hJMPsxPhWHHICuLa1tEOndiJdEuQfb8+f7ag41FfHAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAR2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyt32U/vwBq1seBO+AAAA[0m[Pipeline] sh
++ echo ****
++ sudo docker login -u orinahum1982 --password-stdin
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credential-stores
+
+Login Succeeded
+[8mha:////4Ha7K5TrLoypJefuQotdyNjoVzVAqYjOIFqxRN0KloIoAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIigagQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN40kgA2+AAAA[0m[Pipeline] }
+[8mha:////4Jhlu43tKJLVivVFUzNTufz/iYhSjgqXkrK5N+EcABFlAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIihESDqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgGZBx0SvgAAAA==[0m[Pipeline] // withCredentials
+[8mha:////4E+oBa9rRvPuRG67vVlIQGnjeeeorl4sEYjZH9D8d2OCAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKCREGBqNJabniBiY1xYt0Z2yGpeBFf4w8EIlGxxWpnm3m+YJkiHDlabA11jlLjMPjeTgsHjt3F84Atn7FhSuwNSjNI1qaeUXI2MKcoYSFgZajxnBzZDGvRqruqvCJbnXKcvoOA0ukbPKAQkzmrmL8wRthce52Yfp6/AhhDyFDu9p/avgGq5EauvgAAAA==[0m[Pipeline] }
+[8mha:////4ATidU2DQQFejDLM6+au5jOOB7ZS05p3l+GVtZCOj3PEAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiQQNCqWgtN7zAJMY4se6C7eBUvIiv8QcsIlGxxWpnm3m9YRk81OwNdpp6S6GxOLjR5IWJfX91nLDjCzZMgZ1GqZPkVp9mlBw1zClKWAhYaWocB0smwlp06qEqp8hU5+jzdxRQ2vYOTyhENkfl4xcmD5vb2Aamn+evAKZhiFDu9rm2hw+a39c/vgAAAA==[0m[Pipeline] // stage
+[8mha:////4FW0X4I28J7op57JoOuPysZplCXw0gBgqYQc7TXqplM7AAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUFRNCTF2jLpwgNCEkjf4vSUo6cSKuxh0IVGLCg2Vbst7zBVXwcCSvmVU4GAy9YaObdE4skR8ujhKzdGY9YSCnWKdSR1K1S+0oKlhUlLDisFbYOwoGdYQNt+IuaidQ16fo83bgUBp5gwcUPJOj8PFbZg/b6yQD4Y/zFwDzGKFsmmy7/edZvQGF7fJmwgAAAA==[0m[Pipeline] stage
+[8mha:////4K+dIiHss9hFcBnLLGHNbUi447lw6ZBzcXuy0/iWKGjTAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUCRaEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0Z/aLSwgAAAA==[0m[Pipeline] { (Build Docker Image)
+[8mha:////4GkXM0sB2n9n2yNsTpcUIfM0gwe4Tbx9PbKN5FYYDkbIAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogUJDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAbb5KxbCAAAA[0m[Pipeline] script
+[8mha:////4LkYPfTZ2V6v97ZHOA8Rqbwxeks3iiOMRSLD6qlAp2mxAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUIDbE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5AfdrPt52fxAdhUMVHCAAAA[0m[Pipeline] {
+[8mha:////4L9ZhdSX10u5dGHfJcJCnBDmmAsFpqeIMGFm44Qw2sevAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiAR2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwZyv32U7vwBvbls1O+AAAA[0m[Pipeline] sh
++ cd /tmp/Details_App/
++ sudo docker build -t details_app_pipeline:v1.0 .
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 684B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-alpine
+#2 ...
+
+#3 [auth] library/python:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.11-alpine
+#2 DONE 1.4s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 96B done
+#4 DONE 0.0s
+
+#5 [base 1/6] FROM docker.io/library/python:3.11-alpine@sha256:700b4aa84090748aafb348fc042b5970abb0a73c8f1b4fcfe0f4e3c2a4a9fcca
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 3.65kB 0.0s done
+#6 DONE 0.0s
+
+#7 [stage-1 5/6] COPY --from=base /usr/local/bin /usr/local/bin
+#7 CACHED
+
+#8 [base 4/6] RUN pip install poetry
+#8 CACHED
+
+#9 [stage-1 4/6] COPY --from=base /usr/local/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
+#9 CACHED
+
+#10 [base 2/6] COPY ./pyproject.toml ./
+#10 CACHED
+
+#11 [base 3/6] RUN apk add --no-cache --update build-base git python3-dev libffi-dev
+#11 CACHED
+
+#12 [stage-1 3/6] RUN apk add git
+#12 CACHED
+
+#13 [base 6/6] RUN poetry install --no-dev
+#13 CACHED
+
+#14 [base 5/6] RUN poetry config virtualenvs.create false
+#14 CACHED
+
+#15 [stage-1 2/6] WORKDIR /home/app
+#15 CACHED
+
+#16 [stage-1 6/6] COPY . /home/app/
+#16 CACHED
+
+#17 exporting to image
+#17 exporting layers done
+#17 writing image sha256:894eaa1e95831aa0ba6118fd9a00dcc3d704e8209021d45e690fbed6675bb03b done
+#17 naming to docker.io/library/details_app_pipeline:v1.0 done
+#17 DONE 0.0s
+[8mha:////4CQTYcl0zCJYK9154z1IbaEO+buQ7DpjHNUXZg0n27icAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioXSIitZKwwtMYowd686xHZyKF/E1/kAgEhVbrHa2mecL1jHAkYNGq6g3FFuD3o16Xpg59FfHGS1fsGWK7BQ2KjfcqdOCDScFS4oSVgI2ilrH0ZBOsBVW3mXlJOnqnML8HQSUphvgAYWYzUmG9IUpwO42dpHp5/krgMn7BGVdf2r/BmFfOky+AAAA[0m[Pipeline] }
+[8mha:////4GT5tSZ3jyWYUj3mNTjtAhUZkA31fG5CSrqLaZr5yNemAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiJKgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN37dbx6+AAAA[0m[Pipeline] // script
+[8mha:////4Kii3uEsDWRKvHOTC4RXz6ygrmMytMWwaTisj/28h/thAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJCgWgQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrd/lPbN0af/O++AAAA[0m[Pipeline] }
+[8mha:////4GgnDXjO8DsVlo/jtlNOoMB7EJ+d6GMAIHzqIW4rNC4SAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSgIQQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryt8+1PXwAgGI9Er4AAAA=[0m[Pipeline] // stage
+[8mha:////4N3nPRgoNseAQg3ZtagO8ZqsePauP8YAzpMYyFEt5aoYAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUlRiQEFPXqAsnCE0ISaP/S5KSTpyIq3EHApWY8GDZlqz3fEEVPBzJa2YVDgZDb9joJp0TS+SHi6PELJ1ZTxjIKdap1JFU7VI7igoWFSWsOKwV9o6CQR1hw624i9oJ1PUp+rwdOJRG3uABBc/kKHz8ltnD9jrJQPjj/AXAPEYomybbbv95Vm+uAAlowgAAAA==[0m[Pipeline] stage
+[8mha:////4EIrewWzccYfIp2c4rbNFeuaUMt6rgkYd+fu5gGiE6FLAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoh0YQAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD56au0DCAAAA[0m[Pipeline] { (Push Docker Image)
+[8mha:////4PYn8grzFGDEavhc3HxpTIyWu25Mf0eC3onyKnY0jIPdAAAAqB+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycoiUAQaEOrFGXThBaEJIGv1fkpR04kRcjTsQqMSEB8u2ZL3nC6rgoSGvmVXYGwydYYMbdU4ske8vjhKzdGYdYSCnWKtSS1Id59pSVDCrKGHBYamwcxQM6ggrbsVd1E6grk/R5+3AoTTyBg8oeCZH4eO3TB7W11EGwh/nLwCmIUK53WfbbT7P6g0iH00AwgAAAA==[0m[Pipeline] withCredentials
+[8mha:////4BUT9hus6Nsh/zC8xpiMAU9NRQWmGystUx9abU14LKu7AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICBRWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nffWr7BguVlU2+AAAA[0m[Pipeline] // withCredentials
+[8mha:////4MRSLkoU4aIxArNSkUFY0RimeaXwSOExALJjLFZlXZgkAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiISgQSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wAQG7Gq74AAAA=[0m[Pipeline] }
+[8mha:////4M7Mu62Cmba3LBz/ZypY7HdofkhxXasyd0SL1j7y5eSgAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOJSABISSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryv821O3wAc42dF74AAAA=[0m[Pipeline] // stage
+[8mha:////4NF7Fe9tf0VnJfzb7fkWmdyk4mh7aNm1iOGSskmibssrAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKiSFAhqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJygP+1x1/QEq8TMOvgAAAA==[0m[Pipeline] }
+[8mha:////4NxJfe1x0dx4gDfolwug3ui80UdAe3tyrUKfaRSc/rEYAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICRSpEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNn7BGVd5zrsPxkSaLK+AAAA[0m[Pipeline] // withEnv
+[8mha:////4D35VWw00S1vWxtqJI6NS+WAnoZFJhcW4fVmKXke49oWAAAAox+LCAAAAAAAAP9tjTESgjAQRT84FraWHiI0auNY2WZoPEGEGAOZXUwWofJEXs07yMiMlb/67zXv9cYyRRw5OtVYaj2lyqsu9G56auDYXgMPquGLqpgSB6tKO5Rc29OMJYvFvCzHQmNlqQqcPDnBWjfmYYpgyBVniZM7aOS+vuOJTE9lMVG+MEZsbn2dmH6dvwGMXSfId3tBtv0AM5yUxr0AAAA=[0m[Pipeline] }
+[8mha:////4Bc3nEKPWrBtlPka0PQ05XSQUtevh3zqwCGNe04bv2wuAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIpEKJAVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Lu9INt+ACAgkGW9AAAA[0m[Pipeline] // node
+[8mha:////4P1ndmWHNf8tS/HDKrFXVeMHKhUo7IDhuXbd50Q/LZ4FAAAApB+LCAAAAAAAAP9tjbEKwjAURW8rDq6OfkQKgiCIk2vo4hfENsa04b2avNpOfpG/5j9YLDh5p3vOcl5vLFPEkaNTjaXWU6q86kLvpqcGju018KAavqiKKXGwqrRDybU9zViyWMzLciw0VpaqwMmTE6x1Yx6mCIZccZY4uYNG7us7nsj0VBYT5QtjxObW14np1/kbwNh1gny3F2TbD2eHx5C9AAAA[0m[Pipeline] End of Pipeline
+ERROR: Could not find credentials entry with ID '51bd7d4c-f8c4-4ce9-92ef-1532023bf941'
+Finished: FAILURE

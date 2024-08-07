@@ -66,7 +66,7 @@ pipeline {
 
         stage('Push Docker Image') {
             steps {
-                withCredentials([usernamePassword(credentialsId: '51bd7d4c-f8c4-4ce9-92ef-1532023bf941', 
+                withCredentials([usernamePassword(credentialsId: 'dockerhub_credentials_id', 
                 usernameVariable: 'DOCKER_HUB_USERNAME',
                 passwordVariable: 'DOCKER_HUB_PASSWORD')]) {
                     sh 'sudo docker tag details_app:latest ${DOCKER_HUB_USERNAME}/${IMAGE_NAME}:${IMAGE_TAG}'
