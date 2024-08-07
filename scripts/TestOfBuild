@@ -1,0 +1,14 @@
+if which git ;then
+	git clone https://$GIT_KEY@github.com/orinahum/Details_App.git
+cd Details_App
+./build.sh
+else
+	echo "[!] Missing binary: git "
+fi
+
+docker compose build --no-cache
+docker tag details_app:latest orinahum1982/details_app:v1.0
+docker logout
+docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+docker push orinahum1982/details_app:v1.0
+[[ $? == 0 ]] && echo "[+] This is working" || echo "[!] Somthing went wrong"
