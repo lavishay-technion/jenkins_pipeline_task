@@ -9,11 +9,8 @@ if [[ ! -d $OUTPUT_DIR ]]; then
     mkdir $OUTPUT_DIR
 fi
 ##Creating files with typos
-echo lable > $APP_DIR/file_with_typos.txt
 echo devic > $APP_DIR/file_with_typos.txt
-echo varning > $APP_DIR/file_with_typos2.txt
 echo implemen > $APP_DIR/file_with_typos2.txt
-echo nd > $APP_DIR/file_with_typos1.txt
 echo suppor > $APP_DIR/file_with_typos1.txt
 
 #### Changing ownership of the reports folder, as it's in Volume, it's created with root permissions
