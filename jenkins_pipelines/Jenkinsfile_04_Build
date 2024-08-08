@@ -64,7 +64,7 @@ pipeline {
             }
         }
 
-        stage('Push Docker Image') {
+        stage('Push Docker Image') { // Pushing docker image to docker hub using credentials saved in Jenkins
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockerhub_credentials_id', 
                 usernameVariable: 'DOCKER_HUB_USERNAME',
@@ -74,7 +74,7 @@ pipeline {
                 }
             }
         }
-        stage('Get info from dockerhub on the new image, into a log of confirmation') {
+        stage('Get info from dockerhub on the new image, into a log of confirmation in json format') {
             steps {
                 script {
                     sh '''
