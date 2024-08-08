@@ -44,7 +44,7 @@ export TEST_DB=True
 # Change directory to the application directory
 cd $APP_DIR
 # Run pytest and generate an HTML report
-poetry run pytest --html="${OUTPUT_DIR}/03_pytest_results.html" # --self-contained-html 
+poetry run pytest --html="${OUTPUT_DIR}/03_pytest_results.html" --self-contained-html 
 # Run pytest and save the results to the markdown file
 poetry run pytest > "${OUTPUT_DIR}/03_pytest_result.md"
 # Return to the original directory

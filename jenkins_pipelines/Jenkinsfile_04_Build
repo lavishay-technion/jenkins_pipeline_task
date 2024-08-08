@@ -74,5 +74,15 @@ pipeline {
                 }
             }
         }
+        stage('Get info from dockerhub on the new image, into a log of confirmation') {
+            steps {
+                script {
+                    sh '''
+                    docker image inspect orinahum1982/details_app_pipeline:v1.0 > /home/jenkins/reports/04_dockerimage_info.md
+                    '''
+                    }
+                }
+            }
+        }
     }
 }

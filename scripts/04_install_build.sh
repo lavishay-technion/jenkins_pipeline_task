@@ -4,8 +4,6 @@
 # This Script installs Docker and Docker Compose based on Linux distributions.
 # Packages: docker, docker-ce, docker-ce-cli, containerd.io, docker-compose
 # Additional dependencies: dnf-plugins-core (Rocky), apt-transport-https, ca-certificates, curl, gnupg, lsb-release (Debian/Ubuntu)
-# Author: Ori Nahum
-# Collaborator: Avishay Layani
 # Reference: https://docs.docker.com/engine/install/
 # -----------------------------------------------------------------------------------------------------------------
 
