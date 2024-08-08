@@ -1,6 +1,6 @@
 
 pipeline {
-    agent {label 'worker1'}
+    agent {label 'workers'}
     parameters {
         string(
             name: 'APP_DIR', 
