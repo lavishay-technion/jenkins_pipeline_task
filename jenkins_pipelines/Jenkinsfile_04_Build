@@ -1,6 +1,6 @@
 
 pipeline {
-    agent {label 'workers'}
+    agent {label 'worker1'}
     parameters {
         string(
             name: 'APP_DIR', 
@@ -80,7 +80,7 @@ pipeline {
                     sh '''
                     docker image inspect orinahum1982/details_app_pipeline:v1.0 > /home/jenkins/reports/04_dockerimage_info.md
                     '''
-                    }
+                    
                 }
             }
         }
