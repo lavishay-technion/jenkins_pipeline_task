@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # -------------------------------------------------------------
-# This Script finds all .sh scripts and runs codespell on them.
+# This Script runs codespell.
 # -------------------------------------------------------------
 
 # Check if the directory $OUTPOT_DIR exists; if not, create a reports directory
@@ -22,16 +22,8 @@ echo "CodeSpell Results" >> "${OUTPUT_DIR}/02_codespell_results.md"
 echo "==================" >> "${OUTPUT_DIR}/02_codespell_results.md"
 
 # Loop through all directories specified in PATHS_LOCATION and find .sh files
-codespell -c $APP_DIR >> "${OUTPUT_DIR}/02_codespell_results.md"
+codespell $APP_DIR >> "${OUTPUT_DIR}/02_codespell_results.md"
 
-# for LOCATION in "${APP_DIR[@]}"; do
-#     if [[ $LOCATION != '' ]]; then
-#         # Find .sh files in the current location and run codespell on them
-#         find $LOCATION -name "*.sh" -exec codespell {} + >> "${OUTPUT_DIR}/02_codespell_results.md"
-#     else
-#         echo "[-] Location was not provided"
-#     fi
-# done
 
 # Notify the user that the results have been saved
 echo "[v] Code Spell Results saved in ${OUTPUT_DIR}/02_codespell_results.md"

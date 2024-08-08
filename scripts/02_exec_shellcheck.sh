@@ -2,8 +2,6 @@
 
 # -------------------------------------------------------------
 # This Script finds all .sh scripts and runs ShellCheck on them.
-# Author: Ori Nahum
-# Collaborator: Avishay Layani
 # -------------------------------------------------------------
 
 # Check if the directory $OUTPOT_DIR exists; if not, create a reports directory

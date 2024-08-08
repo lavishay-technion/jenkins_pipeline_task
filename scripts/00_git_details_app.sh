@@ -3,8 +3,6 @@
 # ----------------------------------------------------------------------------------------------------------
 # This Script checks if Git is installed and clones/pulls the Details_App repo from GitHub to /tmp/Details_App.
 # If Git is not installed, it checks the OS and installs Git accordingly.
-# Author: Ori Nahum
-# Collaborator: Avishay Layani
 # Packages: GIT
 # ----------------------------------------------------------------------------------------------------------
 

@@ -3,8 +3,6 @@
 # -----------------------------------------------------------------------------------------------------------------
 # This Script installs packages based on Linux distributions.
 # Packages: python3-pip, py3-pip, codespell
-# Author: Ori Nahum
-# Collaborator: Avishay Layani
 # References:
 # - https://linuxcommandlibrary.com/man/codespell
 # - https://rhel.pkgs.org/9/epel-x86_64/codespell-2.2.1-1.el9.noarch.rpm.html

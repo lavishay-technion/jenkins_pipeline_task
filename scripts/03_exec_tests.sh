@@ -2,8 +2,6 @@
 
 # --------------------------------------------------------------------------------------------
 # This Script sets up a Poetry environment, installs dependencies, and runs pytest on the Details_App project.
-# Author: Ori Nahum
-# Collaborator: Avishay Layani
 # --------------------------------------------------------------------------------------------
 
 HOME_DIR=$(pwd)

@@ -3,8 +3,6 @@
 # -----------------------------------------------------------------------------------------------------------------
 # This Script installs packages based on Linux distributions.
 # Packages: python3, python3-pip, py3-pip, poetry
-# Author: Ori Nahum
-# Collaborator: Avishay Layani
 # References:
 # - https://docs.pytest.org/en/stable/reference/plugin_list.html
 # - https://pytest-html.readthedocs.io/en/latest/installing.html
