@@ -4,7 +4,7 @@
 One main pipeline, that runs seperate pipelines on the workers. 
 The main pipeline is triggered by Curl command:
 
-- curl -u admin:admin localhost/job/pipeline_00_manager/build?token=manager_token
+  - curl -u admin:admin localhost/job/pipeline_00_manager/build?token=manager_token
 
 ## Sub pipelines
 - All sub pipelines are triggered by using "build job"(We coudn't find a way to get the info from the jobs by using curl command). 
