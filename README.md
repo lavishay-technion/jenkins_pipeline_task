@@ -4,13 +4,13 @@
 One main pipeline, that runs seperate pipelines on the workers. 
 The main pipeline is triggered by Curl command:
 
-curl -u admin:admin localhost/job/pipeline_00_manager/build?token=manager_token
+- curl -u admin:admin localhost/job/pipeline_00_manager/build?token=manager_token
 
 ## Sub pipelines
-All sub pipelines are triggered by using "build job"(We coudn't find a way to get the info from the jobs by using curl command). 
-Every sub pipeline can be triggered by a curl command as well, writted in comment in the relevant section. 
-All pipelines generate a report, that is saved using a volume with all of the containers in ./reports
-All pipelines are using installation scripts(Prerequsitions for every pipeline). pipeline 1-3 uses execution scripts, and pipeline 4 executes on the jenkins file. 
+- All sub pipelines are triggered by using "build job"(We coudn't find a way to get the info from the jobs by using curl command). 
+- Every sub pipeline can be triggered by a curl command as well, writted in comment in the relevant section. 
+- All pipelines generate a report, that is saved using a volume with all of the containers in ./reports
+- All pipelines are using installation scripts(Prerequsitions for every pipeline). pipeline 1-3 uses execution scripts, and pipeline 4 executes on the jenkins file. 
 
 ### Short explanation on the sub pipelines:
 - The first pipeline runs "Hunspell" for spell checking files
