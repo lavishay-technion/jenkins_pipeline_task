@@ -20,6 +20,6 @@ All pipelines are using installation scripts(Prerequsitions for every pipeline).
 
 
 ## Notes:
-Jenkins entire setup data is volumed into docker/conf_files, so it saves all jenkins configuration when you run the containers. 
-Docker compose up from docker folder, curl to activate main pipeline, and everything will work accordingly. 
-Application's GIT in: https://github.com/orinahum/Details_App.git It containes modifications for the pytest section
+- Jenkins entire setup data is volumed into docker/conf_files, so it saves all jenkins configuration when you run the containers. 
+- Docker compose up from docker folder, curl to activate main pipeline, and everything will work accordingly. 
+- Application's GIT in: https://github.com/orinahum/Details_App.git It containes modifications for the pytest section
